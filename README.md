@@ -1,4 +1,4 @@
-# ddoif
+# ddoif Digital Data Organization and Exchange in Fashion
 
 Towards a standaridized look of fashion data
 
