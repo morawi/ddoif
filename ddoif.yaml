@@ -1,0 +1,130 @@
+# -*- coding: utf-8 -*-
+
+# Created on Fri Apr 24 17:56:37 2020
+# @author: malrawi
+# https://www.json2yaml.com/convert-yaml-to-json
+# http://yaml-online-parser.appspot.com/
+
+
+Clothing:
+    Skirt:
+        type: Mini
+        all types: 
+            - A-Line 
+            - Fitted (Pencil  / Tube)
+            - Drindl 
+            - Mini  
+            - Bondage
+            - Pelmet 
+            - Micro Mini 
+            - Draped  (Sarong draped)
+            - Layered 
+            - Gored 
+            - Godet 
+            - Trumpet 
+            - Wrap 
+            - Divided 
+            - Pleated 
+            - Asymmetrical Hem 
+            - Bubble 
+            - Yoke 
+            - Tulip 
+            - Tiered (Gypsy)
+            - Accordion 
+            - Asymmetrical  
+            - Bell Shaped 
+            - Bustled 
+            - Button-Up 
+            - Broomstick 
+            - Circular (Circle)
+            - Cowl 
+            - Culottes 
+            - Denim 
+            - Fix Box 
+            - Flared 
+            - Fly 
+            - High Waisted 
+            - Inverted Pleat 
+            - Knife Pleated
+            - Maxi 
+            - Mermaid 
+            - Paneled 
+            - Peasant 
+            - Pegged 
+            - Pencil 
+            - Peplum 
+            - Ruffled 
+            - Sarong 
+            - Sheath 
+            - Skater 
+            - Skort 
+            - Straight 
+            - Trouser 
+            - Tulle 
+            - Tutu 
+            - Under
+            - Wrap (wrap around)  
+            - Ball Gown 
+            - Hoop 
+            - Ballet 
+    Dress:
+        type:
+        all types:
+    Womens Short: # or Ladies Short?
+        type:
+        all types:
+    Ladies Pant: # Or Womens Pant?
+        type: 
+        all types:
+    Ladies Jacket:
+    
+    Mens Short:
+        type:
+        all types:
+    Mens Pant:
+        type:
+        all types:
+    Mens Jacket:
+        type:
+        all types:
+    Colors:
+    
+    Patterns:
+    
+    
+    
+        
+    
+    
+Accessories:
+    Hat:
+        type: Beanie
+        all_types: 
+Images:
+    number: 3 # number of images, 3 here for example 
+    urls:
+        url1: 
+        url2: 
+        url3:                
+    mode:
+        mode1:
+        mode2:
+        mode3:
+        resolution1:
+        resolution2:
+        resolution3:
+Captions:
+    number: 2 # number of captions of the item, here 2 as an example
+    caption1: Nice skirt
+    caption2: Best wear ever
+Sustainability:
+    - Recycled material: Yes/No
+    - Sustainability grade: 8 # a measure from 1 to 10 (10 being best)
+    
+
+Personal Characteristics:
+
+    
+    
+    
+    
