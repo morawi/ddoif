@@ -1,0 +1,131 @@
+{
+  "Clothing": {
+    "Skirt": {
+      "type": "Mini",
+      "all types": [
+        "A-Line",
+        "Fitted (Pencil  / Tube)",
+        "Drindl",
+        "Mini",
+        "Bondage",
+        "Pelmet",
+        "Micro Mini",
+        "Draped  (Sarong draped)",
+        "Layered",
+        "Gored",
+        "Godet",
+        "Trumpet",
+        "Wrap",
+        "Divided",
+        "Pleated",
+        "Asymmetrical Hem",
+        "Bubble",
+        "Yoke",
+        "Tulip",
+        "Tiered (Gypsy)",
+        "Accordion",
+        "Asymmetrical",
+        "Bell Shaped",
+        "Bustled",
+        "Button-Up",
+        "Broomstick",
+        "Circular (Circle)",
+        "Cowl",
+        "Culottes",
+        "Denim",
+        "Fix Box",
+        "Flared",
+        "Fly",
+        "High Waisted",
+        "Inverted Pleat",
+        "Knife Pleated",
+        "Maxi",
+        "Mermaid",
+        "Paneled",
+        "Peasant",
+        "Pegged",
+        "Pencil",
+        "Peplum",
+        "Ruffled",
+        "Sarong",
+        "Sheath",
+        "Skater",
+        "Skort",
+        "Straight",
+        "Trouser",
+        "Tulle",
+        "Tutu",
+        "Under",
+        "Wrap (wrap around)",
+        "Ball Gown",
+        "Hoop",
+        "Ballet"
+      ]
+    },
+    "Dress": {
+      "type": null,
+      "all types": null
+    },
+    "Womens Short": {
+      "type": null,
+      "all types": null
+    },
+    "Ladies Pant": {
+      "type": null,
+      "all types": null
+    },
+    "Ladies Jacket": null,
+    "Mens Short": {
+      "type": null,
+      "all types": null
+    },
+    "Mens Pant": {
+      "type": null,
+      "all types": null
+    },
+    "Mens Jacket": {
+      "type": null,
+      "all types": null
+    },
+    "Colors": null,
+    "Patterns": null
+  },
+  "Accessories": {
+    "Hat": {
+      "type": "Beanie",
+      "all_types": null
+    }
+  },
+  "Images": {
+    "number": 3,
+    "urls": {
+      "url1": null,
+      "url2": null,
+      "url3": null
+    },
+    "mode": {
+      "mode1": null,
+      "mode2": null,
+      "mode3": null
+    },
+    "resolution": {
+      "resolution1": null,
+      "resolution2": null,
+      "resolution3": null
+    }
+  },
+  "Captions": {
+    "number": 2,
+    "caption1": "Nice skirt",
+    "caption2": "Best wear ever"
+  },
+  "Sustainability": [
+    {
+      "Recycled material": "Yes/No"
+    },
+    {
+      "Sustainability grade": 8
+    }
+  ],
+  "Personal Characteristics": null
+}
