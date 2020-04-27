@@ -95,7 +95,10 @@ clothing:
         type:
         all types:
     
-    
+     dress neckline:
+         type:
+         all_types:
+         
       
 accessories:
     hat:
