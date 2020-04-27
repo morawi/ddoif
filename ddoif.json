@@ -1,6 +1,6 @@
 {
-  "Clothing": {
-    "Skirt": {
+  "clothing": {
+    "skirt": {
       "type": "Mini",
       "all types": [
         "A-Line",
@@ -62,42 +62,146 @@
         "Ballet"
       ]
     },
-    "Dress": {
+    "dress": {
       "type": null,
       "all types": null
     },
-    "Womens Short": {
+    "womens short": {
       "type": null,
       "all types": null
     },
-    "Ladies Pant": {
+    "ladies Pant": {
       "type": null,
       "all types": null
     },
-    "Ladies Jacket": null,
-    "Mens Short": {
+    "ladies jacket": null,
+    "mens short": {
       "type": null,
       "all types": null
     },
-    "Mens Pant": {
+    "mens Pant": {
       "type": null,
       "all types": null
     },
-    "Mens Jacket": {
+    "mens Jacket": {
       "type": null,
       "all types": null
-    },
-    "Colors": null,
-    "Patterns": null
-  },
-  "Accessories": {
-    "Hat": {
-      "type": "Beanie",
-      "all_types": null
     }
   },
-  "Images": {
-    "number": 3,
+  "accessories": {
+    "hat": {
+      "type": "Beanie",
+      "all_types": [
+        "Baseball Cap",
+        "Beanie",
+        "Beret",
+        "Boater",
+        "Bonnet",
+        "Bucket",
+        "Cloche",
+        "Cowboy hat",
+        "Deerstalker",
+        "Derby hat",
+        "Fedora",
+        "Gatsby hat / newsboy cap",
+        "Panama Hat",
+        "Pillbox hat",
+        "Pom-pom beanie",
+        "Skully hat",
+        "Sombrero",
+        "Straw hat",
+        "Top hat / topper hat / cylinder hat",
+        "Trapper hat",
+        "Bora Bora Booney II  hat",
+        "Fascinator",
+        "Hatinator",
+        "Colourful Braided Straw Hat for Women",
+        "Trilby hat",
+        "Panama Hat",
+        "Bowler",
+        "Snapback",
+        "Dad Hat",
+        "Flat Cap",
+        "Boater",
+        "Pork Pie hat",
+        "Top Hat",
+        "Chullo Hat for Men",
+        "Ascot Cap for Men",
+        "Akubra Men Hat",
+        "Boater Hat for Men",
+        "Crochet Hat for Women",
+        "Beanie Pull-on Hat for Women",
+        "Breton Hat for Women",
+        "Cartwheel Hat for Women",
+        "Tennis Hat for Women",
+        "Party Hat",
+        "Peaked Hat"
+      ]
+    },
+    "ladies bag": {
+      "type": null,
+      "all types": [
+        "Hand bag",
+        "Hobo bag",
+        "Tote bag",
+        "Duffle bag",
+        "Messenger bag",
+        "Backpack, bookbag, kitbag, knapsack,  pack, sackpack or backsack",
+        "Stachel bag",
+        "Doctor's bag",
+        "Bucket bag",
+        "Bowler bag",
+        "Writslet bag",
+        "Pouch bag",
+        "Clutch bag",
+        "Saddle bag",
+        "Beach bag",
+        "Shoulder bag (modifier)",
+        "Miniaudiere bag",
+        "Shopeing / Gorcery bag",
+        "Drawstring bag",
+        "Makeup bag",
+        "Foldover bag",
+        "Phone bag",
+        "Camera case bag",
+        "Baguette bag",
+        "Barrel bag",
+        "Basket bag",
+        "Fanny pack",
+        "Kelly bag",
+        "Sling bag",
+        "Weekender travel bag"
+      ],
+      "bag-purse handles": {
+        "type": null,
+        "all types": [
+          "Leather \\ Synthetic leather handles",
+          "Leather \\ Synthetic leather handles",
+          "Fabric handles",
+          "Wooden handles",
+          "Metal handles",
+          "Crocheted handles",
+          "Straw handles",
+          "Webbing",
+          "Rope handles",
+          "Soft cord handles",
+          "Thread \\ yarn handles",
+          "Beaded handles",
+          "Ribbon handles",
+          "Plastic Handles",
+          "Braided handles",
+          "Shoulder handles",
+          "Bracelet handle",
+          "Top handles",
+          "Long and medium Straps"
+        ]
+      }
+    }
+  },
+  "colors": null,
+  "patterns": null,
+  "images": {
+    "number": "Val",
     "urls": {
       "url1": null,
       "url2": null,
@@ -112,20 +216,25 @@
       "resolution1": null,
       "resolution2": null,
       "resolution3": null
+    },
+    "description": {
+      "desc1": null,
+      "desc2": null,
+      "desc3": null
     }
   },
-  "Captions": {
+  "captions": {
     "number": 2,
-    "caption1": "Nice skirt",
+    "caption1": "some text",
     "caption2": "Best wear ever"
   },
-  "Sustainability": [
+  "sustainability": [
     {
-      "Recycled material": "Yes/No"
+      "recycled material": "Yes/No"
     },
     {
-      "Sustainability grade": 8
+      "sustainability grade": 8
     }
   ],
-  "Personal Characteristics": null
+  "personal characteristics": null
 }
