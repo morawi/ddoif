@@ -5,12 +5,14 @@
 # https://www.json2yaml.com/convert-yaml-to-json
 # http://yaml-online-parser.appspot.com/
 
+# all these should go under manufacturing tags, then, we have another same copy called predicted tags
+
 
 clothing:
     skirt:
-        type: Mini
+        type: Mini  # this is the type chosen, one picked from 'all types'
         all types: 
-            - A-Line 
+            - A-Line
             - Fitted (Pencil  / Tube)
             - Drindl 
             - Mini  
@@ -70,23 +72,30 @@ clothing:
     dress:
         type:
         all types:
-    womens short: # or Ladies Short?
+    womens short:    # Name confusion/conflict: Ladies vs Womens
         type:
         all types:
-    ladies Pant: # Or Womens Pant?
+    womens pant: # Or Womens Pant?
         type: 
         all types:
-    ladies jacket:
+    womens jacket:
+    
+    womens pantsuits:
     
     mens short:
         type:
         all types:
-    mens Pant:
+    mens pant:
         type:
         all types:
-    mens Jacket:
+    mens jacket:
         type:
         all types:
+    mens shirt:
+        type:
+        all types:
+    
+    
       
 accessories:
     hat:
