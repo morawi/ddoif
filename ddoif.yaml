@@ -8,11 +8,12 @@
 # all these should go under manufacturing tags, then, we have another same copy called predicted tags
 
 
+
 clothing:
     skirt:
         type: Mini  # this is the type chosen, one picked from 'all types'
         all types: 
-            - A-Line
+            - A-Line # description for each type can also be added
             - Fitted (Pencil  / Tube)
             - Drindl 
             - Mini  
@@ -72,33 +73,83 @@ clothing:
     dress:
         type:
         all types:
+    
     womens short:    # Name confusion/conflict: Ladies vs Womens
         type:
         all types:
+    
     womens pant: # Or Womens Pant?
         type: 
         all types:
+    
     womens jacket:
+        type: 
+        all types:
+        
+    womens vests:
+        type: 
+        all types:
+       
     
     womens pantsuits:
+        type: 
+        all types:
     
+    womens top-tee: 
+        type: 
+        all types:
+    
+    womens leggins:
+        type: 
+        all types:
+    
+    
+    # Mens items
     mens short:
         type:
         all types:
+    
     mens pant:
         type:
         all types:
+    
     mens jacket:
         type:
         all types:
+    
     mens shirt:
         type:
         all types:
     
-     dress neckline:
+    mens t-shirt: 
+        type:
+        all types:
+        
+    dress neckline: # necklines can also be used for top(tee)s
          type:
-         all_types:
-         
+         all types:
+    sleeve:
+        type: 
+        all types:
+    
+    # footwear is also considered clothing in the literature
+    footwear:
+        type:
+        all types:
+            shoe:
+                type:
+                all types:
+            sandal:
+                type:
+                all types:
+            boot:
+                type:
+                all types:
+            heel:
+                type:
+                all types:               
+    
+                
       
 accessories:
     hat:
@@ -149,8 +200,8 @@ accessories:
             - Party Hat
             - Peaked Hat
         
-    ladies bag:
-        type:
+    womens bag - purse: # bag / purse
+        type: Pouch
         all types:
             - Hand bag
             - Hobo bag
@@ -182,11 +233,12 @@ accessories:
             - Kelly bag
             - Sling bag
             - Weekender travel bag
-        bag-purse handles:
+        
+        bag - purse handle:
             type:
             all types:
-                - Leather \ Synthetic leather handles
-                - Leather \ Synthetic leather handles
+                - Leather / Synthetic leather handles
+                - Leather / Synthetic leather handles
                 - Fabric handles
                 - Wooden handles
                 - Metal handles
@@ -204,11 +256,21 @@ accessories:
                 - Bracelet handle
                 - Top handles
                 - Long and medium Straps
-        
-                
-colors:
+                       
+colors: # may include the major colors, and not everything, generated using some computer vision algorithm
+    histogram:
+        - [0, 1, 21, 12] # dummy numbers
+        - [3, 4, 5, 17]
+        - [3, 4, 5, 17]        
+    color-RGB-values:
+    color-names:
 
 patterns:
+    
+fabric:
+
+material:
+    
 
 images:
     number: Val # TYPE INT; number of images, 3 here for example 
@@ -228,16 +290,30 @@ images:
         desc1:
         desc2:
         desc3:
-captions:
-    number: 2 # number of captions of the item, here 2 as an example
-    caption1: some text
-    caption2: Best wear ever
+captions: # unlimited number of captions, normally a few of them
+    - Blah blha blah
+    - To be or not to be
 sustainability:
-    - recycled material: Yes/No
+    - recycled material: Y # options: Y(Yes) / N(No)
     - sustainability grade: 8 # a measure from 1 to 10 (10 being best)
     
 
 personal characteristics:
+    age:
+    fitting preferences:
+        type: loose
+        all types: 
+            - loose
+            - slim
+            - regular
+            - normal 
+    weight: # Kg
+    height: # cm
+    waste: # cm
+    chest: # cm
+    
+    
+        
 
     
     
