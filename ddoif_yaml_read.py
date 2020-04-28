@@ -33,5 +33,6 @@ with open(r'C:/MyPrograms/ddoif/ddoif.yaml') as file:
     file.close()
 
 print(ddoif_dict['clothing']['skirt']['type'])
+x= ddoif_dict
 
 

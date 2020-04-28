@@ -2,14 +2,16 @@
 
 # Created on Fri Apr 24 17:56:37 2020
 # @author: malrawi
-# https://www.json2yaml.com/convert-yaml-to-json
+# https://onlineyamltools.com/convert-yaml-to-json
 # http://yaml-online-parser.appspot.com/
+# https://jsonformatter.org/json-parser
 
 # all these should go under manufacturing tags, then, we have another same copy called predicted tags
 
 
 
 clothing:
+    # Womenswear
     skirt:
         type: Mini  # this is the type chosen, one picked from 'all types'
         all types: 
@@ -73,12 +75,15 @@ clothing:
     dress:
         type:
         all types:
+    dress neckline: # necklines can also be used for top(tee)s
+        type:
+        all types:
     
     womens short:    # Name confusion/conflict: Ladies vs Womens
         type:
         all types:
     
-    womens pant: # Or Womens Pant?
+    womens pant: # Or Womens Pant? Also, pants vs trousers 
         type: 
         all types:
     
@@ -86,10 +91,9 @@ clothing:
         type: 
         all types:
         
-    womens vests:
+    womens vest:
         type: 
-        all types:
-       
+        all types:       
     
     womens pantsuits:
         type: 
@@ -104,7 +108,7 @@ clothing:
         all types:
     
     
-    # Mens items
+    # Mens items, not sure if we have to add kids items, TODO
     mens short:
         type:
         all types:
@@ -116,6 +120,9 @@ clothing:
     mens jacket:
         type:
         all types:
+    mens vest:
+        type:
+        all types:
     
     mens shirt:
         type:
@@ -125,9 +132,6 @@ clothing:
         type:
         all types:
         
-    dress neckline: # necklines can also be used for top(tee)s
-         type:
-         all types:
     sleeve:
         type: 
         all types:
@@ -148,12 +152,11 @@ clothing:
             heel:
                 type:
                 all types:               
-    
-                
+                      
       
 accessories:
     hat:
-        type: Beanie
+        type: 
         all_types: 
             - Baseball Cap
             - Beanie
@@ -201,15 +204,20 @@ accessories:
             - Peaked Hat
         
     womens bag - purse: # bag / purse
-        type: Pouch
+        type: 
         all types:
             - Hand bag
             - Hobo bag
             - Tote bag
             - Duffle bag
             - Messenger bag
-            - Backpack, bookbag, kitbag, knapsack,  pack, sackpack or backsack
-            - Stachel bag
+            - Backpack
+            - bookbag
+            - kitbag 
+            - knapsack 
+            - pack  
+            - sackpack 
+            - backsack
             - "Doctor's bag"
             - Bucket bag
             - Bowler bag
@@ -233,6 +241,11 @@ accessories:
             - Kelly bag
             - Sling bag
             - Weekender travel bag
+            - Briefcase
+            - Duffel
+            - Satchel bag # there is also the Stachel bag, not sure if these are two different types!
+            
+            
         
         bag - purse handle:
             type:
@@ -256,21 +269,98 @@ accessories:
                 - Bracelet handle
                 - Top handles
                 - Long and medium Straps
+    glove:
+        type:
+        all types:
+    belt:
+        type:
+        all types:
+    sock:
+        type:
+        all types:
+    sunglasses:
+        type:
+        all types:
+    jewellery:
+        type:
+        description of color material and design:
+        all types:
+           
                        
-colors: # may include the major colors, and not everything, generated using some computer vision algorithm
+color: # may include the major colors, and not everything, generated using some computer vision algorithm: This is the color at manufacturing time
     histogram:
         - [0, 1, 21, 12] # dummy numbers
         - [3, 4, 5, 17]
         - [3, 4, 5, 17]        
     color-RGB-values:
     color-names:
+    color-degradation-factor: # not yet known how to estimate this
 
-patterns:
+pattern:
+    type:  # for example, stribes
+    all types:
+        - horizental stribes
+        - vertical stribes 
+        - circles
+        - "free from texual description"
+    
     
 fabric:
+    type:
+    all types:
+        - Denim
+        - Cord
+        - Jersey
+        - Ribbed
+        - Softshell
+        - Hardshell
+        - Lace
+        - Fleece
+        - Chiffon
 
 material:
+    type: 
+    all types: 
+        - Lambswool 
+        - Cashmere 
+        - Merino wool
+        - Mohair 
+        - Angora 
+        - Alpaca 
+        - Camel 
+        - Qiviut 
+        - Vicuna 
+        - Llama 
+        - Cashgora)
+        - Linen / Flax
+        - Cotton
+        - Jute
+        - Silk
+        - Suede # (is a type of fuzzy leather with a napped finish)
+        - Leather 
+        - Fur 
+        - ( Fake / Imitation / Faux, Snthetic, Artificial ) Fur
+        - ( Fake / Imitation / Faux, Snthetic, Artificial ) Leather 
+        - Polymers (polyester, teflon etc.) # we have to add them separately
+        - Asbestos
+        - Glass fibre
+        - Ryon / artificial silk # (made of bamboo plant), also called artificial silk
+        - Visocse
+        - Acrylic
+        - Spandex
+        - Nylon
+        - Polypropylene and elastane
+        - Poplin
+        - Seersucker
+        - Poly Cotton
+        - Stretch Cotton
+        - Twill
+        - Diolen 
+        - Fiberglass
     
+Post processing of garments:
+    type: description of the post processing comes here, like how the Denim is bleached and processed
+    all types: # this should be left empty, added for consistence
 
 images:
     number: Val # TYPE INT; number of images, 3 here for example 
@@ -279,27 +369,47 @@ images:
         url2: 
         url3:                        
     mode:
-        mode1:
-        mode2:
-        mode3:
+        mod1:
+        mod2:
+        mod3:
     resolution:
-        resolution1:
+        res1:
         resolution2:
         resolution3:
     description:
-        desc1:
-        desc2:
-        desc3:
+        des1:
+        des2:
+        des3:
+    imaging device: 
+        idv1:
+        idv2:
+        idv3:
+    image quality indicator type:
+        iqi1:
+        iqi2:
+        iqi3:
+    imaging location:
+        type:
+        all types:
+            - Outdoor
+            - Indoor
+            - Studio
+            - Professional-shooting
+            - Personal-shooting 	
+            
 captions: # unlimited number of captions, normally a few of them
     - Blah blha blah
     - To be or not to be
+    
+    
 sustainability:
     - recycled material: Y # options: Y(Yes) / N(No)
     - sustainability grade: 8 # a measure from 1 to 10 (10 being best)
     
 
-personal characteristics:
+personal characteristics: # and preferences, info are non-obligatory, in general and abide to GDPR
     age:
+    gendre:
     fitting preferences:
         type: loose
         all types: 
@@ -307,10 +417,121 @@ personal characteristics:
             - slim
             - regular
             - normal 
+    primary preferred color:
+        type:
+        all types:
+    secondary preferred color:
+        type:
+        all types:
+    
     weight: # Kg
     height: # cm
     waste: # cm
     chest: # cm
+    skin color value: 
+        type:
+        all types:
+    skin color name:
+        type: 
+        all types:
+    primary language:
+    secondary language:
+    ethnic group:
+        type:
+        all types:
+    customer comments - review: # this field is used to store customers review on products, it may or maynot be available
+    
+     
+    
+    
+# Personal Information (info are non-obligatory, in general)
+# Customer's Name
+# Customer ID
+# Issuer of Customer ID
+# Type of Customer ID
+# Customer's Birth Date
+# Customer's Sex
+# Customer's Primary Language
+# Customer's Secondary Language
+# Other Customer Names
+# Customer's Age
+# Customer's Size
+# Customer's Weight
+# Customer's Address
+# Country of Residence
+# Region of Residence
+# Customer's Telephone Numbers
+# Customer's Telecom Information
+# Ethnic Group
+# Occupation
+# Eating habits
+# Alchohol Status
+# Smoking Status
+# Customer's Religious Preference
+# Customer Breed Description
+# Customer Breed Code Sequence
+# Customer Comments / Review (this field is used to store customers review on products, it may or maynot be available)
+    
+    
+care: 
+    washing:
+        type:
+        all types:
+            - Wash in commercial machine in water not exceeding 95°C, at normal setting
+            - Wash in commercial machine in water not exceeding 95°C, at permanent press setting 
+            - Wash in domestic or commercial machine in water not exceeding 70°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 60°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 60°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 50°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 50°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 50°C, at delicate/ gentle setting
+            - Wash in domestic or commercial machine in water not exceeding 40°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 40°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 40°C, at delicate/gentle setting
+            - Wash in domestic or commercial machine in water not exceeding 30°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 30°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 30°C, at delicate / gentle setting
+            - Wash gently by hand in water not exceeding 40°C
+            - Wash gently by hand in water not exceeding 30°C
+            - Wash in domestic or commercial machine at any temperature, at normal setting
+            - Do not wash
+    bleaching:
+        type:
+        all types:
+            - Use any bleach when needed
+            - Use only non-chlorine bleach when needed
+            - Do not bleach
+        
+    
+    
+info:
+    date created: dd-month-yyyy # example: 01-September-2019
+    manufacturer: 
+    brand:
+    contributor:   # could be a third party company that collected the data, like eBay or Amazon
+    url to barcode image: 
+    url to QR image:
+    version:
+    description:
+    country: 
+    city:
+    
+    
+    # Modanet categories
+    # categories":[{"supercategory":"fashion","id":1,"name":"bag"},
+    # {"supercategory":"fashion","id":2,"name":"belt"},
+    # {"supercategory":"fashion","id":3,"name":"boots"},{
+    # "supercategory":"fashion","id":4,"name":"footwear"},
+    # {"supercategory":"fashion","id":5,"name":"outer"},
+    # {"supercategory":"fashion","id":6,"name":"dress"},
+    # {"supercategory":"fashion","id":7,"name":"sunglasses"},
+    # {"supercategory":"fashion","id":8,"name":"pants"},
+    # {"supercategory":"fashion","id":9,"name":"top"},
+    # {"supercategory":"fashion","id":10,"name":"shorts"},
+    # {"supercategory":"fashion","id":11,"name":"skirt"},
+    # {"supercategory":"fashion","id":12,"name":"headwear"},
+    # {"supercategory":"fashion","id":13,"name":"scarf\/tie"}]}
+    
     
     
         
