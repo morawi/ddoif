@@ -1,4 +1,4 @@
-{
+﻿{
   "clothing": {
     "skirt": {
       "type": "Mini",
@@ -66,31 +66,91 @@
       "type": null,
       "all types": null
     },
+    "dress neckline": {
+      "type": null,
+      "all types": null
+    },
     "womens short": {
       "type": null,
       "all types": null
     },
-    "ladies Pant": {
+    "womens pant": {
       "type": null,
       "all types": null
     },
-    "ladies jacket": null,
+    "womens jacket": {
+      "type": null,
+      "all types": null
+    },
+    "womens vest": {
+      "type": null,
+      "all types": null
+    },
+    "womens pantsuits": {
+      "type": null,
+      "all types": null
+    },
+    "womens top-tee": {
+      "type": null,
+      "all types": null
+    },
+    "womens leggins": {
+      "type": null,
+      "all types": null
+    },
     "mens short": {
       "type": null,
       "all types": null
     },
-    "mens Pant": {
+    "mens pant": {
       "type": null,
       "all types": null
     },
-    "mens Jacket": {
+    "mens jacket": {
       "type": null,
       "all types": null
+    },
+    "mens vest": {
+      "type": null,
+      "all types": null
+    },
+    "mens shirt": {
+      "type": null,
+      "all types": null
+    },
+    "mens t-shirt": {
+      "type": null,
+      "all types": null
+    },
+    "sleeve": {
+      "type": null,
+      "all types": null
+    },
+    "footwear": {
+      "type": null,
+      "all types": {
+        "shoe": {
+          "type": null,
+          "all types": null
+        },
+        "sandal": {
+          "type": null,
+          "all types": null
+        },
+        "boot": {
+          "type": null,
+          "all types": null
+        },
+        "heel": {
+          "type": null,
+          "all types": null
+        }
+      }
     }
   },
   "accessories": {
     "hat": {
-      "type": "Beanie",
+      "type": null,
       "all_types": [
         "Baseball Cap",
         "Beanie",
@@ -138,7 +198,7 @@
         "Peaked Hat"
       ]
     },
-    "ladies bag": {
+    "womens bag - purse": {
       "type": null,
       "all types": [
         "Hand bag",
@@ -146,8 +206,13 @@
         "Tote bag",
         "Duffle bag",
         "Messenger bag",
-        "Backpack, bookbag, kitbag, knapsack,  pack, sackpack or backsack",
-        "Stachel bag",
+        "Backpack",
+        "bookbag",
+        "kitbag",
+        "knapsack",
+        "pack",
+        "sackpack",
+        "backsack",
         "Doctor's bag",
         "Bucket bag",
         "Bowler bag",
@@ -170,13 +235,16 @@
         "Fanny pack",
         "Kelly bag",
         "Sling bag",
-        "Weekender travel bag"
+        "Weekender travel bag",
+        "Briefcase",
+        "Duffel",
+        "Satchel bag"
       ],
-      "bag-purse handles": {
+      "bag - purse handle": {
         "type": null,
         "all types": [
-          "Leather \\ Synthetic leather handles",
-          "Leather \\ Synthetic leather handles",
+          "Leather / Synthetic leather handles",
+          "Leather / Synthetic leather handles",
           "Fabric handles",
           "Wooden handles",
           "Metal handles",
@@ -196,10 +264,121 @@
           "Long and medium Straps"
         ]
       }
+    },
+    "glove": {
+      "type": null,
+      "all types": null
+    },
+    "belt": {
+      "type": null,
+      "all types": null
+    },
+    "sock": {
+      "type": null,
+      "all types": null
+    },
+    "sunglasses": {
+      "type": null,
+      "all types": null
+    },
+    "jewellery": {
+      "type": null,
+      "description of color material and design": null,
+      "all types": null
     }
   },
-  "colors": null,
-  "patterns": null,
+  "color": {
+    "histogram": [
+      [
+        0,
+        1,
+        21,
+        12
+      ],
+      [
+        3,
+        4,
+        5,
+        17
+      ],
+      [
+        3,
+        4,
+        5,
+        17
+      ]
+    ],
+    "color-RGB-values": null,
+    "color-names": null
+  },
+  "pattern": {
+    "type": null,
+    "all types": [
+      "horizental stribes",
+      "vertical stribes",
+      "circles",
+      "free from texual description"
+    ]
+  },
+  "fabric": {
+    "type": null,
+    "all types": [
+      "Denim",
+      "Cord",
+      "Jersey",
+      "Ribbed",
+      "Softshell",
+      "Hardshell",
+      "Lace",
+      "Fleece",
+      "Chiffon"
+    ]
+  },
+  "material": {
+    "type": null,
+    "all types": [
+      "Lambswool",
+      "Cashmere",
+      "Merino wool",
+      "Mohair",
+      "Angora",
+      "Alpaca",
+      "Camel",
+      "Qiviut",
+      "Vicuna",
+      "Llama",
+      "Cashgora)",
+      "Linen / Flax",
+      "Cotton",
+      "Jute",
+      "Silk",
+      "Suede",
+      "Leather",
+      "Fur",
+      "( Fake / Imitation / Faux, Snthetic, Artificial ) Fur",
+      "( Fake / Imitation / Faux, Snthetic, Artificial ) Leather",
+      "Polymers (polyester, teflon etc.)",
+      "Asbestos",
+      "Glass fibre",
+      "Ryon / artificial silk",
+      "Visocse",
+      "Acrylic",
+      "Spandex",
+      "Nylon",
+      "Polypropylene and elastane",
+      "Poplin",
+      "Seersucker",
+      "Poly Cotton",
+      "Stretch Cotton",
+      "Twill",
+      "Diolen",
+      "Fiberglass"
+    ]
+  },
+  "Post processing of garments": {
+    "type": "description of the post processing comes here, like how the Denim is bleached and processed",
+    "all types": null
+  },
   "images": {
     "number": "Val",
     "urls": {
@@ -223,18 +402,79 @@
       "desc3": null
     }
   },
-  "captions": {
-    "number": 2,
-    "caption1": "some text",
-    "caption2": "Best wear ever"
-  },
+  "captions": [
+    "Blah blha blah",
+    "To be or not to be"
+  ],
   "sustainability": [
     {
-      "recycled material": "Yes/No"
+      "recycled material": "Y"
     },
     {
       "sustainability grade": 8
     }
   ],
-  "personal characteristics": null
+  "personal characteristics": {
+    "age": null,
+    "fitting preferences": {
+      "type": "loose",
+      "all types": [
+        "loose",
+        "slim",
+        "regular",
+        "normal"
+      ]
+    },
+    "weight": null,
+    "height": null,
+    "waste": null,
+    "chest": null,
+    "skin color": null,
+    "skin color name": null
+  },
+  "care": {
+    "washing": {
+      "type": null,
+      "all types": [
+        "Wash in commercial machine in water not exceeding 95°C, at normal setting",
+        "Wash in commercial machine in water not exceeding 95°C, at permanent press setting",
+        "Wash in domestic or commercial machine in water not exceeding 70°C, at normal setting",
+        "Wash in domestic or commercial machine in water not exceeding 60°C, at normal setting",
+        "Wash in domestic or commercial machine in water not exceeding 60°C, at permanent press setting",
+        "Wash in domestic or commercial machine in water not exceeding 50°C, at normal setting",
+        "Wash in domestic or commercial machine in water not exceeding 50°C, at permanent press setting",
+        "Wash in domestic or commercial machine in water not exceeding 50°C, at delicate/ gentle setting",
+        "Wash in domestic or commercial machine in water not exceeding 40°C, at normal setting",
+        "Wash in domestic or commercial machine in water not exceeding 40°C, at permanent press setting",
+        "Wash in domestic or commercial machine in water not exceeding 40°C, at delicate/gentle setting",
+        "Wash in domestic or commercial machine in water not exceeding 30°C, at normal setting",
+        "Wash in domestic or commercial machine in water not exceeding 30°C, at permanent press setting",
+        "Wash in domestic or commercial machine in water not exceeding 30°C, at delicate / gentle setting",
+        "Wash gently by hand in water not exceeding 40°C",
+        "Wash gently by hand in water not exceeding 30°C",
+        "Wash in domestic or commercial machine at any temperature, at normal setting",
+        "Do not wash"
+      ]
+    },
+    "bleaching": {
+      "type": null,
+      "all types": [
+        "Use any bleach when needed",
+        "Use only non-chlorine bleach when needed",
+        "Do not bleach"
+      ]
+    }
+  },
+  "info": {
+    "date created": "dd-month-yyyy",
+    "manufacturer": null,
+    "brand": null,
+    "contributor": null,
+    "url to barcode image": null,
+    "url to QR image": null,
+    "version": null,
+    "description": null,
+    "country": null,
+    "city": null
+  }
 }
