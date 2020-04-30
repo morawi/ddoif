@@ -5,14 +5,14 @@
 # https://onlineyamltools.com/convert-yaml-to-json
 # http://yaml-online-parser.appspot.com/
 # https://jsonformatter.org/json-parser
+# yaml validator: http://www.yamllint.com/
 
 # all these should go under manufacturing tags, then, we have another same copy called predicted tags
 
 
-
-clothing:
+clothing: 
     # Womenswear
-    skirt:
+    skirt:        
         type: Mini  # this is the type chosen, one picked from 'all types'
         all types: 
             - A-Line # description for each type can also be added
@@ -75,6 +75,23 @@ clothing:
     dress:
         type:
         all types:
+            [Shift Dress, A-line (Aline) dress, Tent dress, Yoke dress, 
+            Empire line dress, Dirndl dress, Sheath dress, Low or drop waist dress, 
+            Tunic dress, Princess seam dress, Blouson dress, Shirt waist dress, 
+            Wrap around dress, Peasant Dress, Baby doll dress, Bodycon dress, Cocktail dress, 
+            Debutante dress, Skater dress, Camisole dress, Pinafore dress / Jumber dress, Granny dress, 
+            Harem dress, Trumpet dress / Mermaid dress, Maxi dress, Apron dress, 
+            Sweater dress, Swing dress, Tutu dress, Sun Dress, Little Black Dress, 
+            Coat dress, Corset dress, Balloon Dress , Bouffant dress, Fit and flare dress, 
+            Handkerchief hem Dress, Gathered dress, Kaftan Dress, Pillowcase dress, Slip Dress, 
+            Shirt dress, Ballgown dress, Party dress, Off Shoulder Dress, One shoulder dress, 
+            Strapless Dress, Halterneck Dress, Draped Dress, Xray Dress, Cape Dress, Asymmetrical Dress, 
+            High-Low Dress, Sheath Dress, Peplum Dress, Empire Waist Dress, Pencil Dress, 
+            Smock Dress, Princess Silhouette Dress, Mermaid Silhouette Dress, T-shirt Dress, 
+            Tea Length Dress, Denim Dress, Pinafore Dress,  Midi Dress, Mini Dress, Off the Shoulder, 
+            Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
+            Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress,]
+        
     dress neckline: # necklines can also be used for top(tee)s
         type:
         all types:
@@ -395,7 +412,7 @@ images:
             - Indoor
             - Studio
             - Professional-shooting
-            - Personal-shooting 	
+            - Personal-shooting
             
 captions: # unlimited number of captions, normally a few of them
     - Blah blha blah
@@ -426,8 +443,12 @@ personal characteristics: # and preferences, info are non-obligatory, in general
     
     weight: # Kg
     height: # cm
-    waste: # cm
-    chest: # cm
+    size:
+        waste: # cm
+        chest: # cm
+    occupation:
+    country of residence:
+    country of origin:
     skin color value: 
         type:
         all types:
@@ -436,6 +457,9 @@ personal characteristics: # and preferences, info are non-obligatory, in general
         all types:
     primary language:
     secondary language:
+    religious preference:
+        type:
+        all types:
     ethnic group:
         type:
         all types:
