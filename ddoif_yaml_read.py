@@ -24,15 +24,12 @@ https://github.com/adrienverge/yamllint
 """
 
 
-import yaml
 
-with open(r'C:/MyPrograms/ddoif/ddoif.yaml') as file:
-    # The FullLoader parameter handles the conversion from YAML
-    # scalar values to Python the dictionary format
-    ddoif_dict = yaml.load(file, Loader=yaml.FullLoader)
-    file.close()
 
-print(ddoif_dict['clothing']['skirt']['type'])
+
+
+print(ddoif_dict['ddoif']['clothing']['skirt']['type'])
 x= ddoif_dict
+
 
 
