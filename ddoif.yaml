@@ -30,7 +30,6 @@ ddoif:
         contributor:   # could be a third party company that collected the data, like eBay or Amazon
         barcode-url:  # a link to the the image of the bar code
         qr-code-url: # a link to the image of the QR code
-        version:
         description:
         country: 
         city:
@@ -177,8 +176,8 @@ ddoif:
             type: 
             all-types:
         
-        # footwear is also considered clothing in the literature
-        footwear:
+        
+        footwear: # footwear is also considered clothing in the literature
             type:
             all-types:
                 shoe:
@@ -193,7 +192,6 @@ ddoif:
                 heel:
                     type:
                     all-types:               
-                          
           
     accessories:
         hat:
@@ -399,7 +397,7 @@ ddoif:
             - Fiberglass
         
     post-processing-of-garments:
-        type: description of the post processing comes here, like how the Denim is bleached and processed
+        type: # description of the post processing comes here, like how the Denim is bleached and processed
         all-types: # this should be left empty, added for consistence
     
     images:
