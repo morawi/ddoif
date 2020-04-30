@@ -3,18 +3,20 @@
 # Created on Fri Apr 24 17:56:37 2020
 # @author: malrawi
 # https://onlineyamltools.com/convert-yaml-to-json
+# https://onlineyamltools.com/convert-yaml-to-xml
 # http://yaml-online-parser.appspot.com/
 # https://jsonformatter.org/json-parser
 # yaml validator: http://www.yamllint.com/
 
 # all these should go under manufacturing tags, then, we have another same copy called predicted tags
 
+# The hyphen is needed to be able to convert the yaml to xml, and then, backward xml to yaml
 
 clothing: 
     # Womenswear
     skirt:        
-        type: Mini  # this is the type chosen, one picked from 'all types'
-        all types: 
+        type: Mini # this is the type chosen, one picked from 'all-types'
+        all-types:  
             - A-Line # description for each type can also be added
             - Fitted (Pencil  / Tube)
             - Drindl 
@@ -74,7 +76,7 @@ clothing:
             - Ballet 
     dress:
         type:
-        all types:
+        all-types:
             [Shift Dress, A-line (Aline) dress, Tent dress, Yoke dress, 
             Empire line dress, Dirndl dress, Sheath dress, Low or drop waist dress, 
             Tunic dress, Princess seam dress, Blouson dress, Shirt waist dress, 
@@ -92,83 +94,83 @@ clothing:
             Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
             Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress,]
         
-    dress neckline: # necklines can also be used for top(tee)s
+    dress-neckline: # necklines can also be used for top(tee)s
         type:
-        all types:
+        all-types:
     
-    womens short:    # Name confusion/conflict: Ladies vs Womens
+    womens-short:    # Name confusion/conflict: Ladies vs Womens
         type:
-        all types:
+        all-types:
     
-    womens pant: # Or Womens Pant? Also, pants vs trousers 
+    womens-pant: # Or Womens Pant? Also, pants vs trousers 
         type: 
-        all types:
+        all-types:
     
-    womens jacket:
+    womens-jacket:
         type: 
-        all types:
+        all-types:
         
-    womens vest:
+    womens-vest:
         type: 
-        all types:       
+        all-types:       
     
-    womens pantsuits:
+    womens-pantsuits:
         type: 
-        all types:
+        all-types:
     
-    womens top-tee: 
+    womens-top-tee: 
         type: 
-        all types:
+        all-types:
     
-    womens leggins:
+    womens-leggins:
         type: 
-        all types:
+        all-types:
     
     
     # Mens items, not sure if we have to add kids items, TODO
-    mens short:
+    mens-short:
         type:
-        all types:
+        all-types:
     
-    mens pant:
+    mens-pant:
         type:
-        all types:
+        all-types:
     
-    mens jacket:
+    mens-jacket:
         type:
-        all types:
-    mens vest:
+        all-types:
+    mens-vest:
         type:
-        all types:
+        all-types:
     
-    mens shirt:
+    mens-shirt:
         type:
-        all types:
+        all-types:
     
-    mens t-shirt: 
+    mens-tshirt: 
         type:
-        all types:
+        all-types:
         
     sleeve:
         type: 
-        all types:
+        all-types:
     
     # footwear is also considered clothing in the literature
     footwear:
         type:
-        all types:
+        all-types:
             shoe:
                 type:
-                all types:
+                all-types:
             sandal:
                 type:
-                all types:
+                all-types:
             boot:
                 type:
-                all types:
+                all-types:
             heel:
                 type:
-                all types:               
+                all-types:               
                       
       
 accessories:
@@ -222,7 +224,7 @@ accessories:
         
     womens bag - purse: # bag / purse
         type: 
-        all types:
+        all-types:
             - Hand bag
             - Hobo bag
             - Tote bag
@@ -266,7 +268,7 @@ accessories:
         
         bag - purse handle:
             type:
-            all types:
+            all-types:
                 - Leather / Synthetic leather handles
                 - Leather / Synthetic leather handles
                 - Fabric handles
@@ -288,20 +290,20 @@ accessories:
                 - Long and medium Straps
     glove:
         type:
-        all types:
+        all-types:
     belt:
         type:
-        all types:
+        all-types:
     sock:
         type:
-        all types:
+        all-types:
     sunglasses:
         type:
-        all types:
+        all-types:
     jewellery:
         type:
         description of color material and design:
-        all types:
+        all-types:
            
                        
 color: # may include the major colors, and not everything, generated using some computer vision algorithm: This is the color at manufacturing time
@@ -315,7 +317,7 @@ color: # may include the major colors, and not everything, generated using some 
 
 pattern:
     type:  # for example, stribes
-    all types:
+    all-types:
         - horizental stribes
         - vertical stribes 
         - circles
@@ -324,7 +326,7 @@ pattern:
     
 fabric:
     type:
-    all types:
+    all-types:
         - Denim
         - Cord
         - Jersey
@@ -337,7 +339,7 @@ fabric:
 
 material:
     type: 
-    all types: 
+    all-types: 
         - Lambswool 
         - Cashmere 
         - Merino wool
@@ -377,7 +379,7 @@ material:
     
 Post processing of garments:
     type: description of the post processing comes here, like how the Denim is bleached and processed
-    all types: # this should be left empty, added for consistence
+    all-types: # this should be left empty, added for consistence
 
 images:
     number: Val # TYPE INT; number of images, 3 here for example 
@@ -407,7 +409,7 @@ images:
         iqi3:
     imaging location:
         type:
-        all types:
+        all-types:
             - Outdoor
             - Indoor
             - Studio
@@ -429,17 +431,17 @@ personal characteristics: # and preferences, info are non-obligatory, in general
     gendre:
     fitting preferences:
         type: loose
-        all types: 
+        all-types: 
             - loose
             - slim
             - regular
             - normal 
     primary preferred color:
         type:
-        all types:
+        all-types:
     secondary preferred color:
         type:
-        all types:
+        all-types:
     
     weight: # Kg
     height: # cm
@@ -451,18 +453,18 @@ personal characteristics: # and preferences, info are non-obligatory, in general
     country of origin:
     skin color value: 
         type:
-        all types:
+        all-types:
     skin color name:
         type: 
-        all types:
+        all-types:
     primary language:
     secondary language:
     religious preference:
         type:
-        all types:
+        all-types:
     ethnic group:
         type:
-        all types:
+        all-types:
     customer comments - review: # this field is used to store customers review on products, it may or maynot be available
     
      
@@ -500,7 +502,7 @@ personal characteristics: # and preferences, info are non-obligatory, in general
 care: 
     washing:
         type:
-        all types:
+        all-types:
             - Wash in commercial machine in water not exceeding 95°C, at normal setting
             - Wash in commercial machine in water not exceeding 95°C, at permanent press setting 
             - Wash in domestic or commercial machine in water not exceeding 70°C, at normal setting
@@ -521,7 +523,7 @@ care:
             - Do not wash
     bleaching:
         type:
-        all types:
+        all-types:
             - Use any bleach when needed
             - Use only non-chlorine bleach when needed
             - Do not bleach
@@ -557,7 +559,41 @@ info:
     # {"supercategory":"fashion","id":13,"name":"scarf\/tie"}]}
     
     
-    
+# YAML tags and Python types, and more in https://pyyaml.org/wiki/PyYAMLDocumentation
+# The following table describes how nodes with different tags are converted to Python objects.
+
+# YAML tag	Python type
+# Standard YAML tags	
+# !!null	None
+# !!bool	bool
+# !!int	int or long (int in Python 3)
+# !!float	float
+# !!binary	str (bytes in Python 3)
+# !!timestamp	datetime.datetime
+# !!omap, !!pairs	list of pairs
+# !!set	set
+# !!str	str or unicode (str in Python 3)
+# !!seq	list
+# !!map	dict
+# Python-specific tags	
+# !!python/none	None
+# !!python/bool	bool
+# !!python/bytes	(bytes in Python 3)
+# !!python/str	str (str in Python 3)
+# !!python/unicode	unicode (str in Python 3)
+# !!python/int	int
+# !!python/long	long (int in Python 3)
+# !!python/float	float
+# !!python/complex	complex
+# !!python/list	list
+# !!python/tuple	tuple
+# !!python/dict	dict
+# Complex Python tags	
+# !!python/name:module.name	module.name
+# !!python/module:package.module	package.module
+# !!python/object:module.cls	module.cls instance
+# !!python/object/new:module.cls	module.cls instance
+# !!python/object/apply:module.f	value of f(...)
         
 
     
