@@ -27,12 +27,16 @@ https://github.com/adrienverge/yamllint
 
 from ddoif_utils import read_yaml_as_dict, save_dict_to_xml
 
+save_as_xml=True
+
 path= 'C:/MyPrograms/ddoif/'
 yaml_fname = 'ddoif.yaml'
 xml_fname = 'ddoif.xml' 
 
 yaml_dict = read_yaml_as_dict(path+yaml_fname)
-save_dict_to_xml(path+xml_fname, yaml_dict)
+print(yaml_dict)
+if save_as_xml:
+    save_dict_to_xml(path+xml_fname, yaml_dict)
 
 
 
