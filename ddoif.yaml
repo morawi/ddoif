@@ -21,592 +21,608 @@
 
 
 
-ddoif:
-    version: 0.1
-    info:
-        date-created: dd-month-yyyy # example: 01-September-2019
-        manufacturer: 
-        brand:
-        contributor:   # could be a third party company that collected the data, like eBay or Amazon
-        barcode-url:  # a link to the the image of the bar code
-        qr-code-url: # a link to the image of the QR code
-        description:
-        country: 
-        city:
-    clothing: 
-        # Womenswear
-        skirt:        
-            type: Mini # this is the type chosen, one picked from 'all-types'
-            all-types:  
-                - A-Line # description for each type can also be added
-                - Fitted (Pencil  / Tube)
-                - Drindl 
-                - Mini  
-                - Bondage
-                - Pelmet 
-                - Micro Mini 
-                - Draped  (Sarong draped)
-                - Layered 
-                - Gored 
-                - Godet 
-                - Trumpet 
-                - Wrap 
-                - Divided 
-                - Pleated 
-                - Asymmetrical Hem 
-                - Bubble 
-                - Yoke 
-                - Tulip 
-                - Tiered (Gypsy)
-                - Accordion 
-                - Asymmetrical  
-                - Bell Shaped 
-                - Bustled 
-                - Button-Up 
-                - Broomstick 
-                - Circular (Circle)
-                - Cowl 
-                - Culottes 
-                - Denim 
-                - Fix Box 
-                - Flared 
-                - Fly 
-                - High Waisted 
-                - Inverted Pleat 
-                - Knife Pleated
-                - Maxi 
-                - Mermaid 
-                - Paneled 
-                - Peasant 
-                - Pegged 
-                - Pencil 
-                - Peplum 
-                - Ruffled 
-                - Sarong 
-                - Sheath 
-                - Skater 
-                - Skort 
-                - Straight 
-                - Trouser 
-                - Tulle 
-                - Tutu 
-                - Under
-                - Wrap (wrap around)  
-                - Ball Gown 
-                - Hoop 
-                - Ballet 
-        dress:
-            type:
-            all-types:
-                [Shift Dress, A-line (Aline) dress, Tent dress, Yoke dress, 
-                Empire line dress, Dirndl dress, Sheath dress, Low or drop waist dress, 
-                Tunic dress, Princess seam dress, Blouson dress, Shirt waist dress, 
-                Wrap around dress, Peasant Dress, Baby doll dress, Bodycon dress, Cocktail dress, 
-                Debutante dress, Skater dress, Camisole dress, Pinafore dress / Jumber dress, Granny dress, 
-                Harem dress, Trumpet dress / Mermaid dress, Maxi dress, Apron dress, 
-                Sweater dress, Swing dress, Tutu dress, Sun Dress, Little Black Dress, 
-                Coat dress, Corset dress, Balloon Dress , Bouffant dress, Fit and flare dress, 
-                Handkerchief hem Dress, Gathered dress, Kaftan Dress, Pillowcase dress, Slip Dress, 
-                Shirt dress, Ballgown dress, Party dress, Off Shoulder Dress, One shoulder dress, 
-                Strapless Dress, Halterneck Dress, Draped Dress, Xray Dress, Cape Dress, Asymmetrical Dress, 
-                High-Low Dress, Sheath Dress, Peplum Dress, Empire Waist Dress, Pencil Dress, 
-                Smock Dress, Princess Silhouette Dress, Mermaid Silhouette Dress, T-shirt Dress, 
-                Tea Length Dress, Denim Dress, Pinafore Dress,  Midi Dress, Mini Dress, Off the Shoulder, 
-                Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
-                Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress,]
-            
-        dress-neckline: # necklines can also be used for top(tee)s
-            type:
-            all-types:
-        
-        womens-short:    # Name confusion/conflict: Ladies vs Womens
-            type:
-            all-types:
-        
-        womens-pant: # Or Womens Pant? Also, pants vs trousers 
-            type: 
-            all-types:
-        
-        womens-jacket:
-            type: 
-            all-types:
-            
-        womens-vest:
-            type: 
-            all-types:       
-        
-        womens-pantsuits:
-            type: 
-            all-types:
-        
-        womens-top-tee: 
-            type: 
-            all-types:
-        
-        womens-leggins:
-            type: 
-            all-types:
-        
-        
-        # Mens items, not sure if we have to add kids items, TODO
-        mens-short:
-            type:
-            all-types:
-        
-        mens-pant:
-            type:
-            all-types:
-        
-        mens-jacket:
-            type:
-            all-types:
-        mens-vest:
-            type:
-            all-types:
-        
-        mens-shirt:
-            type:
-            all-types:
-        
-        mens-tshirt: 
-            type:
-            all-types:
-            
-        sleeve:
-            type: 
-            all-types:
-        
-        
-        footwear: # footwear is also considered clothing in the literature
-            type:
-            all-types:
-                shoe:
-                    type:
-                    all-types:
-                sandal:
-                    type:
-                    all-types:
-                boot:
-                    type:
-                    all-types:
-                heel:
-                    type:
-                    all-types:               
-          
-    accessories:
-        hat:
-            type: 
-            all_types: 
-                - Baseball Cap
-                - Beanie
-                - Beret
-                - Boater
-                - Bonnet
-                - Bucket
-                - Cloche
-                - Cowboy hat
-                - Deerstalker
-                - Derby hat
-                - Fedora
-                - Gatsby hat / newsboy cap
-                - Panama Hat
-                - Pillbox hat
-                - Pom-pom beanie
-                - Skully hat
-                - Sombrero
-                - Straw hat
-                - Top hat / topper hat / cylinder hat
-                - Trapper hat
-                - Bora Bora Booney II  hat
-                - Fascinator
-                - Hatinator
-                - Colourful Braided Straw Hat for Women
-                - Trilby hat
-                - Panama Hat
-                - Bowler
-                - Snapback
-                - Dad Hat
-                - Flat Cap
-                - Boater
-                - Pork Pie hat
-                - Top Hat
-                - Chullo Hat for Men
-                - Ascot Cap for Men
-                - Akubra Men Hat
-                - Boater Hat for Men
-                - Crochet Hat for Women
-                - Beanie Pull-on Hat for Women 
-                - Breton Hat for Women
-                - Cartwheel Hat for Women
-                - Tennis Hat for Women
-                - Party Hat
-                - Peaked Hat
-            
-        womens-bag: # bag / purse
-            type: 
-            all-types:
-                - Hand bag
-                - Hobo bag
-                - Tote bag
-                - Duffle bag
-                - Messenger bag
-                - Backpack
-                - bookbag
-                - kitbag 
-                - knapsack 
-                - pack  
-                - sackpack 
-                - backsack
-                - "Doctor's bag"
-                - Bucket bag
-                - Bowler bag
-                - Writslet bag
-                - Pouch bag
-                - Clutch bag
-                - Saddle bag
-                - Beach bag
-                - Shoulder bag (modifier)
-                - Miniaudiere bag
-                - Shopeing / Gorcery bag
-                - Drawstring bag
-                - Makeup bag
-                - Foldover bag
-                - Phone bag
-                - Camera case bag
-                - Baguette bag
-                - Barrel bag
-                - Basket bag
-                - Fanny pack
-                - Kelly bag
-                - Sling bag
-                - Weekender travel bag
-                - Briefcase
-                - Duffel
-                - Satchel bag # there is also the Stachel bag, not sure if these are two different types!
-                
-                
-            
-            bag-purse-handle:
-                type:
-                all-types:
-                    - Leather / Synthetic leather handles
-                    - Leather / Synthetic leather handles
-                    - Fabric handles
-                    - Wooden handles
-                    - Metal handles
-                    - Crocheted handles
-                    - Straw handles
-                    - Webbing
-                    - Rope handles
-                    - Soft cord handles
-                    - Thread \ yarn handles
-                    - Beaded handles
-                    - Ribbon handles
-                    - Plastic Handles
-                    - Braided handles
-                    - Shoulder handles
-                    - Bracelet handle
-                    - Top handles
-                    - Long and medium Straps
-        glove:
-            type:
-            all-types:
-        belt:
-            type:
-            all-types:
-        sock:
-            type:
-            all-types:
-        sunglasses:
-            type:
-            all-types:
-        jewellery:
-            type:
-            description: # description of color material and design
-            all-types:
-               
-                           
-    color: # may include the major colors, and not everything, generated using some computer vision algorithm: This is the color at manufacturing time
-        histogram: 
-            red: [0, 1, 21, 12, 3, 4, 5, 17, 51, 32, 5, 97] # should contain numbers
-            green: []
-            blue: []
-            
-        color-RGB-values:
-        color-names:
-        color-degradation-factor: # not yet known how to estimate this
-    
-    pattern:
-        type:  # for example, stribes
-        all-types:
-            - horizental stribes
-            - vertical stribes 
-            - circles
-        description:
-                
-    fabric:
+
+version: 0.1
+info:
+    date-created: dd-month-yyyy # example: 01-September-2019
+    manufacturer: 
+    brand:
+    contributor:   # could be a third party company that collected the data, like eBay or Amazon
+    barcode-url:  # a link to the the image of the bar code
+    qr-code-url: # a link to the image of the QR code
+    description:
+    country: 
+    city:
+clothing: 
+    # Womenswear
+    skirt:            
+        type: Mini # this is the type chosen, one picked from 'all-types'
+        all-types:  
+            - A-Line # description for each type can also be added
+            - Fitted (Pencil  / Tube)
+            - Drindl 
+            - Mini  
+            - Bondage
+            - Pelmet 
+            - Micro Mini 
+            - Draped  (Sarong draped)
+            - Layered 
+            - Gored 
+            - Godet 
+            - Trumpet 
+            - Wrap 
+            - Divided 
+            - Pleated 
+            - Asymmetrical Hem 
+            - Bubble 
+            - Yoke 
+            - Tulip 
+            - Tiered (Gypsy)
+            - Accordion 
+            - Asymmetrical  
+            - Bell Shaped 
+            - Bustled 
+            - Button-Up 
+            - Broomstick 
+            - Circular (Circle)
+            - Cowl 
+            - Culottes 
+            - Denim 
+            - Fix Box 
+            - Flared 
+            - Fly 
+            - High Waisted 
+            - Inverted Pleat 
+            - Knife Pleated
+            - Maxi 
+            - Mermaid 
+            - Paneled 
+            - Peasant 
+            - Pegged 
+            - Pencil 
+            - Peplum 
+            - Ruffled 
+            - Sarong 
+            - Sheath 
+            - Skater 
+            - Skort 
+            - Straight 
+            - Trouser 
+            - Tulle 
+            - Tutu 
+            - Under
+            - Wrap (wrap around)  
+            - Ball Gown 
+            - Hoop 
+            - Ballet 
+    dress:
         type:
         all-types:
-            - Denim
-            - Cord
-            - Jersey
-            - Ribbed
-            - Softshell
-            - Hardshell
-            - Lace
-            - Fleece
-            - Chiffon
+            [Shift Dress, A-line (Aline) dress, Tent dress, Yoke dress, 
+            Empire line dress, Dirndl dress, Sheath dress, Low or drop waist dress, 
+            Tunic dress, Princess seam dress, Blouson dress, Shirt waist dress, 
+            Wrap around dress, Peasant Dress, Baby doll dress, Bodycon dress, Cocktail dress, 
+            Debutante dress, Skater dress, Camisole dress, Pinafore dress / Jumber dress, Granny dress, 
+            Harem dress, Trumpet dress / Mermaid dress, Maxi dress, Apron dress, 
+            Sweater dress, Swing dress, Tutu dress, Sun Dress, Little Black Dress, 
+            Coat dress, Corset dress, Balloon Dress , Bouffant dress, Fit and flare dress, 
+            Handkerchief hem Dress, Gathered dress, Kaftan Dress, Pillowcase dress, Slip Dress, 
+            Shirt dress, Ballgown dress, Party dress, Off Shoulder Dress, One shoulder dress, 
+            Strapless Dress, Halterneck Dress, Draped Dress, Xray Dress, Cape Dress, Asymmetrical Dress, 
+            High-Low Dress, Sheath Dress, Peplum Dress, Empire Waist Dress, Pencil Dress, 
+            Smock Dress, Princess Silhouette Dress, Mermaid Silhouette Dress, T-shirt Dress, 
+            Tea Length Dress, Denim Dress, Pinafore Dress,  Midi Dress, Mini Dress, Off the Shoulder, 
+            Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
+            Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress,]
+        
+    dress-neckline: # necklines can also be used for top(tee)s
+        type:
+        all-types:
     
-    material:
+    womens-short:    # Name confusion/conflict: Ladies vs Womens
+        type:
+        all-types:
+    
+    womens-pant: # Or Womens Pant? Also, pants vs trousers 
         type: 
+        all-types:
+    
+    womens-jacket:
+        type: 
+        all-types:
+        
+    womens-vest:
+        type: 
+        all-types:       
+    
+    womens-pantsuits:
+        type: 
+        all-types:
+    
+    womens-top-tee: 
+        type: 
+        all-types:
+    
+    womens-leggins:
+        type: 
+        all-types:
+    
+    
+    # Mens items, not sure if we have to add kids items, TODO
+    mens-short:
+        type:
+        all-types:
+    
+    mens-pant:
+        type:
+        all-types:
+    
+    mens-jacket:
+        type:
+        all-types:
+    mens-vest:
+        type:
+        all-types:
+    
+    mens-shirt:
+        type:
+        all-types:
+    
+    mens-tshirt: 
+        type:
+        all-types:
+        
+    sleeve:
+        type: 
+        all-types:
+    
+    
+    footwear: # footwear is also considered clothing in the literature
+        type:
+        all-types:
+            shoe:
+                type:
+                all-types:
+            sandal:
+                type:
+                all-types:
+            boot:
+                type:
+                all-types:
+            heel:
+                type:
+                all-types:               
+      
+accessories:
+    hat:
+        type: 
+        all_types: 
+            - Baseball Cap
+            - Beanie
+            - Beret
+            - Boater
+            - Bonnet
+            - Bucket
+            - Cloche
+            - Cowboy hat
+            - Deerstalker
+            - Derby hat
+            - Fedora
+            - Gatsby hat / newsboy cap
+            - Panama Hat
+            - Pillbox hat
+            - Pom-pom beanie
+            - Skully hat
+            - Sombrero
+            - Straw hat
+            - Top hat / topper hat / cylinder hat
+            - Trapper hat
+            - Bora Bora Booney II  hat
+            - Fascinator
+            - Hatinator
+            - Colourful Braided Straw Hat for Women
+            - Trilby hat
+            - Panama Hat
+            - Bowler
+            - Snapback
+            - Dad Hat
+            - Flat Cap
+            - Boater
+            - Pork Pie hat
+            - Top Hat
+            - Chullo Hat for Men
+            - Ascot Cap for Men
+            - Akubra Men Hat
+            - Boater Hat for Men
+            - Crochet Hat for Women
+            - Beanie Pull-on Hat for Women 
+            - Breton Hat for Women
+            - Cartwheel Hat for Women
+            - Tennis Hat for Women
+            - Party Hat
+            - Peaked Hat
+        
+    womens-bag: # bag / purse
+        type: 
+        all-types:
+            - Hand bag
+            - Hobo bag
+            - Tote bag
+            - Duffle bag
+            - Messenger bag
+            - Backpack
+            - bookbag
+            - kitbag 
+            - knapsack 
+            - pack  
+            - sackpack 
+            - backsack
+            - "Doctor's bag"
+            - Bucket bag
+            - Bowler bag
+            - Writslet bag
+            - Pouch bag
+            - Clutch bag
+            - Saddle bag
+            - Beach bag
+            - Shoulder bag (modifier)
+            - Miniaudiere bag
+            - Shopeing / Gorcery bag
+            - Drawstring bag
+            - Makeup bag
+            - Foldover bag
+            - Phone bag
+            - Camera case bag
+            - Baguette bag
+            - Barrel bag
+            - Basket bag
+            - Fanny pack
+            - Kelly bag
+            - Sling bag
+            - Weekender travel bag
+            - Briefcase
+            - Duffel
+            - Satchel bag # there is also the Stachel bag, not sure if these are two different types!
+            
+            
+        
+        bag-purse-handle:
+            type:
+            all-types:
+                - Leather / Synthetic leather handles
+                - Leather / Synthetic leather handles
+                - Fabric handles
+                - Wooden handles
+                - Metal handles
+                - Crocheted handles
+                - Straw handles
+                - Webbing
+                - Rope handles
+                - Soft cord handles
+                - Thread \ yarn handles
+                - Beaded handles
+                - Ribbon handles
+                - Plastic Handles
+                - Braided handles
+                - Shoulder handles
+                - Bracelet handle
+                - Top handles
+                - Long and medium Straps
+    glove:
+        type:
+        all-types:
+    belt:
+        type:
+        all-types:
+    sock:
+        type:
+        all-types:
+    sunglasses:
+        type:
+        all-types:
+    jewellery:
+        type:
+        description: # description of color material and design
+        all-types:
+           
+                       
+color: # may include the major colors, and not everything, generated using some computer vision algorithm: This is the color at manufacturing time
+    histogram: 
+        red: [0, 1, 21, 12, 3, 4, 5, 17, 51, 32, 5, 97] # should contain numbers
+        green: []
+        blue: []
+        
+    color-RGB-values:
+    color-names:
+    color-degradation-factor: # not yet known how to estimate this
+
+pattern:
+    type:  # for example, stribes
+    all-types:
+        - horizental stribes
+        - vertical stribes 
+        - circles
+    description:
+            
+fabric:
+    type:
+    all-types:
+        - Denim
+        - Cord
+        - Jersey
+        - Ribbed
+        - Softshell
+        - Hardshell
+        - Lace
+        - Fleece
+        - Chiffon
+
+material:
+    type: 
+    all-types: 
+        - Lambswool 
+        - Cashmere 
+        - Merino wool
+        - Mohair 
+        - Angora 
+        - Alpaca 
+        - Camel 
+        - Qiviut 
+        - Vicuna 
+        - Llama 
+        - Cashgora)
+        - Linen / Flax
+        - Cotton
+        - Jute
+        - Silk
+        - Suede # (is a type of fuzzy leather with a napped finish)
+        - Leather 
+        - Fur 
+        - ( Fake / Imitation / Faux, Snthetic, Artificial ) Fur
+        - ( Fake / Imitation / Faux, Snthetic, Artificial ) Leather 
+        - Polymers (polyester, teflon etc.) # we have to add them separately
+        - Asbestos
+        - Glass fibre
+        - Ryon / artificial silk # (made of bamboo plant), also called artificial silk
+        - Visocse
+        - Acrylic
+        - Spandex
+        - Nylon
+        - Polypropylene and elastane
+        - Poplin
+        - Seersucker
+        - Poly Cotton
+        - Stretch Cotton
+        - Twill
+        - Diolen 
+        - Fiberglass
+    
+post-processing-of-garments:
+    type: # description of the post processing comes here, like how the Denim is bleached and processed
+    all-types: # this should be left empty, added for consistence
+
+images:
+    number: Val # TYPE INT; number of images, 3 here for example 
+    urls:
+        url1: 
+        url2: 
+        url3:                        
+    mode:
+        mod1:
+        mod2:
+        mod3:
+    resolution:
+        res1:
+        resolution2:
+        resolution3:
+    description:
+        des1:
+        des2:
+        des3:
+    imaging-device: 
+        idv1:
+        idv2:
+        idv3:
+    image-quality-indicator-type:
+        iqi1:
+        iqi2:
+        iqi3:
+    imaging-location: # locatoin and/or condition
+        type:
+        all-types:
+            - Outdoor
+            - Indoor
+            - Studio
+            - Professional-shooting
+            - Personal-shooting
+            
+captions: # unlimited number of captions, normally a few of them
+    - Blah blha blah
+    - To be or not to be
+    
+    
+sustainability:
+    recycled-material: Y # options: Y(Yes) / N(No)
+    sustainability-grade: 8 # a measure from 1 to 10 (10 being best)
+    other:
+    
+
+personal-characteristics: # and preferences, info are non-obligatory, in general and abide to GDPR
+    age:
+    gendre:
+    fitting-preferences:
+        type: loose
         all-types: 
-            - Lambswool 
-            - Cashmere 
-            - Merino wool
-            - Mohair 
-            - Angora 
-            - Alpaca 
-            - Camel 
-            - Qiviut 
-            - Vicuna 
-            - Llama 
-            - Cashgora)
-            - Linen / Flax
-            - Cotton
-            - Jute
-            - Silk
-            - Suede # (is a type of fuzzy leather with a napped finish)
-            - Leather 
-            - Fur 
-            - ( Fake / Imitation / Faux, Snthetic, Artificial ) Fur
-            - ( Fake / Imitation / Faux, Snthetic, Artificial ) Leather 
-            - Polymers (polyester, teflon etc.) # we have to add them separately
-            - Asbestos
-            - Glass fibre
-            - Ryon / artificial silk # (made of bamboo plant), also called artificial silk
-            - Visocse
-            - Acrylic
-            - Spandex
-            - Nylon
-            - Polypropylene and elastane
-            - Poplin
-            - Seersucker
-            - Poly Cotton
-            - Stretch Cotton
-            - Twill
-            - Diolen 
-            - Fiberglass
-        
-    post-processing-of-garments:
-        type: # description of the post processing comes here, like how the Denim is bleached and processed
-        all-types: # this should be left empty, added for consistence
+            - loose
+            - slim
+            - regular
+            - normal 
+    primary-preferred-color:
+        type:
+        all-types:
+    secondary-preferred-color:
+        type:
+        all-types:
     
-    images:
-        number: Val # TYPE INT; number of images, 3 here for example 
-        urls:
-            url1: 
-            url2: 
-            url3:                        
-        mode:
-            mod1:
-            mod2:
-            mod3:
-        resolution:
-            res1:
-            resolution2:
-            resolution3:
-        description:
-            des1:
-            des2:
-            des3:
-        imaging-device: 
-            idv1:
-            idv2:
-            idv3:
-        image-quality-indicator-type:
-            iqi1:
-            iqi2:
-            iqi3:
-        imaging-location: # locatoin and/or condition
-            type:
-            all-types:
-                - Outdoor
-                - Indoor
-                - Studio
-                - Professional-shooting
-                - Personal-shooting
-                
-    captions: # unlimited number of captions, normally a few of them
-        - Blah blha blah
-        - To be or not to be
-        
-        
-    sustainability:
-        recycled-material: Y # options: Y(Yes) / N(No)
-        sustainability-grade: 8 # a measure from 1 to 10 (10 being best)
-        other:
-        
+    weight: # Kg
+    height: # cm
+    size:
+        waste: # cm
+        chest: # cm
+    occupation:
+    country-of-residence:
+    country-of-origin:
+    skin-color-value: 
+        type:
+        all-types:
+    skin-color-name:
+        type: 
+        all-types:
+    primary-language:
+    secondary-language:
+    religious-preference:
+        type:
+        all-types:
+    ethnic-group:
+        type:
+        all-types:
+    customer-comments-review: # this field is used to store customers review on products, it may or maynot be available
     
-    personal-characteristics: # and preferences, info are non-obligatory, in general and abide to GDPR
-        age:
-        gendre:
-        fitting-preferences:
-            type: loose
-            all-types: 
-                - loose
-                - slim
-                - regular
-                - normal 
-        primary-preferred-color:
-            type:
-            all-types:
-        secondary-preferred-color:
-            type:
-            all-types:
-        
-        weight: # Kg
-        height: # cm
-        size:
-            waste: # cm
-            chest: # cm
-        occupation:
-        country-of-residence:
-        country-of-origin:
-        skin-color-value: 
-            type:
-            all-types:
-        skin-color-name:
-            type: 
-            all-types:
-        primary-language:
-        secondary-language:
-        religious-preference:
-            type:
-            all-types:
-        ethnic-group:
-            type:
-            all-types:
-        customer-comments-review: # this field is used to store customers review on products, it may or maynot be available
-        
-         
-        
-        
-    # Personal Information (info are non-obligatory, in general)
-    # Customer's Name
-    # Customer ID
-    # Issuer of Customer ID
-    # Type of Customer ID
-    # Customer's Birth Date
-    # Customer's Sex
-    # Customer's Primary Language
-    # Customer's Secondary Language
-    # Other Customer Names
-    # Customer's Age
-    # Customer's Size
-    # Customer's Weight
-    # Customer's Address
-    # Country of Residence
-    # Region of Residence
-    # Customer's Telephone Numbers
-    # Customer's Telecom Information
-    # Ethnic Group
-    # Occupation
-    # Eating habits
-    # Alchohol Status
-    # Smoking Status
-    # Customer's Religious Preference
-    # Customer Breed Description
-    # Customer Breed Code Sequence
-    # Customer Comments / Review (this field is used to store customers review on products, it may or maynot be available)
-        
-        
-        # This care guide if included will be very useful for customers, 
-        # I always tell my wife (jokingly) to keep cut the labels and arrange
-        # them in an Album near the washin machine for her to follow the guides
-        # prior to washing them lol ... as can bee seen, the information is huge
-        # and one cannot deal with the situation without the help of thcnology,
-        # using a chip/cared/bar-code readable by the washing-machine so that the washing-macnhine
-        # itself decides which care programme to use during the whole process
-        # we may also think of an intelligent iron that adjust its setting according to 
-        # the fabric and material of the garment. 
-        
-        
-    care: 
-        washing:
-            type:
-            all-types:
-                - Wash in commercial machine in water not exceeding 95°C, at normal setting
-                - Wash in commercial machine in water not exceeding 95°C, at permanent press setting 
-                - Wash in domestic or commercial machine in water not exceeding 70°C, at normal setting
-                - Wash in domestic or commercial machine in water not exceeding 60°C, at normal setting
-                - Wash in domestic or commercial machine in water not exceeding 60°C, at permanent press setting
-                - Wash in domestic or commercial machine in water not exceeding 50°C, at normal setting
-                - Wash in domestic or commercial machine in water not exceeding 50°C, at permanent press setting
-                - Wash in domestic or commercial machine in water not exceeding 50°C, at delicate/ gentle setting
-                - Wash in domestic or commercial machine in water not exceeding 40°C, at normal setting
-                - Wash in domestic or commercial machine in water not exceeding 40°C, at permanent press setting
-                - Wash in domestic or commercial machine in water not exceeding 40°C, at delicate/gentle setting
-                - Wash in domestic or commercial machine in water not exceeding 30°C, at normal setting
-                - Wash in domestic or commercial machine in water not exceeding 30°C, at permanent press setting
-                - Wash in domestic or commercial machine in water not exceeding 30°C, at delicate / gentle setting
-                - Wash gently by hand in water not exceeding 40°C
-                - Wash gently by hand in water not exceeding 30°C
-                - Wash in domestic or commercial machine at any temperature, at normal setting
-                - Do not wash
-        bleaching:
-            type:
-            all-types:
-                - Use any bleach when needed
-                - Use only non-chlorine bleach when needed
-                - Do not bleach
-        drying:
-            type:
-            all-types:                    
-                - Tumble dry at high heat (not exceeding 75°C) at normal setting
-                - Tumble dry at medium heat (not exceeding 65°C) at normal setting
-                - Tumble dry at medium heat (not exceeding 65°C) at permanent press setting
-                - Tumble dry at low heat (not exceeding 55°C) at permanent press setting
-                - Tumble dry at a low heat (not exceeding 55°C) at delicate cycle
-                - Tumble dry any heat
-                - Tumble dry no heat/air dry
-                - Do not tumble dry
-                - After extraction of excess water, line dry/hang to dry
-                - Hang up the soaking wet article to "drip" dry
-                - After extraction of excess water, dry the article on a suitable flat surface
-                - Dry in the shade
-                - Do not dry
-        ironing:
-            type:
-            all-types:
-                - Iron with or without steam by hand, or press on commercial equipment, at a high temperature (not exceeding 200°C). Recommended temperature for cotton and linen textiles
-                - Iron with or without steam by hand, or press on commercial equipment, at a medium temperature (not exceeding 150°C). Recommended temperature for polyester, rayon, silk, triacetate and wool textiles
-                - Iron with or without steam by hand, or press on commercial equipment, at a low temperature (not exceeding 110°C). Recommended temperature for acetate, acrylic, modacrylic, nylon, polypropylene and spandex textiles
-                - Do not steam
-                - Do not iron or press
-        dry-cleaning: # Professional Textile Care Symbols
-            type:
-            all-types:
-                - Dry-clean, normal cycle. Any solvent except trichloroethylene
-                - Dry-clean, normal cycle. Petroleum solvent only
-                - Do not dry-clean
-                        
-    
-    # Modanet categories
-    # categories":[{"supercategory":"fashion","id":1,"name":"bag"},
-    # {"supercategory":"fashion","id":2,"name":"belt"},
-    # {"supercategory":"fashion","id":3,"name":"boots"},{
-    # "supercategory":"fashion","id":4,"name":"footwear"},
-    # {"supercategory":"fashion","id":5,"name":"outer"},
-    # {"supercategory":"fashion","id":6,"name":"dress"},
-    # {"supercategory":"fashion","id":7,"name":"sunglasses"},
-    # {"supercategory":"fashion","id":8,"name":"pants"},
-    # {"supercategory":"fashion","id":9,"name":"top"},
-    # {"supercategory":"fashion","id":10,"name":"shorts"},
-    # {"supercategory":"fashion","id":11,"name":"skirt"},
-    # {"supercategory":"fashion","id":12,"name":"headwear"},
-    # {"supercategory":"fashion","id":13,"name":"scarf\/tie"}]}
+     
     
     
+# Personal Information (info are non-obligatory, in general)
+# Customer's Name
+# Customer ID
+# Issuer of Customer ID
+# Type of Customer ID
+# Customer's Birth Date
+# Customer's Sex
+# Customer's Primary Language
+# Customer's Secondary Language
+# Other Customer Names
+# Customer's Age
+# Customer's Size
+# Customer's Weight
+# Customer's Address
+# Country of Residence
+# Region of Residence
+# Customer's Telephone Numbers
+# Customer's Telecom Information
+# Ethnic Group
+# Occupation
+# Eating habits
+# Alchohol Status
+# Smoking Status
+# Customer's Religious Preference
+# Customer Breed Description
+# Customer Breed Code Sequence
+# Customer Comments / Review (this field is used to store customers review on products, it may or maynot be available)
+    
+    
+    # This care guide if included will be very useful for customers, 
+    # I always tell my wife (jokingly) to keep cut the labels and arrange
+    # them in an Album near the washin machine for her to follow the guides
+    # prior to washing them lol ... as can bee seen, the information is huge
+    # and one cannot deal with the situation without the help of thcnology,
+    # using a chip/cared/bar-code readable by the washing-machine so that the washing-macnhine
+    # itself decides which care programme to use during the whole process
+    # we may also think of an intelligent iron that adjust its setting according to 
+    # the fabric and material of the garment. 
+    
+    
+care: 
+    washing:
+        type:
+        all-types:
+            - Wash in commercial machine in water not exceeding 95°C, at normal setting
+            - Wash in commercial machine in water not exceeding 95°C, at permanent press setting 
+            - Wash in domestic or commercial machine in water not exceeding 70°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 60°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 60°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 50°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 50°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 50°C, at delicate/ gentle setting
+            - Wash in domestic or commercial machine in water not exceeding 40°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 40°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 40°C, at delicate/gentle setting
+            - Wash in domestic or commercial machine in water not exceeding 30°C, at normal setting
+            - Wash in domestic or commercial machine in water not exceeding 30°C, at permanent press setting
+            - Wash in domestic or commercial machine in water not exceeding 30°C, at delicate / gentle setting
+            - Wash gently by hand in water not exceeding 40°C
+            - Wash gently by hand in water not exceeding 30°C
+            - Wash in domestic or commercial machine at any temperature, at normal setting
+            - Do not wash
+    bleaching:
+        type:
+        all-types:
+            - Use any bleach when needed
+            - Use only non-chlorine bleach when needed
+            - Do not bleach
+    drying:
+        type:
+        all-types:                    
+            - Tumble dry at high heat (not exceeding 75°C) at normal setting
+            - Tumble dry at medium heat (not exceeding 65°C) at normal setting
+            - Tumble dry at medium heat (not exceeding 65°C) at permanent press setting
+            - Tumble dry at low heat (not exceeding 55°C) at permanent press setting
+            - Tumble dry at a low heat (not exceeding 55°C) at delicate cycle
+            - Tumble dry any heat
+            - Tumble dry no heat/air dry
+            - Do not tumble dry
+            - After extraction of excess water, line dry/hang to dry
+            - Hang up the soaking wet article to "drip" dry
+            - After extraction of excess water, dry the article on a suitable flat surface
+            - Dry in the shade
+            - Do not dry
+    ironing:
+        type:
+        all-types:
+            - Iron with or without steam by hand, or press on commercial equipment, at a high temperature (not exceeding 200°C). Recommended temperature for cotton and linen textiles
+            - Iron with or without steam by hand, or press on commercial equipment, at a medium temperature (not exceeding 150°C). Recommended temperature for polyester, rayon, silk, triacetate and wool textiles
+            - Iron with or without steam by hand, or press on commercial equipment, at a low temperature (not exceeding 110°C). Recommended temperature for acetate, acrylic, modacrylic, nylon, polypropylene and spandex textiles
+            - Do not steam
+            - Do not iron or press
+    dry-cleaning: # Professional Textile Care Symbols
+        type:
+        all-types:
+            - Dry-clean, normal cycle. Any solvent except trichloroethylene
+            - Dry-clean, normal cycle. Petroleum solvent only
+            - Do not dry-clean
+    supplementary-care:
+        type:
+        all-types:            
+            - Do not wring
+            - Wet-clean
+            - Do not wet-clean
+        
+    water-temperature-dot-symbol:
+        type:
+        all-types:
+            - 6 dots (95°C Near boil)
+            - 5 dots (70°C Extremely hot)
+            - 4 dots (60°C Very hot)
+            - 3 dots (50°C Hot)
+            - 2 dots (40°C Warm)
+            - 1 dots (30°C Cool)
+                    
+
+# Modanet categories
+# categories":[{"supercategory":"fashion","id":1,"name":"bag"},
+# {"supercategory":"fashion","id":2,"name":"belt"},
+# {"supercategory":"fashion","id":3,"name":"boots"},{
+# "supercategory":"fashion","id":4,"name":"footwear"},
+# {"supercategory":"fashion","id":5,"name":"outer"},
+# {"supercategory":"fashion","id":6,"name":"dress"},
+# {"supercategory":"fashion","id":7,"name":"sunglasses"},
+# {"supercategory":"fashion","id":8,"name":"pants"},
+# {"supercategory":"fashion","id":9,"name":"top"},
+# {"supercategory":"fashion","id":10,"name":"shorts"},
+# {"supercategory":"fashion","id":11,"name":"skirt"},
+# {"supercategory":"fashion","id":12,"name":"headwear"},
+# {"supercategory":"fashion","id":13,"name":"scarf\/tie"}]}
+
+
 # YAML tags and Python types, and more in https://pyyaml.org/wiki/PyYAMLDocumentation
 # The following table describes how nodes with different tags are converted to Python objects.
 
@@ -642,8 +658,7 @@ ddoif:
 # !!python/object:module.cls	module.cls instance
 # !!python/object/new:module.cls	module.cls instance
 # !!python/object/apply:module.f	value of f(...)
-        
+    
 
-    
-    
-    
+
+
