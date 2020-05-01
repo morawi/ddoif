@@ -327,10 +327,11 @@ ddoif:
                
                            
     color: # may include the major colors, and not everything, generated using some computer vision algorithm: This is the color at manufacturing time
-        histogram:
-            - [0, 1, 21, 12] # dummy numbers
-            - [3, 4, 5, 17]
-            - [3, 4, 5, 17]        
+        histogram: 
+            red: [0, 1, 21, 12, 3, 4, 5, 17, 51, 32, 5, 97] # should contain numbers
+            green: []
+            blue: []
+            
         color-RGB-values:
         color-names:
         color-degradation-factor: # not yet known how to estimate this
@@ -519,6 +520,17 @@ ddoif:
     # Customer Comments / Review (this field is used to store customers review on products, it may or maynot be available)
         
         
+        # This care guide if included will be very useful for customers, 
+        # I always tell my wife (jokingly) to keep cut the labels and arrange
+        # them in an Album near the washin machine for her to follow the guides
+        # prior to washing them lol ... as can bee seen, the information is huge
+        # and one cannot deal with the situation without the help of thcnology,
+        # using a chip/cared/bar-code readable by the washing-machine so that the washing-macnhine
+        # itself decides which care programme to use during the whole process
+        # we may also think of an intelligent iron that adjust its setting according to 
+        # the fabric and material of the garment. 
+        
+        
     care: 
         washing:
             type:
@@ -547,11 +559,37 @@ ddoif:
                 - Use any bleach when needed
                 - Use only non-chlorine bleach when needed
                 - Do not bleach
-            
-        
-        
-    
-    
+        drying:
+            type:
+            all-types:                    
+                - Tumble dry at high heat (not exceeding 75°C) at normal setting
+                - Tumble dry at medium heat (not exceeding 65°C) at normal setting
+                - Tumble dry at medium heat (not exceeding 65°C) at permanent press setting
+                - Tumble dry at low heat (not exceeding 55°C) at permanent press setting
+                - Tumble dry at a low heat (not exceeding 55°C) at delicate cycle
+                - Tumble dry any heat
+                - Tumble dry no heat/air dry
+                - Do not tumble dry
+                - After extraction of excess water, line dry/hang to dry
+                - Hang up the soaking wet article to "drip" dry
+                - After extraction of excess water, dry the article on a suitable flat surface
+                - Dry in the shade
+                - Do not dry
+        ironing:
+            type:
+            all-types:
+                - Iron with or without steam by hand, or press on commercial equipment, at a high temperature (not exceeding 200°C). Recommended temperature for cotton and linen textiles
+                - Iron with or without steam by hand, or press on commercial equipment, at a medium temperature (not exceeding 150°C). Recommended temperature for polyester, rayon, silk, triacetate and wool textiles
+                - Iron with or without steam by hand, or press on commercial equipment, at a low temperature (not exceeding 110°C). Recommended temperature for acetate, acrylic, modacrylic, nylon, polypropylene and spandex textiles
+                - Do not steam
+                - Do not iron or press
+        dry-cleaning: # Professional Textile Care Symbols
+            type:
+            all-types:
+                - Dry-clean, normal cycle. Any solvent except trichloroethylene
+                - Dry-clean, normal cycle. Petroleum solvent only
+                - Do not dry-clean
+                        
     
     # Modanet categories
     # categories":[{"supercategory":"fashion","id":1,"name":"bag"},
