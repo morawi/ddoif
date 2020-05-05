@@ -32,7 +32,7 @@ info:
     qr-code-url: # a link to the image of the QR code
     description:
     country: 
-    city:
+    city:    
 clothing: 
     # Womenswear
     skirt:            
@@ -97,7 +97,7 @@ clothing:
             - Ballet 
     dress:
         type:
-        all-types:
+        all-types: # this arrangement can be used instead of the above used for skirt
             [Shift Dress, A-line (Aline) dress, Tent dress, Yoke dress, 
             Empire line dress, Dirndl dress, Sheath dress, Low or drop waist dress, 
             Tunic dress, Princess seam dress, Blouson dress, Shirt waist dress, 
@@ -113,11 +113,8 @@ clothing:
             Smock Dress, Princess Silhouette Dress, Mermaid Silhouette Dress, T-shirt Dress, 
             Tea Length Dress, Denim Dress, Pinafore Dress,  Midi Dress, Mini Dress, Off the Shoulder, 
             Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
-            Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress,]
+            Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress]
         
-    dress-neckline: # necklines can also be used for top(tee)s
-        type:
-        all-types:
     
     womens-short:    # Name confusion/conflict: Ladies vs Womens
         type:
@@ -171,12 +168,7 @@ clothing:
     mens-tshirt: 
         type:
         all-types:
-        
-    sleeve:
-        type: 
-        all-types:
-    
-    
+      
     footwear: # footwear is also considered clothing in the literature
         type:
         all-types:
@@ -192,7 +184,58 @@ clothing:
             heel:
                 type:
                 all-types:               
-      
+    anatomy:
+        neckline: # necklines can be used for dress(es), top(tee)s, etc
+            type:
+            all-types:
+                [Asymmetric Neckline, Bateau / Boat Neck Neckline, Collared Neckline, 
+                Crossover Halter Style Neckline, Florentine Neckline, Grecian Neckline, 
+                Halter Neckline, Halter Strap Neckline, High Neck Illusion Neckline, 
+                Jewel Neckline, Keyhole Neckline, Off Shoulder / Bardot Neckline, 
+                Pentagon Neckline, Queen Anne Neckline, Sabrina Neckline, Scoop Neckline, 
+                Semi Sweetheart Neckline, Spaghetti Strap Neckline, Square Neckline, 
+                Straight Neckline, Strapless Neckline, Sweetheart Neckline, 
+                V Neck Wedding Band Neckline, Collared Neckline, Cowl Neckline, 
+                Crew Neckline, Notch Neckline, Portrait Neckline]
+        sleeve:
+            type: 
+            all-types:
+                [Raglan sleeves, Normal sleeve, Cap sleeves, Cap sleeves( extended), 
+                Bracelet sleeves ( Three fourth sleeve), Lantern sleeves, 
+                Man’s shirt sleeve with cuff, Leg of mutton sleeves, Juliet Sleeve, 
+                Long Bell sleeves, Bell sleeve, Frill Sleeve / Flute sleeves, 
+                Pagoda sleeve, Bishop sleeve, Peasant sleeve, Square armhole sleeve, 
+                Dolman/ Magyar sleeve, Padded shouldered sleeve, 
+                Petal sleeve ( lapped sleeve ) Tulip sleeve, Marmaluke / Virago sleeve, 
+                Angel sleeves / Dalmation sleeves, Butterfly sleeve, Bag sleeve, Draped sleeves,
+                Puff sleeves, Drawstring puff sleeve, Epaulet sleeve, Balloon sleeve, Batwing sleeve, 
+                Circle sleeve / Flutter sleeves, Wing  Ruffle sleeve, Kimono sleeves, Over sleeve, 
+                Hanging sleeve, Elbow patched sleeve, Slashed sleeve, Strapped or banded sleeve, 
+                Tailored sleeve, Cape sleeves, Mahoitres Sleeve, Gibson Girl Sleeve, Poet  Sleeve,
+                Melon Sleeve, Gauntlet Sleeve (Pointed), Cold-shouldered sleeve]
+        collar:
+            type:
+            all-types:
+                [Shirt Collar, Button down collar, Straight band collar, 
+                Shawl collar, Mandarin collar, / Nehru collar / Mao collar / Cadet Collar, 
+                Polo/ roll/ turtle collar, Peter pan collar, Shaped shawl collar, 
+                Ring collar, Bateau collar, Rounded wing tipped collar, Butterfly collar, 
+                Dog ear Collar, Cossack collar, Bishop collar, Tab collar, Button down collar, 
+                Revers collar, Fish mouth revers, Clover revers, L  revers collar, Tuxedo collar, 
+                Giraffe collar, Danton collar, Napoleon high coat collar, Sailor collar, 
+                Puritan collar / Pilgrim Collar, Modesty Collar, Round bertha collar, 
+                Dutch collar, Poerrot collar, Ruff collar, Frilled Stand collar, 
+                Stand Collar with a knot, Van dyke collar, Bertha Square Collar, 
+                Bertha Round Collar, Falling band collar, Partlet collar, Cape Collar, 
+                Cascade jabot collar, Bib with frill collar, Eton collar, Ascot collar,
+                Barbett collar, Cowl Collar, Carcaille collar, Convertible Open Collar, 
+                Convertible closed collar, Gorget collar, Pussy Bow collar, Fichu Collar, 
+                Detachable Collars, Turtleneck Collar, Rolled Collar, Flat Collar, 
+                Ornamented Collar, Tie / Bow Collar, Embroidered Collar, Side Collar, 
+                Embellished Collar, Flower Petal Collar, Double Collar, Italian Collar, 
+                Boat Collar, Portrait Collar, Johnny Collar, Half Collar, Flape Collar, 
+                Lace Collar, Chinese V-Neck Collar, Graphic Collar, Notch Collar, 
+                Notch Shawl Collar, Flip Collar ]
 accessories:
     hat:
         type: 
@@ -338,7 +381,7 @@ color: # may include the major colors, and not everything, generated using some 
 
 pattern:
     type:  # for example, stribes
-    all-types:
+    all-types: # this can by dynamic
         - horizental stribes
         - vertical stribes 
         - circles
@@ -552,7 +595,9 @@ care:
             - Wash gently by hand in water not exceeding 40°C
             - Wash gently by hand in water not exceeding 30°C
             - Wash in domestic or commercial machine at any temperature, at normal setting
+            - Hand wash only
             - Do not wash
+            
     bleaching:
         type:
         all-types:
@@ -606,21 +651,6 @@ care:
             - 2 dots (40°C Warm)
             - 1 dots (30°C Cool)
                     
-
-# Modanet categories
-# categories":[{"supercategory":"fashion","id":1,"name":"bag"},
-# {"supercategory":"fashion","id":2,"name":"belt"},
-# {"supercategory":"fashion","id":3,"name":"boots"},{
-# "supercategory":"fashion","id":4,"name":"footwear"},
-# {"supercategory":"fashion","id":5,"name":"outer"},
-# {"supercategory":"fashion","id":6,"name":"dress"},
-# {"supercategory":"fashion","id":7,"name":"sunglasses"},
-# {"supercategory":"fashion","id":8,"name":"pants"},
-# {"supercategory":"fashion","id":9,"name":"top"},
-# {"supercategory":"fashion","id":10,"name":"shorts"},
-# {"supercategory":"fashion","id":11,"name":"skirt"},
-# {"supercategory":"fashion","id":12,"name":"headwear"},
-# {"supercategory":"fashion","id":13,"name":"scarf\/tie"}]}
 
 
 # YAML tags and Python types, and more in https://pyyaml.org/wiki/PyYAMLDocumentation
