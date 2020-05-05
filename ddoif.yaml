@@ -40,6 +40,30 @@ clothing:
             Barbour Ashby Jacket, Drawstring Jacket, Cropped Jacket, 
             Overcoat, Parka, Pea Coat, Trench Coat, Raincoat, Crombie Coat, 
             Tuxedo Suit, Pantsuits]
+            
+    vest:
+        type:
+        all-types:
+            - Travel Vest
+            - Sweater Vest
+            - Gilets Vest
+            - Quilted Vest
+            - Shooting Vest
+            - Fleece Vest
+            - Polo Vest
+            - Seven Casual Vest
+            - Tuxedo Vest
+            - Research Vest
+            - Fishing Vest
+            - Puffed Vest
+            - Hunting Vest
+            - Long Vest
+            - Hooded Vest
+            - High Neck Vest
+            - Fringe Vest
+            # - Denim Vest  # may remove these as this is related to fabric/material
+            # - Fur Vest            
+            # - Leather Vest
     # Womenswear
     skirt:            
         type: Mini # this is the type chosen, one picked from 'all-types'
@@ -88,21 +112,12 @@ clothing:
             [Dress pants, Jeans, Overalls / Jumpsuits, Culottes, Harem Pants, 
             Baggy Pants, Bell Bottoms, Leggings, Tights, Punk Pants, Stirrup Pants, 
             Fatigue Trousers, Stovepipe pants (drainpipe trousers), Peg-Leg Pants, 
-            Toreador Pants, Eastern Pants, Jodhpur Pants, Dungarees Pants]
-    
-    womens-jacket:
-        type: 
-        all-types:
-        
-    womens-vest:
-        type: 
-        all-types:       
-    
-    womens-pantsuits:
-        type: 
-        all-types:
-    
-    womens-top-tee: 
+            Toreador Pants, Eastern Pants, Jodhpur Pants, Dungarees Pants, 
+            Trousers Pants, Capris Pants, Yoga Pants, Palazzos Pants, Sweat Pants,
+            Sailor Pants]
+ 
+       
+    top-tee: 
         type: 
         all-types:
             [Asymmetrical Top, Bardot / Off-Shoulder Top, Batwing (Magyar/ Dolman) Top, 
@@ -131,21 +146,13 @@ clothing:
     mens-pant:
         type:
         all-types:
+            - Khakis Pants
+            - Pleated Pants
+            - Cargo Pants 
+            - Chinos Pants
+            - Flat Fronts Pants
+  
     
-    
-    mens-vest:
-        type:
-        all-types:
-            - Travel Vest
-            - Sweater Vest
-            - Gilets
-            - Quilted Vest
-            - Shooting Vest
-            - Fleece Vest
-            - Polo Vest
-            - Seven Casual Vest
-            - Tuxedo Vest
-            - Research Vest
     
     mens-shirt:
         type:
@@ -528,6 +535,10 @@ fabric:
         - Lace
         - Fleece
         - Chiffon
+        - Blends
+        - Corduroy
+        - Cotton and Polyester Blends
+
 
 material:
     type: 
@@ -568,6 +579,7 @@ material:
         - Twill
         - Diolen 
         - Fiberglass
+      
     
 post-processing-of-garments:
     type: # description of the post processing comes here, like how the Denim is bleached and processed
