@@ -35,7 +35,7 @@ def yaml_to_xml(yaml_fname, xml_fname, ids=False):
 def yaml_to_json(yaml_fname, json_fname):
     yaml_dict = read_yaml_as_dict(yaml_fname)
     with open(json_fname, 'w') as fp:
-        json.dump(yaml_dict, fp)
+        json.dump(yaml_dict, fp, indent=True, )
 
 def print_xml(xml_obj): # xml_obj = dicttoxml.dicttoxml(yaml_dict, custom_root='ddoif', attr_type=False)
     from xml.dom.minidom import parseString
