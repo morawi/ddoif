@@ -2,11 +2,7 @@
 
 # Created on Fri Apr 24 17:56:37 2020
 # @author: malrawi
-# https://onlineyamltools.com/convert-yaml-to-json
-# https://onlineyamltools.com/convert-yaml-to-xml
-# http://yaml-online-parser.appspot.com/
-# https://jsonformatter.org/json-parser
-# yaml validator: http://www.yamllint.com/
+
 
 # =============================================================================
 #       GENERAL COMMENTS
@@ -17,7 +13,7 @@
 # =============================================================================
 
 
-# all these should go under manufacturing tags, then, we have another same copy called predicted tags
+# This should go under manufacturing tags, then, we may have another copy called predicted tags
 
 
 
@@ -34,6 +30,16 @@ info:
     country: 
     city:    
 clothing: 
+    jacket:
+        type:
+        all-types:
+            [Bomber Jacket, Long Bomber Jacket, Biker Jacket, Trucker Jacket, 
+            Denim Jacket,s Track Jacket, Blouson Jacket, Hooded Jacket, Shearling Jacket, 
+            Anorak Jacket, Quilted Jacket, Puffer (Down) Jacket,s Blazer Jacket, 
+            Suit Jacket, Sport Jacket, Barbour Beaufort Jacket, Barbour Bedale Jacket, 
+            Barbour Ashby Jacket, Drawstring Jacket, Cropped Jacket, 
+            Overcoat, Parka, Pea Coat, Trench Coat, Raincoat, Crombie Coat, 
+            Tuxedo Suit, Pantsuits]
     # Womenswear
     skirt:            
         type: Mini # this is the type chosen, one picked from 'all-types'
@@ -99,15 +105,15 @@ clothing:
     womens-top-tee: 
         type: 
         all-types:
-            [Asymmetrical Top, Bardot / Off-shoulder Top, Batwing (Magyar/ Dolman) Top, 
+            [Asymmetrical Top, Bardot / Off-Shoulder Top, Batwing (Magyar/ Dolman) Top, 
             Bralette Top, Boxy Top, Blouson Top, Bodysuit Top, Bustier Top, Camisole Top, 
             Cape Top, Cardigans & Sweaters Crop Top, Choker Top, Corset Top, Collar Top, 
             Cold-shouldered Top, Draped Blouse Empire Line Top, Flashdance Top, Halter Top, 
             Henley Neck Top, High Low Top, Kaftan Top, Keyhole Top, Lace Up Top, Layered Top, 
             Maxi Top, One Shoulder Top, Peasant Top, Poncho Top, Peplum Top, Princess Line Top, 
             Raglan Sleeve Top, Spaghetti Strap Top, Sweatshirt Top, Swing Top, Shirt Top, Smock Top, 
-            Shell Top, Tie Front Top, Tank Top, Tube Top, Tunic Top, T-shirt Top Wrap / Surplice Top, 
-            X-ray Top, Yoke Top,]
+            Shell Top, Tie Front Top, Tank Top, Tube Top, Tunic Top, T-Shirt / Surplice Top, 
+            X-ray Top, Yoke Top]
     
     womens-leggins:
         type: 
@@ -126,16 +132,29 @@ clothing:
         type:
         all-types:
     
-    mens-jacket:
-        type:
-        all-types:
+    
     mens-vest:
         type:
         all-types:
+            - Travel Vest
+            - Sweater Vest
+            - Gilets
+            - Quilted Vest
+            - Shooting Vest
+            - Fleece Vest
+            - Polo Vest
+            - Seven Casual Vest
+            - Tuxedo Vest
+            - Research Vest
     
     mens-shirt:
         type:
         all-types:
+            [Aloha Shirt, Baseball Shirt, Camp Shirt, Casual Shirt, Sports Shirt,
+            Dress Shirt, Epaulette Shirt, Flannel / Lumberjack Shirt, Granddad Shirt, 
+            Golf Shirt, Henley Shirt, Ivy league Shirt, Oxford Shirt, Jersey Shirt, 
+            Night Shirt, Western Shirt, Polo Shirt, SweatShirt, Tunic Shirt, 
+            Tuxedo / Formal Shirt, UnderShirt]
     
     mens-tshirt: 
         type:
@@ -179,9 +198,6 @@ clothing:
                 Melon Sleeve, Gauntlet Sleeve (Pointed), Cold-shouldered Sleeve]
 
 
-
-
-
         collar:
             type:
             all-types:
@@ -212,14 +228,12 @@ footwear: # footwear is also considered clothing in the literature, but we are s
         shoe:
             type:
             all-types:
-                [Athletic Shoe, Ballet Shoe, Boat Shoe, Bootie Shoe, 
-                Boyfriend Shoe, Brogue Shoe, Clog, Court Shoe, Derby Shoe, 
-                Gladiator Shoe, Gumboots, High Tops, Loafer, 
-                Mary Janes, Moccasin, Monk Shoe, Motorcycle Shoe, Oxford Shoe, 
-                Peep-toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
-                Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe,
-                Ballet Flats, D’orsay, 
-                Espadrille, Flip-flops, Mules, Slip-on, Sneakers]
+                [Athletic Shoe, Ballet Shoe, Boat Shoe, Bootie Shoe, Boyfriend Shoe, 
+                Brogue Shoe, Clog, Court Shoe, Derby Shoe, Gladiator Shoe,  
+                High-Top Shoe, Loafer, Mary Janes Shoe, Moccasin, Monk Shoe, Motorcycle Shoe, Oxford Shoe, 
+                Peep-Toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
+                Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats, D’Orsay Shoe, 
+                Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers]
         sandal:
             type:
             all-types:
@@ -230,7 +244,8 @@ footwear: # footwear is also considered clothing in the literature, but we are s
             all-types:
                 [Wellington Boots, Leather And Knit Booties Platform Shoe, 
                 Platform Boot, Chelsea Boots, Chukka Boots, Crotch-High Boots, 
-                Paddock Boots, Rain Boots, Riding Boots, Slouchy Boots, Cowboy Boots, Go-Go Boot]
+                Paddock Boots, Rain Boots, Riding Boots, Slouchy Boots, Cowboy Boots, 
+                Gumboots, Go-Go Boot]
         heel:
             type:
             all-types:                             
@@ -362,10 +377,10 @@ accessories:
                     - Slender Width Straps (1/2-inch)
                     - Standard Width Straps (3/4-inch)
                     - Classic Width Straps (1-inch)
-                    - Wide Width Straps (1½-inch)
+                    - Wide Width Straps (3/2-inch)
                     - Extra Wide Width Straps (2-inch)
                     - Chain Straps (varying in width from 1/4-inch to 5/8-inch)
-            length:
+            drop-length:
                 type:
                 all-types:                
                     - Wristlet (6 to 10-inch range)
@@ -376,19 +391,104 @@ accessories:
                     - Extra Long (60-inch range)
                     - Adjustable (22 to 60-inch range)
 
-
-
-
-
     glove:
         type:
         all-types:
+            - Touch Screen Gloves
+            - Silk Liners Gloves
+            - Thermal Insulation Mittens Gloves
+            - Black Leather Gloves
+            - Cycling Gloves
+            - Skiing Gloves
+            - Fingerless Gloves
+            - Christmas Gloves
+            - Button Gloves
+            - Elastic Velvet Gloves
+            - Arm Warmers Gloves
+            - Driving Gloves
+            - Weightlifting Gym Gloves
+            - Faux Fur Gloves
+            - Fish Neon Gloves
+            - White Parade Gloves
+            - Winter Gloves
+            - Heavy Duty Winter Gloves
+            - Touch Screen Gloves
+            - Fur-Lined Gloves
+            - Protective Gloves
+            - Driving Gloves
+            - Military Fingerless Gloves
+            - Daywear Leather and Suede Gloves
+            - Surgical / Medical Gloves
+            - Golf Gloves
+            - Gardening Gloves
+            - Convertible Gloves
+            - Food Servicing Gloves
+            - Weightlifting Gloves
+            
     belt:
         type:
         all-types:
+            - Autogrip Belt
+            - Bow Knot Belt
+            - Broad Belt
+            - Casual Belt
+            - Corset Belt 
+            - Double Buckle Belt
+            - Dress Belt 
+            - Elastic / Stretch  Belt 
+            - Embellished Belt
+            - Fabric Belt 
+            - Knotted Belt
+            - No Buckle Belt
+            - Ratchet Belt 
+            - Rope Belt
+            - Skinny Belt 
+            - Tongue Buckle Belt
+            - Wrap Around Belt
+            - Horseshoe Buckle Belt
+            - Suspender Belt
+            - Cummerbund Belt
+            - Military Belt
+            - Metal Belt
+            - Hip Belt
+            - Yoke Belt
+            - Cinch Belt
+            - Lace-up Belt
+            - Sash Belts
+            - Obi Belts
+            - Braided Belt
+            - Twist Belt
+            - Bow Belt
+            - Garter Belt
+            - Peplum Belt
+
+
     sock:
         type:
         all-types:
+            - Dress Sock
+            - Casual Sock
+            - Sport Sock
+            - Work Sock
+            - Yoga Sock
+            - Winter / Thermal Sock
+            - Low Cut Running Sock
+            - Ankle length Sock
+            - Quarter length Sock
+            - Crew length Sock
+            - Mid-calf length Sock
+            - Calf-length muscles Sock
+            - Knee length Sock
+            - Thigh high Sock
+            - Slip-on padding Sock
+            - Pain reliever Sock
+            - Knitted Sock
+            - Legwarmer Sock
+            - Transparent Sock            
+            - Split Toe Sock
+            - Fishnet Sock
+            - Fence Net Sock
+
     sunglasses:
         type:
         all-types:
