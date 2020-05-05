@@ -313,10 +313,6 @@
     "Yoke Top"
    ]
   },
-  "womens-leggins": {
-   "type": null,
-   "all-types": null
-  },
   "mens-short": {
    "type": null,
    "all-types": [
@@ -947,11 +943,11 @@
  "pattern": {
   "type": null,
   "all-types": [
-   "horizental stribes",
-   "vertical stribes",
-   "circles"
-  ],
-  "description": null
+   "Horizental Stribes",
+   "Vertical Stribes",
+   "Circles",
+   "Flowers"
+  ]
  },
  "fabric": {
   "type": null,
@@ -991,17 +987,17 @@
    "Suede",
    "Leather",
    "Fur",
-   "( Fake / Imitation / Faux, Snthetic, Artificial ) Fur",
-   "( Fake / Imitation / Faux, Snthetic, Artificial ) Leather",
+   "Fake / Imitation / Faux / Snthetic / Artificial  Fur",
+   "Fake / Imitation / Faux / Snthetic / Artificial Leather",
    "Polymers (polyester, teflon etc.)",
    "Asbestos",
    "Glass fibre",
-   "Ryon / artificial silk",
+   "Ryon / Artificial-Silk",
    "Visocse",
    "Acrylic",
    "Spandex",
    "Nylon",
-   "Polypropylene and elastane",
+   "Polypropylene and Elastane",
    "Poplin",
    "Seersucker",
    "Poly Cotton",

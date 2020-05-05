@@ -130,10 +130,7 @@ clothing:
             Shell Top, Tie Front Top, Tank Top, Tube Top, Tunic Top, T-Shirt / Surplice Top, 
             X-ray Top, Yoke Top]
     
-    womens-leggins:
-        type: 
-        all-types:
-    
+      
     
     # Mens items, not sure if we have to add kids items, TODO
     mens-short:
@@ -150,8 +147,7 @@ clothing:
             - Pleated Pants
             - Cargo Pants 
             - Chinos Pants
-            - Flat Fronts Pants
-  
+            - Flat Fronts Pants  
     
     
     mens-shirt:
@@ -518,10 +514,11 @@ color: # may include the major colors, and not everything, generated using some 
 pattern:
     type:  # for example, stribes
     all-types: # this can by dynamic
-        - horizental stribes
-        - vertical stribes 
-        - circles
-    description:
+        - Horizental Stribes
+        - Vertical Stribes 
+        - Circles
+        - Flowers
+
             
 fabric:
     type:
@@ -561,17 +558,17 @@ material:
         - Suede # (is a type of fuzzy leather with a napped finish)
         - Leather 
         - Fur 
-        - ( Fake / Imitation / Faux, Snthetic, Artificial ) Fur
-        - ( Fake / Imitation / Faux, Snthetic, Artificial ) Leather 
+        - Fake / Imitation / Faux / Snthetic / Artificial  Fur
+        - Fake / Imitation / Faux / Snthetic / Artificial Leather 
         - Polymers (polyester, teflon etc.) # we have to add them separately
         - Asbestos
         - Glass fibre
-        - Ryon / artificial silk # (made of bamboo plant), also called artificial silk
+        - Ryon / Artificial-Silk # (made of bamboo plant), also called artificial silk
         - Visocse
         - Acrylic
         - Spandex
         - Nylon
-        - Polypropylene and elastane
+        - Polypropylene and Elastane
         - Poplin
         - Seersucker
         - Poly Cotton
@@ -672,48 +669,7 @@ personal-characteristics: # and preferences, info are non-obligatory, in general
         all-types:
     customer-comments-review: # this field is used to store customers review on products, it may or maynot be available
     
-     
-    
-    
-# Personal Information (info are non-obligatory, in general)
-# Customer's Name
-# Customer ID
-# Issuer of Customer ID
-# Type of Customer ID
-# Customer's Birth Date
-# Customer's Sex
-# Customer's Primary Language
-# Customer's Secondary Language
-# Other Customer Names
-# Customer's Age
-# Customer's Size
-# Customer's Weight
-# Customer's Address
-# Country of Residence
-# Region of Residence
-# Customer's Telephone Numbers
-# Customer's Telecom Information
-# Ethnic Group
-# Occupation
-# Eating habits
-# Alchohol Status
-# Smoking Status
-# Customer's Religious Preference
-# Customer Breed Description
-# Customer Breed Code Sequence
-# Customer Comments / Review (this field is used to store customers review on products, it may or maynot be available)
-    
-    
-    # This care guide if included will be very useful for customers, 
-    # I always tell my wife (jokingly) to keep cut the labels and arrange
-    # them in an Album near the washin machine for her to follow the guides
-    # prior to washing them lol ... as can bee seen, the information is huge
-    # and one cannot deal with the situation without the help of thcnology,
-    # using a chip/cared/bar-code readable by the washing-machine so that the washing-macnhine
-    # itself decides which care programme to use during the whole process
-    # we may also think of an intelligent iron that adjust its setting according to 
-    # the fabric and material of the garment. 
-    
+             
     
 care: 
     washing:
