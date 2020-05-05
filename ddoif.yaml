@@ -38,63 +38,14 @@ clothing:
     skirt:            
         type: Mini # this is the type chosen, one picked from 'all-types'
         all-types:  
-            - A-Line # description for each type can also be added
-            - Fitted (Pencil  / Tube)
-            - Drindl 
-            - Mini  
-            - Bondage
-            - Pelmet 
-            - Micro Mini 
-            - Draped  (Sarong draped)
-            - Layered 
-            - Gored 
-            - Godet 
-            - Trumpet 
-            - Wrap 
-            - Divided 
-            - Pleated 
-            - Asymmetrical Hem 
-            - Bubble 
-            - Yoke 
-            - Tulip 
-            - Tiered (Gypsy)
-            - Accordion 
-            - Asymmetrical  
-            - Bell Shaped 
-            - Bustled 
-            - Button-Up 
-            - Broomstick 
-            - Circular (Circle)
-            - Cowl 
-            - Culottes 
-            - Denim 
-            - Fix Box 
-            - Flared 
-            - Fly 
-            - High Waisted 
-            - Inverted Pleat 
-            - Knife Pleated
-            - Maxi 
-            - Mermaid 
-            - Paneled 
-            - Peasant 
-            - Pegged 
-            - Pencil 
-            - Peplum 
-            - Ruffled 
-            - Sarong 
-            - Sheath 
-            - Skater 
-            - Skort 
-            - Straight 
-            - Trouser 
-            - Tulle 
-            - Tutu 
-            - Under
-            - Wrap (wrap around)  
-            - Ball Gown 
-            - Hoop 
-            - Ballet 
+            [A-Line, Fitted (Pencil / Tube), Drindl, Mini, Bondage, Pelmet, Micro Mini, 
+            Draped (Sarong draped), Layered, Gored, Godet, Trumpet, Wrap, Divided, 
+            Pleated, Asymmetrical Hem, Bubble, Yoke, Tulip, Tiered (Gypsy), Accordion, 
+            Asymmetrical, Bell Shaped, Bustled, Button,Up, Broomstick, Circular (Circle), 
+            Cowl, Culottes, Denim, Fix Box, Flared, Fly, High Waisted, Inverted Pleat, 
+            Knife Pleated, Maxi, Mermaid, Paneled, Peasant, Pegged, Pencil, Peplum, 
+            Ruffled, Sarong, Sheath, Skater, Skort, Straight, Trouser, Tulle, Tutu, 
+            Under, Wrap (wrap around), Ball Gown, Hoop, Ballet]
     dress:
         type:
         all-types: # this arrangement can be used instead of the above used for skirt
@@ -213,42 +164,48 @@ clothing:
         sleeve:
             type: 
             all-types:
-                [Raglan sleeves, Normal sleeve, Cap sleeves, Cap sleeves( extended), 
-                Bracelet sleeves ( Three fourth sleeve), Lantern sleeves, 
-                Man’s shirt sleeve with cuff, Leg of mutton sleeves, Juliet Sleeve, 
-                Long Bell sleeves, Bell sleeve, Frill Sleeve / Flute sleeves, 
-                Pagoda sleeve, Bishop sleeve, Peasant sleeve, Square armhole sleeve, 
-                Dolman/ Magyar sleeve, Padded shouldered sleeve, 
-                Petal sleeve ( lapped sleeve ) Tulip sleeve, Marmaluke / Virago sleeve, 
-                Angel sleeves / Dalmation sleeves, Butterfly sleeve, Bag sleeve, Draped sleeves,
-                Puff sleeves, Drawstring puff sleeve, Epaulet sleeve, Balloon sleeve, Batwing sleeve, 
-                Circle sleeve / Flutter sleeves, Wing  Ruffle sleeve, Kimono sleeves, Over sleeve, 
-                Hanging sleeve, Elbow patched sleeve, Slashed sleeve, Strapped or banded sleeve, 
-                Tailored sleeve, Cape sleeves, Mahoitres Sleeve, Gibson Girl Sleeve, Poet  Sleeve,
-                Melon Sleeve, Gauntlet Sleeve (Pointed), Cold-shouldered sleeve]
+                [Raglan Sleeve, Normal Sleeve, Cap Sleeve, Cap-Extended Sleeve, 
+                Bracelet / Three-Fourth  Sleeve, Lantern Sleeve, 
+                Man’s Shirt Sleeve With Cuff, Leg Of Mutton Sleeve, Juliet Sleeve, 
+                Long Bell Sleeve, Bell Sleeve, Frill Sleeve / Flute Sleeve, 
+                Pagoda Sleeve, Bishop Sleeve, Peasant Sleeve, Square Armhole Sleeve, 
+                Dolman/ Magyar Sleeve, Padded Shouldered Sleeve, 
+                Petal /Tulip / Lapped Sleeve, Marmaluke / Virago Sleeve, 
+                Angel Sleeve / Dalmation Sleeve, Butterfly Sleeve, Bag Sleeve, Draped Sleeve,
+                Puff Sleeve, Drawstring Puff Sleeve, Epaulet Sleeve, Balloon Sleeve, Batwing Sleeve, 
+                Circle Sleeve / Flutter Sleeve, Wing  Ruffle Sleeve, Kimono Sleeve, Over Sleeve, 
+                Hanging Sleeve, Elbow Patched Sleeve, Slashed Sleeve, Strapped Or Banded Sleeve, 
+                Tailored Sleeve, Cape Sleeve, Mahoitres Sleeve, Gibson Girl Sleeve, Poet  Sleeve,
+                Melon Sleeve, Gauntlet Sleeve (Pointed), Cold-shouldered Sleeve]
+
+
+
+
+
         collar:
             type:
             all-types:
-                [Shirt Collar, Button down collar, Straight band collar, 
-                Shawl collar, Mandarin collar, / Nehru collar / Mao collar / Cadet Collar, 
-                Polo/ roll/ turtle collar, Peter pan collar, Shaped shawl collar, 
-                Ring collar, Bateau collar, Rounded wing tipped collar, Butterfly collar, 
-                Dog ear Collar, Cossack collar, Bishop collar, Tab collar, Button down collar, 
-                Revers collar, Fish mouth revers, Clover revers, L  revers collar, Tuxedo collar, 
-                Giraffe collar, Danton collar, Napoleon high coat collar, Sailor collar, 
-                Puritan collar / Pilgrim Collar, Modesty Collar, Round bertha collar, 
-                Dutch collar, Poerrot collar, Ruff collar, Frilled Stand collar, 
-                Stand Collar with a knot, Van dyke collar, Bertha Square Collar, 
-                Bertha Round Collar, Falling band collar, Partlet collar, Cape Collar, 
-                Cascade jabot collar, Bib with frill collar, Eton collar, Ascot collar,
-                Barbett collar, Cowl Collar, Carcaille collar, Convertible Open Collar, 
-                Convertible closed collar, Gorget collar, Pussy Bow collar, Fichu Collar, 
+                [Shirt Collar, Button Down Collar, Straight Band Collar, 
+                Shawl Collar, Mandarin Collar, / Nehru Collar / Mao Collar / Cadet Collar, 
+                Polo/ Roll/ Turtle Collar, Peter Pan Collar, Shaped Shawl Collar, 
+                Ring Collar, Bateau Collar, Rounded Wing Tipped Collar, Butterfly Collar, 
+                Dog Ear Collar, Cossack Collar, Bishop Collar, Tab Collar, Button Down Collar, 
+                Revers Collar, Fish Mouth Revers, Clover Revers, L-Revers Collar, Tuxedo Collar, 
+                Giraffe Collar, Danton Collar, Napoleon High Coat Collar, Sailor Collar, 
+                Puritan Collar / Pilgrim Collar, Modesty Collar, Round Bertha Collar, 
+                Dutch Collar, Pierrot Collar, Ruff Collar, Frilled Stand Collar, 
+                Stand Collar With A Knot, Van Dyke Collar, Bertha Square Collar, 
+                Bertha Round Collar, Falling Band Collar, Partlet Collar, Cape Collar, 
+                Cascade Jabot Collar, Bib With Frill Collar, Eton Collar, Ascot Collar,
+                Barbett Collar, Cowl Collar, Carcaille Collar, Convertible Open Collar, 
+                Convertible Closed Collar, Gorget Collar, Pussy Bow Collar, Fichu Collar, 
                 Detachable Collars, Turtleneck Collar, Rolled Collar, Flat Collar, 
                 Ornamented Collar, Tie / Bow Collar, Embroidered Collar, Side Collar, 
                 Embellished Collar, Flower Petal Collar, Double Collar, Italian Collar, 
                 Boat Collar, Portrait Collar, Johnny Collar, Half Collar, Flape Collar, 
-                Lace Collar, Chinese V-Neck Collar, Graphic Collar, Notch Collar, 
+                Lace Collar, Chinese V-neck Collar, Graphic Collar, Notch Collar, 
                 Notch Shawl Collar, Flip Collar]
+
 footwear: # footwear is also considered clothing in the literature, but we are separating it as it has different anatomy
     type:
     all-types:
@@ -272,8 +229,8 @@ footwear: # footwear is also considered clothing in the literature, but we are s
             type:
             all-types:
                 [Wellington Boots, Leather And Knit Booties Platform Shoe, 
-                Platform Boot, Chelsea Boots, Chukka Boots, Crotch-high Boots, 
-                Paddock Boots, Rain Boots, Riding Boots, Slouchy Boots, Cowboy Boots, Go-go Boot]
+                Platform Boot, Chelsea Boots, Chukka Boots, Crotch-High Boots, 
+                Paddock Boots, Rain Boots, Riding Boots, Slouchy Boots, Cowboy Boots, Go-Go Boot]
         heel:
             type:
             all-types:                             
@@ -296,110 +253,133 @@ accessories:
             - Bonnet
             - Bucket
             - Cloche
-            - Cowboy hat
+            - Cowboy Hat
             - Deerstalker
-            - Derby hat
+            - Derby Hat
             - Fedora
-            - Gatsby hat / newsboy cap
+            - Gatsby Hat / Newsboy Cap
             - Panama Hat
-            - Pillbox hat
-            - Pom-pom beanie
-            - Skully hat
+            - Pillbox Hat
+            - Pom-pom Beanie
+            - Skully Hat
             - Sombrero
-            - Straw hat
-            - Top hat / topper hat / cylinder hat
-            - Trapper hat
-            - Bora Bora Booney II  hat
+            - Straw Hat
+            - Top Hat / Topper Hat / Cylinder Hat
+            - Trapper Hat
+            - Bora Bora Booney II  Hat
             - Fascinator
             - Hatinator
-            - Colourful Braided Straw Hat for Women
-            - Trilby hat
+            - Trilby Hat
             - Panama Hat
-            - Bowler
-            - Snapback
+            - Bowler Hat
+            - Snapback Hat
             - Dad Hat
             - Flat Cap
-            - Boater
-            - Pork Pie hat
+            - Boater Hat
+            - Pork Pie Hat
             - Top Hat
-            - Chullo Hat for Men
-            - Ascot Cap for Men
-            - Akubra Men Hat
-            - Boater Hat for Men
-            - Crochet Hat for Women
-            - Beanie Pull-on Hat for Women 
-            - Breton Hat for Women
-            - Cartwheel Hat for Women
-            - Tennis Hat for Women
+            - Chullo Hat For Men
+            - Ascot Cap 
+            - Royal Ascot Hat
+            - Akubra Hat
+            - Boater Hat
             - Party Hat
             - Peaked Hat
+            - Crochet Hat
+            - Beanie Pull-on Hat
+            - Breton Hat
+            - Cartwheel Hat
+            - Tennis Hat           
+            - Colourful Braided Straw Hat
         
-    womens-bag: # bag / purse
+    bag: # bag / purse
         type: 
         all-types:
-            - Hand bag
-            - Hobo bag
-            - Tote bag
-            - Duffle bag
-            - Messenger bag
+            - Hand Bag
+            - Hobo Bag
+            - Tote Bag
+            - Duffle Bag
+            - Messenger Bag
+            - "Doctor's Bag"
+            - Bucket Bag
+            - Bowler Bag
+            - Wristlet Bag
+            - Pouch Bag
+            - Clutch Bag
+            - Saddle Bag
+            - Beach Bag            
+            - Minaudiere Bag
+            - Shopping / Grocery Bag
+            - Drawstring Bag
+            - Makeup Bag
+            - Foldover Bag
+            - Phone Bag
+            - Camera Case Bag
+            - Baguette Bag
+            - Barrel Bag
+            - Basket Bag
+            - Fanny Pack
+            - Kelly Bag
+            - Sling Bag
+            - Weekender Travel Bag
+            - Briefcase Bag
+            - Duffel Bag
+            - Satchel Bag # Satchel vs Stachel, not sure if these are two different types!
+            - Shoulder Bag (Modifier)
             - Backpack
-            - bookbag
-            - kitbag 
-            - knapsack 
-            - pack  
-            - sackpack 
-            - backsack
-            - "Doctor's bag"
-            - Bucket bag
-            - Bowler bag
-            - Writslet bag
-            - Pouch bag
-            - Clutch bag
-            - Saddle bag
-            - Beach bag
-            - Shoulder bag (modifier)
-            - Miniaudiere bag
-            - Shopeing / Gorcery bag
-            - Drawstring bag
-            - Makeup bag
-            - Foldover bag
-            - Phone bag
-            - Camera case bag
-            - Baguette bag
-            - Barrel bag
-            - Basket bag
-            - Fanny pack
-            - Kelly bag
-            - Sling bag
-            - Weekender travel bag
-            - Briefcase
-            - Duffel
-            - Satchel bag # there is also the Stachel bag, not sure if these are two different types!
-            
-            
-        
-        bag-purse-handle:
+            - Bookbag
+            - Kitbag 
+            - Knapsack 
+            - Pack
+            - Sackpack 
+            - Backsack           
+                   
+        handle: # bag handle
             type:
             all-types:
-                - Leather / Synthetic leather handles
-                - Leather / Synthetic leather handles
-                - Fabric handles
-                - Wooden handles
-                - Metal handles
-                - Crocheted handles
-                - Straw handles
-                - Webbing
-                - Rope handles
-                - Soft cord handles
-                - Thread \ yarn handles
-                - Beaded handles
-                - Ribbon handles
-                - Plastic Handles
-                - Braided handles
-                - Shoulder handles
-                - Bracelet handle
-                - Top handles
-                - Long and medium Straps
+                - Leather / Synthetic Leather Handle
+                - Leather / Synthetic Leather Handle
+                - Fabric Handle
+                - Wooden Handle
+                - Metal Handle
+                - Crocheted Handle
+                - Straw Handle
+                - Rope Handle
+                - Soft Cord Handle
+                - Thread / Yarn Handle
+                - Beaded Handle
+                - Ribbon Handle
+                - Plastic Handle
+                - Braided Handle
+                - Shoulder Handle
+                - Bracelet Handl
+                - Top Handle
+        strap:
+            width:
+                type:
+                all-types:                              
+                    - Extra Slender & Drawcord Straps (3/8-inch)
+                    - Slender Width Straps (1/2-inch)
+                    - Standard Width Straps (3/4-inch)
+                    - Classic Width Straps (1-inch)
+                    - Wide Width Straps (1½-inch)
+                    - Extra Wide Width Straps (2-inch)
+                    - Chain Straps (varying in width from 1/4-inch to 5/8-inch)
+            length:
+                type:
+                all-types:                
+                    - Wristlet (6 to 10-inch range)
+                    - Short Handle (12 to 20-inch range)
+                    - Shoulder (30-inch range)
+                    - Long Shoulder (40-inch range)
+                    - Crossbody (50-inch range)
+                    - Extra Long (60-inch range)
+                    - Adjustable (22 to 60-inch range)
+
+
+
+
+
     glove:
         type:
         all-types:
