@@ -119,10 +119,19 @@ clothing:
     womens-short:    # Name confusion/conflict: Ladies vs Womens
         type:
         all-types:
-    
+            [Booty shorts, Boy shorts, Jamaican Shorts, Bermuda shorts, 
+            Knee length shorts, Pedal pusher shorts, Toreador shorts, 
+            Capri Boyfriend shorts, Chino shorts, Cut off shorts, Wrap shorts, 
+            Cargo Shorts, Slipshort Skorts, Swimming trunk shorts, Boxer shorts, 
+            Board shorts, Knee hugger shorts]
+                
     womens-pant: # Or Womens Pant? Also, pants vs trousers 
         type: 
         all-types:
+            [Dress pants, Jeans, Overalls / Jumpsuits, Culottes, Harem Pants, 
+            Baggy Pants, Bell Bottoms, Leggings, Tights, Punk Pants, Stirrup Pants, 
+            Fatigue Trousers, Stovepipe pants (drainpipe trousers), Peg-Leg Pants, 
+            Toreador Pants, Eastern Pants, Jodhpur Pants, Dungarees Pants]
     
     womens-jacket:
         type: 
@@ -139,6 +148,15 @@ clothing:
     womens-top-tee: 
         type: 
         all-types:
+            [Asymmetrical Top, Bardot / Off-shoulder Top, Batwing (Magyar/ Dolman) Top, 
+            Bralette Top, Boxy Top, Blouson Top, Bodysuit Top, Bustier Top, Camisole Top, 
+            Cape Top, Cardigans & Sweaters Crop Top, Choker Top, Corset Top, Collar Top, 
+            Cold-shouldered Top, Draped Blouse Empire Line Top, Flashdance Top, Halter Top, 
+            Henley Neck Top, High Low Top, Kaftan Top, Keyhole Top, Lace Up Top, Layered Top, 
+            Maxi Top, One Shoulder Top, Peasant Top, Poncho Top, Peplum Top, Princess Line Top, 
+            Raglan Sleeve Top, Spaghetti Strap Top, Sweatshirt Top, Swing Top, Shirt Top, Smock Top, 
+            Shell Top, Tie Front Top, Tank Top, Tube Top, Tunic Top, T-shirt Top Wrap / Surplice Top, 
+            X-ray Top, Yoke Top,]
     
     womens-leggins:
         type: 
@@ -149,6 +167,9 @@ clothing:
     mens-short:
         type:
         all-types:
+            [Tennis Shorts, Running Shorts, Cargo Shorts, Pleated Shorts, 
+            Flat Front Shorts, Denim Shorts, Bermuda Shorts, Board Shorts, 
+            Chino Shorts, Leather Shorts, Plaid Shorts]
     
     mens-pant:
         type:
@@ -168,22 +189,14 @@ clothing:
     mens-tshirt: 
         type:
         all-types:
-      
-    footwear: # footwear is also considered clothing in the literature
-        type:
-        all-types:
-            shoe:
-                type:
-                all-types:
-            sandal:
-                type:
-                all-types:
-            boot:
-                type:
-                all-types:
-            heel:
-                type:
-                all-types:               
+            [Basic Half Sleeve T-Shirt, Long Sleeve Crew Neck T-Shirt, 
+            Polo Collar T-Shirt, V-neck T-Shirt, Douche Bag Neck (Scoop Neck) T-Shirt, 
+            Henley Collar T-Shirt, Baseball T-Shirt, Raglan / Long Sleeve  T-Shirt, 
+            Turtle Neck T-Shirt, Ringer T-Shirt, Cap Sleeve T-Shirt, Half (Singlet) T-Shirt, 
+            Muscle T-Shirt , Half Muscle T-Shirt, Longline T-Shirt, Pocket T-Shirt, 
+            Baby Doll T-Shirt, Wide Neck off Shoulder T-Shirt, Yoke Neck T-Shirt]
+                  
+
     anatomy:
         neckline: # necklines can be used for dress(es), top(tee)s, etc
             type:
@@ -235,7 +248,43 @@ clothing:
                 Embellished Collar, Flower Petal Collar, Double Collar, Italian Collar, 
                 Boat Collar, Portrait Collar, Johnny Collar, Half Collar, Flape Collar, 
                 Lace Collar, Chinese V-Neck Collar, Graphic Collar, Notch Collar, 
-                Notch Shawl Collar, Flip Collar ]
+                Notch Shawl Collar, Flip Collar]
+footwear: # footwear is also considered clothing in the literature, but we are separating it as it has different anatomy
+    type:
+    all-types:
+        shoe:
+            type:
+            all-types:
+                [Athletic Shoe, Ballet Shoe, Boat Shoe, Bootie Shoe, 
+                Boyfriend Shoe, Brogue Shoe, Clog, Court Shoe, Derby Shoe, 
+                Gladiator Shoe, Gumboots, High Tops, Loafer, 
+                Mary Janes, Moccasin, Monk Shoe, Motorcycle Shoe, Oxford Shoe, 
+                Peep-toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
+                Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe,
+                Ballet Flats, D’orsay, 
+                Espadrille, Flip-flops, Mules, Slip-on, Sneakers]
+        sandal:
+            type:
+            all-types:
+                [Wood Sandals, Tatami Sandals, Leather Sandals, Rope Sandals, 
+                Metallic Sandals, Wedge Women Sandals, Flat Sandals, Rubber Sandals]
+        boot:
+            type:
+            all-types:
+                [Wellington Boots, Leather And Knit Booties Platform Shoe, 
+                Platform Boot, Chelsea Boots, Chukka Boots, Crotch-high Boots, 
+                Paddock Boots, Rain Boots, Riding Boots, Slouchy Boots, Cowboy Boots, Go-go Boot]
+        heel:
+            type:
+            all-types:                             
+                [Ankle Strap Heel, Ballroom Dance Heel, Basic Pumps Block Heel, 
+                Chunky Heel, Comma Heel, Cone Heel, Corset Heel, Cuban Heel, 
+                Cut Out Heel, Decorative Heel, Espadrille Heel, Fantasy Heel, 
+                Flare Heel, Flatform Heel, French Heel, High Heel Boots, High Heel Sandals,
+                Kitten Heel, Lace-Up Heel, Medium Heel, Peep Toe Heel, Platform Heel, 
+                Sculptural Heel, Slingback Heel, Spool Heel, Stacked Heel, Stiletto Heel, 
+                T-Strap Heel, Wedge Heel, Louis / Pompadour]
+
 accessories:
     hat:
         type: 
