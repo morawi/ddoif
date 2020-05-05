@@ -5,7 +5,6 @@ Created on Tue Apr 28 23:15:17 2020
 
 @author: malrawi
 
-https://pypi.org/project/dicttoxml/
 
 
 """
@@ -26,7 +25,9 @@ def read_yaml_as_dict(fname):
 def yaml_to_xml(yaml_fname, xml_fname, ids=False):
     yaml_dict = read_yaml_as_dict(yaml_fname)    
     xml_obj = dicttoxml.dicttoxml(yaml_dict, custom_root='ddoif', attr_type=False, ids=ids)
-    print_xml(xml_obj)
+    print('Converting to xml using dicttoxml version -- ', dicttoxml.__version__)
+    # print_xml(xml_obj)
+    
     with open(xml_fname, "wb") as fp:
         fp.write(xml_obj)
     
