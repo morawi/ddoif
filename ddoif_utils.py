@@ -10,7 +10,8 @@ Created on Tue Apr 28 23:15:17 2020
 """
 
 import dicttoxml
-import yaml
+# import yaml
+import ruamel.yaml
 import json
 
     
@@ -18,7 +19,11 @@ def read_yaml_as_dict(fname):
     with open(fname) as fp:
         # The FullLoader parameter handles the conversion from YAML
         # scalar values to Python the dictionary format
-        ddoif_dict = yaml.load(fp, Loader=yaml.FullLoader)        
+        # ddoif_dict = yaml.load(fp, Loader=yaml.FullLoader) 
+        # ddoif_dict = yaml.safe_load(fp)
+
+        yaml = ruamel.yaml.YAML(typ='safe') # this is claimed to be the safest way to load yaml  https://stackoverflow.com/questions/50846431/converting-a-yaml-file-to-python-json-object
+        ddoif_dict = yaml.load(fp)
     return ddoif_dict
 
     
