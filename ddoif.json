@@ -9,12 +9,16 @@
   "qr-code-url": null,
   "description": null,
   "country": null,
-  "city": null
+  "city": null,
+  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to the the image of the image with the code, \n"
  },
  "clothing": {
   "jacket": {
    "type": null,
    "all-types": [
+    "Blazer Jacket",
+    "Suit Jacket",
+    "Sport Jacket",
     "Bomber Jacket",
     "Long Bomber Jacket",
     "Biker Jacket",
@@ -27,9 +31,6 @@
     "Anorak Jacket",
     "Quilted Jacket",
     "Puffer (Down) Jacket",
-    "Blazer Jacket",
-    "Suit Jacket",
-    "Sport Jacket",
     "Barbour Beaufort Jacket",
     "Barbour Bedale Jacket",
     "Barbour Ashby Jacket",
@@ -45,6 +46,7 @@
     "Pantsuits"
    ]
   },
+  "comment": "",
   "vest": {
    "type": null,
    "all-types": [
@@ -65,7 +67,8 @@
     "Hooded Vest",
     "High Neck Vest",
     "Fringe Vest"
-   ]
+   ],
+   "comment": "There are other vest types; Denim Vest, Fur Vest, and Leather Vest. But these differ by material.\n"
   },
   "skirt": {
    "type": "Mini",
@@ -128,7 +131,8 @@
     "Ball Gown",
     "Hoop",
     "Ballet"
-   ]
+   ],
+   "comment": ""
   },
   "dress": {
    "type": null,
@@ -211,7 +215,26 @@
     "Kimono Dress",
     "Handkerchief Hem Dress",
     "Bandage Dress"
-   ]
+   ],
+   "comment": ""
+  },
+  "gown": {
+   "type": null,
+   "all-types": [
+    "Ball Gown",
+    "Mermaid Gown",
+    "A-Line Gown",
+    "Sheath Gown",
+    "Bouffant skirt Gown",
+    "Circular skirt Gown",
+    "Full Skirt Gown",
+    "Bustle Gown",
+    "Bias cut Gown",
+    "Asymmetrical Gown",
+    "Tiered Gown",
+    "Panel Gown"
+   ],
+   "comment": ""
   },
   "womens-short": {
    "type": null,
@@ -233,7 +256,8 @@
     "Boxer shorts",
     "Board shorts",
     "Knee hugger shorts"
-   ]
+   ],
+   "comment": ""
   },
   "womens-pant": {
    "type": null,
@@ -262,7 +286,8 @@
     "Palazzos Pants",
     "Sweat Pants",
     "Sailor Pants"
-   ]
+   ],
+   "comment": "pants vs trousers? how to connect the two?\n"
   },
   "top-tee": {
    "type": null,
@@ -311,7 +336,8 @@
     "T-Shirt / Surplice Top",
     "X-ray Top",
     "Yoke Top"
-   ]
+   ],
+   "comment": ""
   },
   "mens-short": {
    "type": null,
@@ -327,7 +353,8 @@
     "Chino Shorts",
     "Leather Shorts",
     "Plaid Shorts"
-   ]
+   ],
+   "comment": ""
   },
   "mens-pant": {
    "type": null,
@@ -337,7 +364,8 @@
     "Cargo Pants",
     "Chinos Pants",
     "Flat Fronts Pants"
-   ]
+   ],
+   "comment": ""
   },
   "mens-shirt": {
    "type": null,
@@ -363,7 +391,8 @@
     "Tunic Shirt",
     "Tuxedo / Formal Shirt",
     "UnderShirt"
-   ]
+   ],
+   "comment": ""
   },
   "mens-tshirt": {
    "type": null,
@@ -387,7 +416,8 @@
     "Baby Doll T-Shirt",
     "Wide Neck off Shoulder T-Shirt",
     "Yoke Neck T-Shirt"
-   ]
+   ],
+   "comment": ""
   },
   "anatomy": {
    "neckline": {
@@ -421,7 +451,8 @@
      "Crew Neckline",
      "Notch Neckline",
      "Portrait Neckline"
-    ]
+    ],
+    "comment": ""
    },
    "sleeve": {
     "type": null,
@@ -471,7 +502,8 @@
      "Melon Sleeve",
      "Gauntlet Sleeve (Pointed)",
      "Cold-shouldered Sleeve"
-    ]
+    ],
+    "comment": ""
    },
    "collar": {
     "type": null,
@@ -552,7 +584,8 @@
      "Notch Collar",
      "Notch Shawl Collar",
      "Flip Collar"
-    ]
+    ],
+    "comment": ""
    }
   }
  },
@@ -595,7 +628,8 @@
      "Mules",
      "Slip-on",
      "Sneakers"
-    ]
+    ],
+    "comment": ""
    },
    "sandal": {
     "type": null,
@@ -608,7 +642,8 @@
      "Wedge Women Sandals",
      "Flat Sandals",
      "Rubber Sandals"
-    ]
+    ],
+    "comment": ""
    },
    "boot": {
     "type": null,
@@ -626,7 +661,8 @@
      "Cowboy Boots",
      "Gumboots",
      "Go-Go Boot"
-    ]
+    ],
+    "comment": ""
    },
    "heel": {
     "type": null,
@@ -661,7 +697,8 @@
      "T-Strap Heel",
      "Wedge Heel",
      "Louis / Pompadour"
-    ]
+    ],
+    "comment": "left blank                   \n"
    }
   }
  },
@@ -714,7 +751,8 @@
     "Cartwheel Hat",
     "Tennis Hat",
     "Colourful Braided Straw Hat"
-   ]
+   ],
+   "comment": ""
   },
   "bag": {
    "type": null,
@@ -754,10 +792,11 @@
     "Bookbag",
     "Kitbag",
     "Knapsack",
-    "Pack",
+    "Pack Bag",
     "Sackpack",
     "Backsack"
    ],
+   "comment": "",
    "handle": {
     "type": null,
     "all-types": [
@@ -778,7 +817,8 @@
      "Shoulder Handle",
      "Bracelet Handl",
      "Top Handle"
-    ]
+    ],
+    "comment": ""
    },
    "strap": {
     "width": {
@@ -791,7 +831,8 @@
       "Wide Width Straps (3/2-inch)",
       "Extra Wide Width Straps (2-inch)",
       "Chain Straps (varying in width from 1/4-inch to 5/8-inch)"
-     ]
+     ],
+     "comment": ""
     },
     "drop-length": {
      "type": null,
@@ -803,7 +844,8 @@
       "Crossbody (50-inch range)",
       "Extra Long (60-inch range)",
       "Adjustable (22 to 60-inch range)"
-     ]
+     ],
+     "comment": ""
     }
    }
   },
@@ -840,7 +882,8 @@
     "Convertible Gloves",
     "Food Servicing Gloves",
     "Weightlifting Gloves"
-   ]
+   ],
+   "comment": ""
   },
   "belt": {
    "type": null,
@@ -878,7 +921,8 @@
     "Bow Belt",
     "Garter Belt",
     "Peplum Belt"
-   ]
+   ],
+   "comment": ""
   },
   "sock": {
    "type": null,
@@ -905,16 +949,19 @@
     "Split Toe Sock",
     "Fishnet Sock",
     "Fence Net Sock"
-   ]
+   ],
+   "comment": ""
   },
   "sunglasses": {
    "type": null,
-   "all-types": null
+   "all-types": null,
+   "comment": ""
   },
   "jewellery": {
    "type": null,
    "description": null,
-   "all-types": null
+   "all-types": null,
+   "comment": ""
   }
  },
  "color": {
@@ -938,7 +985,8 @@
   },
   "color-RGB-values": null,
   "color-names": null,
-  "color-degradation-factor": null
+  "color-degradation-factor": null,
+  "comment": "May include the major colors, and not everything,  generated using some computer vision algorithm.  This is the color at manufacturing time. Not yet known how to estimate this\n"
  },
  "pattern": {
   "type": null,
@@ -947,7 +995,8 @@
    "Vertical Stribes",
    "Circles",
    "Flowers"
-  ]
+  ],
+  "comment": "More patterns need to be added\n\n    \n"
  },
  "fabric": {
   "type": null,
@@ -964,7 +1013,8 @@
    "Blends",
    "Corduroy",
    "Cotton and Polyester Blends"
-  ]
+  ],
+  "comment": ""
  },
  "material": {
   "type": null,
@@ -1005,11 +1055,13 @@
    "Twill",
    "Diolen",
    "Fiberglass"
-  ]
+  ],
+  "comment": ""
  },
  "post-processing-of-garments": {
   "type": null,
-  "all-types": null
+  "all-types": null,
+  "comment": "This is a description of the post processing comes here,  like how the Denim is bleached and processed It mainly does not follow a starndard. Therefore, 'all-types' can be left empty.\n"
  },
  "images": {
   "number": "Val",
@@ -1061,7 +1113,8 @@
  "sustainability": {
   "recycled-material": "Y",
   "sustainability-grade": 8,
-  "other": null
+  "other": null,
+  "comment": ""
  },
  "personal-characteristics": {
   "age": null,
@@ -1110,7 +1163,8 @@
    "type": null,
    "all-types": null
   },
-  "customer-comments-review": null
+  "customer-comments-review": null,
+  "comment": "review field is used to store customers review on products, it may or maynot be available\n        \n"
  },
  "care": {
   "washing": {
@@ -1135,7 +1189,8 @@
     "Wash in domestic or commercial machine at any temperature, at normal setting",
     "Hand wash only",
     "Do not wash"
-   ]
+   ],
+   "comment": ""
   },
   "bleaching": {
    "type": null,
@@ -1143,7 +1198,8 @@
     "Use any bleach when needed",
     "Use only non-chlorine bleach when needed",
     "Do not bleach"
-   ]
+   ],
+   "comment": ""
   },
   "drying": {
    "type": null,
@@ -1161,7 +1217,8 @@
     "After extraction of excess water, dry the article on a suitable flat surface",
     "Dry in the shade",
     "Do not dry"
-   ]
+   ],
+   "comment": ""
   },
   "ironing": {
    "type": null,
@@ -1171,29 +1228,23 @@
     "Iron with or without steam by hand, or press on commercial equipment, at a low temperature (not exceeding 110\u00c2\u00b0C). Recommended temperature for acetate, acrylic, modacrylic, nylon, polypropylene and spandex textiles",
     "Do not steam",
     "Do not iron or press"
-   ]
+   ],
+   "comment": ""
   },
   "dry-cleaning": {
    "type": null,
    "all-types": [
-    {
-     "A\\": "Dry-cleaning in all solvents normally used for dry-cleaning - this includes all solvents listed for the symbol P, plus trichloroethylene and 1,1, 1-trichloroethane"
-    },
+    "A Dry-cleaning in all solvents normally used for dry-cleaning - this includes all solvents listed for the symbol P, plus trichloroethylene and 1,1, 1-trichloroethane",
     "F Dry-cleaning in trifluorotrichloroethane, white spirit (distillation temperature between 150\u00c2\u00b0C and 210\u00c2\u00b0C, flash point 38\u00c2\u00b0C to 60\u00c2\u00b0C) Normal cleansing procedures without restrictions",
-    "P_ Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Normal cleansing procedures without restrictions",
-    {
-     "F_US": "Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Strict limitations on the addition of water and / or mechanical action and / or temperature during cleaning and / or drying. No self-service cleaning allowed"
-    },
-    {
-     "P_US": "Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Strict limitations on the addition of water and / or mechanical action and / or temperature during cleaning and / or drying. No self-service cleaning allowed"
-    },
-    {
-     "C_CROSS": "Do not dry-clean. No stain removal with solvents"
-    },
-    {
-     "D_": "Do not dry-clean"
-    }
-   ]
+    "P Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Normal cleansing procedures without restrictions",
+    "F_US Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Strict limitations on the addition of water and / or mechanical action and / or temperature during cleaning and / or drying. No self-service cleaning allowed",
+    "P_US Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Strict limitations on the addition of water and / or mechanical action and / or temperature during cleaning and / or drying. No self-service cleaning allowed",
+    "C_CROSS Do not dry-clean. No stain removal with solvents",
+    "D_ Do not dry-clean",
+    "Dry-cleaning, normal cycle. Any solvent except trichloroethylene",
+    "Dry-clean, normal cycle. Petroleum solvent only"
+   ],
+   "comment": "\"F_US is F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en\" P_US, same as F_US but with a P symbol.  \"C_CROSS is a crossed circle, see in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en\"\n"
   },
   "supplementary-care": {
    "type": null,
@@ -1201,7 +1252,8 @@
     "Do not wring",
     "Wet-clean",
     "Do not wet-clean"
-   ]
+   ],
+   "comment": ""
   },
   "water-temperature-dot-symbol": {
    "type": null,
@@ -1212,7 +1264,8 @@
     "3 dots (50\u00c2\u00b0C Hot)",
     "2 dots (40\u00c2\u00b0C Warm)",
     "1 dots (30\u00c2\u00b0C Cool)"
-   ]
+   ],
+   "comment": ""
   }
  }
 }

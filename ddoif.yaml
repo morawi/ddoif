@@ -5,11 +5,30 @@
 
 
 # =============================================================================
-#       GENERAL COMMENTS
+# This is a protocol of fashion items containing 
+# names, vocabulary and terminology of clothing and accessories 
+# Each item has the following structure:
+#       item:
+#         type: 
+#         all-types:
+#             -x,
+#             -y,
+#             ...
+#             -z
+#         comment: >
+# where 'type' is one name selected from all-types {x, y, ..., z}
+# 'all-types' contains all the possible item classes
+# 'comment' may contain some comments about the names, classes, for example, ambiguity.
+#
+# 
+#      GENERAL COMMENTS
 # KEYS: 
 # 1. The hyphen is needed to be able to convert the yaml to xml, and then, backward xml to yaml
 # 2. All keys are in lower case letters
 # 3. Initials of entry names are capitalized
+#
+#
+# 
 # =============================================================================
 
 
@@ -20,26 +39,31 @@
 
 version: 0.1
 info:
-    date-created: dd-month-yyyy # example: 01-September-2019
+    date-created: dd-month-yyyy 
     manufacturer: 
     brand:
-    contributor:   # could be a third party company that collected the data, like eBay or Amazon
-    barcode-url:  # a link to the the image of the bar code
+    contributor:   
+    barcode-url:
     qr-code-url: # a link to the image of the QR code
     description:
     country: 
     city:    
+    comment: >
+        date-example 01-September-2019
+        barcode-url (qr-code-url) is a link to the the image of the image with the code, 
 clothing: 
     jacket:
         type:
         all-types:
-            [Bomber Jacket, Long Bomber Jacket, Biker Jacket, Trucker Jacket, 
+            [Blazer Jacket, Suit Jacket, Sport Jacket,
+            Bomber Jacket, Long Bomber Jacket, Biker Jacket, Trucker Jacket, 
             Denim Jacket, Track Jacket, Blouson Jacket, Hooded Jacket, Shearling Jacket, 
-            Anorak Jacket, Quilted Jacket, Puffer (Down) Jacket, Blazer Jacket, 
-            Suit Jacket, Sport Jacket, Barbour Beaufort Jacket, Barbour Bedale Jacket, 
+            Anorak Jacket, Quilted Jacket, Puffer (Down) Jacket, 
+            Barbour Beaufort Jacket, Barbour Bedale Jacket, 
             Barbour Ashby Jacket, Drawstring Jacket, Cropped Jacket, 
             Overcoat, Parka, Pea Coat, Trench Coat, Raincoat, Crombie Coat, 
             Tuxedo Suit, Pantsuits]
+    comment: >
             
     vest:
         type:
@@ -61,9 +85,9 @@ clothing:
             - Hooded Vest
             - High Neck Vest
             - Fringe Vest
-            # - Denim Vest  # may remove these as this is related to fabric/material
-            # - Fur Vest            
-            # - Leather Vest
+        comment: >
+            There are other vest types; Denim Vest, Fur Vest, and Leather Vest. But these differ by material.
+            
     # Womenswear
     skirt:            
         type: Mini # this is the type chosen, one picked from 'all-types'
@@ -76,6 +100,8 @@ clothing:
             Knife Pleated, Maxi, Mermaid, Paneled, Peasant, Pegged, Pencil, Peplum, 
             Ruffled, Sarong, Sheath, Skater, Skort, Straight, Trouser, Tulle, Tutu, 
             Under, Wrap (wrap around), Ball Gown, Hoop, Ballet]
+        comment: >
+        
     dress:
         type:
         all-types: # this arrangement can be used instead of the above used for skirt
@@ -95,6 +121,26 @@ clothing:
             Tea Length Dress, Denim Dress, Pinafore Dress,  Midi Dress, Mini Dress, Off the Shoulder, 
             Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
             Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress]
+        comment: >
+            
+    gown:
+        type:
+        all-types:
+            - Ball Gown
+            - Mermaid Gown
+            - A-Line Gown
+            - Sheath Gown
+            - Bouffant skirt Gown
+            - Circular skirt Gown 
+            - Full Skirt Gown
+            - Bustle Gown
+            - Bias cut Gown
+            - Asymmetrical Gown
+            - Tiered Gown
+            - Panel Gown
+        comment: >
+
+
         
     
     womens-short:    # Name confusion/conflict: Ladies vs Womens
@@ -105,8 +151,9 @@ clothing:
             Capri Boyfriend shorts, Chino shorts, Cut off shorts, Wrap shorts, 
             Cargo Shorts, Slipshort Skorts, Swimming trunk shorts, Boxer shorts, 
             Board shorts, Knee hugger shorts]
+        comment: >
                 
-    womens-pant: # Or Womens Pant? Also, pants vs trousers 
+    womens-pant: 
         type: 
         all-types:
             [Dress pants, Jeans, Overalls / Jumpsuits, Culottes, Harem Pants, 
@@ -115,6 +162,8 @@ clothing:
             Toreador Pants, Eastern Pants, Jodhpur Pants, Dungarees Pants, 
             Trousers Pants, Capris Pants, Yoga Pants, Palazzos Pants, Sweat Pants,
             Sailor Pants]
+        comment: >
+            pants vs trousers? how to connect the two?
  
        
     top-tee: 
@@ -129,6 +178,7 @@ clothing:
             Raglan Sleeve Top, Spaghetti Strap Top, Sweatshirt Top, Swing Top, Shirt Top, Smock Top, 
             Shell Top, Tie Front Top, Tank Top, Tube Top, Tunic Top, T-Shirt / Surplice Top, 
             X-ray Top, Yoke Top]
+        comment: >
          
     
     # Mens items, not sure if we have to add kids items, TODO
@@ -138,6 +188,7 @@ clothing:
             [Tennis Shorts, Running Shorts, Cargo Shorts, Pleated Shorts, 
             Flat Front Shorts, Denim Shorts, Bermuda Shorts, Board Shorts, 
             Chino Shorts, Leather Shorts, Plaid Shorts]
+        comment: >
     
     mens-pant:
         type:
@@ -146,7 +197,8 @@ clothing:
             - Pleated Pants
             - Cargo Pants 
             - Chinos Pants
-            - Flat Fronts Pants  
+            - Flat Fronts Pants
+        comment: >
     
     
     mens-shirt:
@@ -157,6 +209,7 @@ clothing:
             Golf Shirt, Henley Shirt, Ivy league Shirt, Oxford Shirt, Jersey Shirt, 
             Night Shirt, Western Shirt, Polo Shirt, SweatShirt, Tunic Shirt, 
             Tuxedo / Formal Shirt, UnderShirt]
+        comment: >
     
     mens-tshirt: 
         type:
@@ -167,7 +220,7 @@ clothing:
             Turtle Neck T-Shirt, Ringer T-Shirt, Cap Sleeve T-Shirt, Half (Singlet) T-Shirt, 
             Muscle T-Shirt , Half Muscle T-Shirt, Longline T-Shirt, Pocket T-Shirt, 
             Baby Doll T-Shirt, Wide Neck off Shoulder T-Shirt, Yoke Neck T-Shirt]
-                  
+        comment: >
 
     anatomy:
         neckline: # necklines can be used for dress(es), top(tee)s, etc
@@ -182,6 +235,9 @@ clothing:
                 Straight Neckline, Strapless Neckline, Sweetheart Neckline, 
                 V Neck Wedding Band Neckline, Collared Neckline, Cowl Neckline, 
                 Crew Neckline, Notch Neckline, Portrait Neckline]
+            comment: >
+            
+            
         sleeve:
             type: 
             all-types:
@@ -199,6 +255,8 @@ clothing:
                 Slashed Sleeve, Strapped Or Banded Sleeve, Tailored Sleeve, Cape Sleeve, 
                 Mahoitres Sleeve, Gibson Girl Sleeve, Poet  Sleeve, Melon Sleeve, 
                 Gauntlet Sleeve (Pointed), Cold-shouldered Sleeve]
+
+            comment: >
 
 
         collar:
@@ -224,6 +282,10 @@ clothing:
                 Boat Collar, Portrait Collar, Johnny Collar, Half Collar, Flape Collar, 
                 Lace Collar, Chinese V-neck Collar, Graphic Collar, Notch Collar, 
                 Notch Shawl Collar, Flip Collar]
+            comment: >
+                
+                
+                
 
 footwear: # footwear is also considered clothing in the literature, but we are separating it as it has different anatomy
     type:
@@ -237,11 +299,18 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Peep-Toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
                 Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats, D’Orsay Shoe, 
                 Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers]
+                
+            comment: >
+            
+            
         sandal:
             type:
             all-types:
                 [Wood Sandals, Tatami Sandals, Leather Sandals, Rope Sandals, 
                 Metallic Sandals, Wedge Women Sandals, Flat Sandals, Rubber Sandals]
+            comment: >
+            
+            
         boot:
             type:
             all-types:
@@ -249,6 +318,9 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Platform Boot, Chelsea Boots, Chukka Boots, Crotch-High Boots, 
                 Paddock Boots, Rain Boots, Riding Boots, Slouchy Boots, Cowboy Boots, 
                 Gumboots, Go-Go Boot]
+            comment: >
+            
+            
         heel:
             type:
             all-types:                             
@@ -259,11 +331,13 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Kitten Heel, Lace-Up Heel, Medium Heel, Peep Toe Heel, Platform Heel, 
                 Sculptural Heel, Slingback Heel, Spool Heel, Stacked Heel, Stiletto Heel, 
                 T-Strap Heel, Wedge Heel, Louis / Pompadour]
+            comment: >
+                left blank                   
 
 accessories:
     hat:
-        type: 
-        all_types: 
+        type:
+        all_types:
             - Baseball Cap
             - Beanie
             - Beret
@@ -309,6 +383,9 @@ accessories:
             - Cartwheel Hat
             - Tennis Hat           
             - Colourful Braided Straw Hat
+        comment: >
+            
+        
         
     bag: # bag / purse
         type: 
@@ -348,9 +425,10 @@ accessories:
             - Bookbag
             - Kitbag 
             - Knapsack 
-            - Pack
+            - Pack Bag 
             - Sackpack 
             - Backsack           
+        comment: >
                    
         handle: # bag handle
             type:
@@ -372,6 +450,8 @@ accessories:
                 - Shoulder Handle
                 - Bracelet Handl
                 - Top Handle
+            comment: >
+            
         strap:
             width:
                 type:
@@ -383,6 +463,9 @@ accessories:
                     - Wide Width Straps (3/2-inch)
                     - Extra Wide Width Straps (2-inch)
                     - Chain Straps (varying in width from 1/4-inch to 5/8-inch)
+                comment: >
+                
+                
             drop-length:
                 type:
                 all-types:                
@@ -393,6 +476,7 @@ accessories:
                     - Crossbody (50-inch range)
                     - Extra Long (60-inch range)
                     - Adjustable (22 to 60-inch range)
+                comment: >
 
     glove:
         type:
@@ -427,6 +511,7 @@ accessories:
             - Convertible Gloves
             - Food Servicing Gloves
             - Weightlifting Gloves
+        comment: >
             
     belt:
         type:
@@ -464,6 +549,7 @@ accessories:
             - Bow Belt
             - Garter Belt
             - Peplum Belt
+        comment: >
 
 
     sock:
@@ -491,17 +577,23 @@ accessories:
             - Split Toe Sock
             - Fishnet Sock
             - Fence Net Sock
+        comment: >
 
     sunglasses:
         type:
         all-types:
+        comment: >
+        
+        
     jewellery:
         type:
         description: # description of color material and design
         all-types:
+        comment: >
+        
            
                        
-color: # may include the major colors, and not everything, generated using some computer vision algorithm: This is the color at manufacturing time
+color: 
     histogram: 
         red: [0, 1, 21, 12, 3, 4, 5, 17, 51, 32, 5, 97] # should contain numbers
         green: []
@@ -509,7 +601,12 @@ color: # may include the major colors, and not everything, generated using some 
         
     color-RGB-values:
     color-names:
-    color-degradation-factor: # not yet known how to estimate this
+    color-degradation-factor: 
+    comment: > 
+        May include the major colors, and not everything, 
+        generated using some computer vision algorithm. 
+        This is the color at manufacturing time.
+        Not yet known how to estimate this
 
 pattern:
     type:  # for example, stribes
@@ -518,6 +615,8 @@ pattern:
         - Vertical Stribes 
         - Circles
         - Flowers
+    comment: > 
+        More patterns need to be added
 
             
 fabric:
@@ -535,6 +634,7 @@ fabric:
         - Blends
         - Corduroy
         - Cotton and Polyester Blends
+    comment: > 
 
 
 material:
@@ -576,11 +676,19 @@ material:
         - Twill
         - Diolen 
         - Fiberglass
+    comment: > 
       
     
 post-processing-of-garments:
-    type: # description of the post processing comes here, like how the Denim is bleached and processed
-    all-types: # this should be left empty, added for consistence
+    type: 
+    all-types: 
+    comment: > 
+        This is a description of the post processing comes here, 
+        like how the Denim is bleached and processed
+        It mainly does not follow a starndard.
+        Therefore, 'all-types' can be left empty.
+        
+        
 
 images:
     number: Val # TYPE INT; number of images, 3 here for example 
@@ -626,6 +734,7 @@ sustainability:
     recycled-material: Y # options: Y(Yes) / N(No)
     sustainability-grade: 8 # a measure from 1 to 10 (10 being best)
     other:
+    comment: > 
     
 
 personal-characteristics: # and preferences, info are non-obligatory, in general and abide to GDPR
@@ -667,7 +776,9 @@ personal-characteristics: # and preferences, info are non-obligatory, in general
     ethnic-group:
         type:
         all-types:
-    customer-comments-review: # this field is used to store customers review on products, it may or maynot be available
+    customer-comments-review: 
+    comment: > 
+        review field is used to store customers review on products, it may or maynot be available
                 
     
 care: 
@@ -693,6 +804,8 @@ care:
             - Wash in domestic or commercial machine at any temperature, at normal setting
             - Hand wash only
             - Do not wash
+        comment: > 
+        
             
     bleaching:
         type:
@@ -700,6 +813,8 @@ care:
             - Use any bleach when needed
             - Use only non-chlorine bleach when needed
             - Do not bleach
+        comment: > 
+        
     drying:
         type:
         all-types:                    
@@ -716,6 +831,9 @@ care:
             - After extraction of excess water, dry the article on a suitable flat surface
             - Dry in the shade
             - Do not dry
+        comment: > 
+            
+        
     ironing:
         type:
         all-types:
@@ -724,6 +842,8 @@ care:
             - Iron with or without steam by hand, or press on commercial equipment, at a low temperature (not exceeding 110°C). Recommended temperature for acetate, acrylic, modacrylic, nylon, polypropylene and spandex textiles
             - Do not steam
             - Do not iron or press
+        comment: > 
+        
     dry-cleaning: # Professional Textile Care Symbols
         type:
         all-types:
@@ -734,12 +854,13 @@ care:
             - P_US Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Strict limitations on the addition of water and / or mechanical action and / or temperature during cleaning and / or drying. No self-service cleaning allowed
             - C_CROSS Do not dry-clean. No stain removal with solvents
             - D_ Do not dry-clean
-            # Description
-            # F_US= F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en
-            # P_US, same as Fbar but with a P
-            # C_CROSS: a crossed circle, see symbol in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en
-            # - Dry-clean, normal cycle. Any solvent except trichloroethylene
-            # - Dry-clean, normal cycle. Petroleum solvent only
+            - Dry-cleaning, normal cycle. Any solvent except trichloroethylene
+            - Dry-clean, normal cycle. Petroleum solvent only
+        comment: > 
+            "F_US is F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en"
+            P_US, same as F_US but with a P symbol. 
+            "C_CROSS is a crossed circle, see in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en"
+            
             
     
     supplementary-care:
@@ -748,6 +869,7 @@ care:
             - Do not wring
             - Wet-clean
             - Do not wet-clean
+        comment: > 
         
     water-temperature-dot-symbol:
         type:
@@ -758,6 +880,7 @@ care:
             - 3 dots (50°C Hot)
             - 2 dots (40°C Warm)
             - 1 dots (30°C Cool)
+        comment: > 
                     
 
 
