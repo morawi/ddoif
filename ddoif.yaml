@@ -34,8 +34,8 @@ clothing:
         type:
         all-types:
             [Bomber Jacket, Long Bomber Jacket, Biker Jacket, Trucker Jacket, 
-            Denim Jacket,s Track Jacket, Blouson Jacket, Hooded Jacket, Shearling Jacket, 
-            Anorak Jacket, Quilted Jacket, Puffer (Down) Jacket,s Blazer Jacket, 
+            Denim Jacket, Track Jacket, Blouson Jacket, Hooded Jacket, Shearling Jacket, 
+            Anorak Jacket, Quilted Jacket, Puffer (Down) Jacket, Blazer Jacket, 
             Suit Jacket, Sport Jacket, Barbour Beaufort Jacket, Barbour Bedale Jacket, 
             Barbour Ashby Jacket, Drawstring Jacket, Cropped Jacket, 
             Overcoat, Parka, Pea Coat, Trench Coat, Raincoat, Crombie Coat, 
@@ -79,16 +79,16 @@ clothing:
     dress:
         type:
         all-types: # this arrangement can be used instead of the above used for skirt
-            [Shift Dress, A-line (Aline) dress, Tent dress, Yoke dress, 
-            Empire line dress, Dirndl dress, Sheath dress, Low or drop waist dress, 
-            Tunic dress, Princess seam dress, Blouson dress, Shirt waist dress, 
-            Wrap around dress, Peasant Dress, Baby doll dress, Bodycon dress, Cocktail dress, 
-            Debutante dress, Skater dress, Camisole dress, Pinafore dress / Jumber dress, Granny dress, 
-            Harem dress, Trumpet dress / Mermaid dress, Maxi dress, Apron dress, 
-            Sweater dress, Swing dress, Tutu dress, Sun Dress, Little Black Dress, 
-            Coat dress, Corset dress, Balloon Dress , Bouffant dress, Fit and flare dress, 
-            Handkerchief hem Dress, Gathered dress, Kaftan Dress, Pillowcase dress, Slip Dress, 
-            Shirt dress, Ballgown dress, Party dress, Off Shoulder Dress, One shoulder dress, 
+            [Shift Dress, A-line (Aline) Dress, Tent Dress, Yoke Dress, 
+            Empire line Dress, Dirndl Dress, Sheath Dress, Low or drop waist Dress, 
+            Tunic Dress, Princess seam Dress, Blouson Dress, Shirt waist Dress, 
+            Wrap around Dress, Peasant Dress, Baby doll Dress, Bodycon Dress, Cocktail Dress, 
+            Debutante Dress, Skater Dress, Camisole Dress, Pinafore Dress / Jumber Dress, Granny Dress, 
+            Harem Dress, Trumpet Dress / Mermaid Dress, Maxi Dress, Apron Dress, 
+            Sweater Dress, Swing Dress, Tutu Dress, Sun Dress, Little Black Dress, 
+            Coat Dress, Corset Dress, Balloon Dress , Bouffant Dress, Fit and flare Dress, 
+            Handkerchief hem Dress, Gathered Dress, Kaftan Dress, Pillowcase Dress, Slip Dress, 
+            Shirt Dress, Ballgown Dress, Party Dress, Off Shoulder Dress, One shoulder Dress, 
             Strapless Dress, Halterneck Dress, Draped Dress, Xray Dress, Cape Dress, Asymmetrical Dress, 
             High-Low Dress, Sheath Dress, Peplum Dress, Empire Waist Dress, Pencil Dress, 
             Smock Dress, Princess Silhouette Dress, Mermaid Silhouette Dress, T-shirt Dress, 
@@ -129,8 +129,7 @@ clothing:
             Raglan Sleeve Top, Spaghetti Strap Top, Sweatshirt Top, Swing Top, Shirt Top, Smock Top, 
             Shell Top, Tie Front Top, Tank Top, Tube Top, Tunic Top, T-Shirt / Surplice Top, 
             X-ray Top, Yoke Top]
-    
-      
+         
     
     # Mens items, not sure if we have to add kids items, TODO
     mens-short:
@@ -194,11 +193,12 @@ clothing:
                 Dolman/ Magyar Sleeve, Padded Shouldered Sleeve, 
                 Petal /Tulip / Lapped Sleeve, Marmaluke / Virago Sleeve, 
                 Angel Sleeve / Dalmation Sleeve, Butterfly Sleeve, Bag Sleeve, Draped Sleeve,
-                Puff Sleeve, Drawstring Puff Sleeve, Epaulet Sleeve, Balloon Sleeve, Batwing Sleeve, 
-                Circle Sleeve / Flutter Sleeve, Wing  Ruffle Sleeve, Kimono Sleeve, Over Sleeve, 
-                Hanging Sleeve, Elbow Patched Sleeve, Slashed Sleeve, Strapped Or Banded Sleeve, 
-                Tailored Sleeve, Cape Sleeve, Mahoitres Sleeve, Gibson Girl Sleeve, Poet  Sleeve,
-                Melon Sleeve, Gauntlet Sleeve (Pointed), Cold-shouldered Sleeve]
+                Puff Sleeve, Drawstring Puff Sleeve, Epaulet Sleeve, Balloon Sleeve, 
+                Batwing Sleeve, Circle Sleeve / Flutter Sleeve, Wing  Ruffle Sleeve, 
+                Kimono Sleeve, Over Sleeve, Hanging Sleeve, Elbow Patched Sleeve, 
+                Slashed Sleeve, Strapped Or Banded Sleeve, Tailored Sleeve, Cape Sleeve, 
+                Mahoitres Sleeve, Gibson Girl Sleeve, Poet  Sleeve, Melon Sleeve, 
+                Gauntlet Sleeve (Pointed), Cold-shouldered Sleeve]
 
 
         collar:
@@ -668,8 +668,7 @@ personal-characteristics: # and preferences, info are non-obligatory, in general
         type:
         all-types:
     customer-comments-review: # this field is used to store customers review on products, it may or maynot be available
-    
-             
+                
     
 care: 
     washing:
@@ -728,9 +727,21 @@ care:
     dry-cleaning: # Professional Textile Care Symbols
         type:
         all-types:
-            - Dry-clean, normal cycle. Any solvent except trichloroethylene
-            - Dry-clean, normal cycle. Petroleum solvent only
-            - Do not dry-clean
+            - A Dry-cleaning in all solvents normally used for dry-cleaning - this includes all solvents listed for the symbol P, plus trichloroethylene and 1,1, 1-trichloroethane
+            - F Dry-cleaning in trifluorotrichloroethane, white spirit (distillation temperature between 150°C and 210°C, flash point 38°C to 60°C) Normal cleansing procedures without restrictions
+            - P Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Normal cleansing procedures without restrictions
+            - F_US Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Strict limitations on the addition of water and / or mechanical action and / or temperature during cleaning and / or drying. No self-service cleaning allowed
+            - P_US Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Strict limitations on the addition of water and / or mechanical action and / or temperature during cleaning and / or drying. No self-service cleaning allowed
+            - C_CROSS Do not dry-clean. No stain removal with solvents
+            - D_ Do not dry-clean
+            # Description
+            # F_US= F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en
+            # P_US, same as Fbar but with a P
+            # C_CROSS: a crossed circle, see symbol in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en
+            # - Dry-clean, normal cycle. Any solvent except trichloroethylene
+            # - Dry-clean, normal cycle. Petroleum solvent only
+            
+    
     supplementary-care:
         type:
         all-types:            
@@ -749,43 +760,6 @@ care:
             - 1 dots (30°C Cool)
                     
 
-
-# YAML tags and Python types, and more in https://pyyaml.org/wiki/PyYAMLDocumentation
-# The following table describes how nodes with different tags are converted to Python objects.
-
-# YAML tag	Python type
-# Standard YAML tags	
-# !!null	None
-# !!bool	bool
-# !!int	int or long (int in Python 3)
-# !!float	float
-# !!binary	str (bytes in Python 3)
-# !!timestamp	datetime.datetime
-# !!omap, !!pairs	list of pairs
-# !!set	set
-# !!str	str or unicode (str in Python 3)
-# !!seq	list
-# !!map	dict
-# Python-specific tags	
-# !!python/none	None
-# !!python/bool	bool
-# !!python/bytes	(bytes in Python 3)
-# !!python/str	str (str in Python 3)
-# !!python/unicode	unicode (str in Python 3)
-# !!python/int	int
-# !!python/long	long (int in Python 3)
-# !!python/float	float
-# !!python/complex	complex
-# !!python/list	list
-# !!python/tuple	tuple
-# !!python/dict	dict
-# Complex Python tags	
-# !!python/name:module.name	module.name
-# !!python/module:package.module	package.module
-# !!python/object:module.cls	module.cls instance
-# !!python/object/new:module.cls	module.cls instance
-# !!python/object/apply:module.f	value of f(...)
-    
 
 
 
