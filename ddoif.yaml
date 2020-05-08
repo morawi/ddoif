@@ -20,7 +20,10 @@
 # 'all-types' contains all the possible item classes
 # 'comment' may contain some comments about the names, classes, for example, ambiguity.
 #
-# 
+# Some times the item has sub-items. Future realeases should have more sub-items.
+# For now, we'll keep it simple,in general.
+#
+#
 #      GENERAL COMMENTS
 # KEYS: 
 # 1. The hyphen is needed to be able to convert the yaml to xml, and then, backward xml to yaml
@@ -37,7 +40,7 @@
 
 
 
-version: 0.1
+'__version__': 0.1
 info:
     date-created: dd-month-yyyy 
     manufacturer: 
@@ -50,7 +53,7 @@ info:
     city:    
     comment: >
         date-example 01-September-2019
-        barcode-url (qr-code-url) is a link to the the image of the image with the code, 
+        barcode-url (qr-code-url) is a link to an image of the code, 
 clothing: 
     jacket:
         type:
@@ -58,10 +61,10 @@ clothing:
             [Blazer Jacket, Suit Jacket, Sport Jacket,
             Bomber Jacket, Long Bomber Jacket, Biker Jacket, Trucker Jacket, 
             Denim Jacket, Track Jacket, Blouson Jacket, Hooded Jacket, Shearling Jacket, 
-            Anorak Jacket, Quilted Jacket, Puffer (Down) Jacket, 
+            Anorak Jacket, Quilted Jacket, Puffer /Down Jacket, 
             Barbour Beaufort Jacket, Barbour Bedale Jacket, 
-            Barbour Ashby Jacket, Drawstring Jacket, Cropped Jacket, 
-            Overcoat, Parka, Pea Coat, Trench Coat, Raincoat, Crombie Coat, 
+            Barbour Ashby Jacket, Drawstring Jacket, Cropped Jacket, Parka Jacket,
+            Overcoat, Pea Coat, Trench Coat, Raincoat, Crombie Coat, 
             Tuxedo Suit, Pantsuits]
     comment: >
             
@@ -139,8 +142,6 @@ clothing:
             - Tiered Gown
             - Panel Gown
         comment: >
-
-
         
     
     womens-short:    # Name confusion/conflict: Ladies vs Womens
@@ -208,7 +209,7 @@ clothing:
             Dress Shirt, Epaulette Shirt, Flannel / Lumberjack Shirt, Granddad Shirt, 
             Golf Shirt, Henley Shirt, Ivy league Shirt, Oxford Shirt, Jersey Shirt, 
             Night Shirt, Western Shirt, Polo Shirt, SweatShirt, Tunic Shirt, 
-            Tuxedo / Formal Shirt, UnderShirt]
+            Tuxedo / Formal Shirt]
         comment: >
     
     mens-tshirt: 
@@ -219,7 +220,7 @@ clothing:
             Henley Collar T-Shirt, Baseball T-Shirt, Raglan / Long Sleeve  T-Shirt, 
             Turtle Neck T-Shirt, Ringer T-Shirt, Cap Sleeve T-Shirt, Half (Singlet) T-Shirt, 
             Muscle T-Shirt , Half Muscle T-Shirt, Longline T-Shirt, Pocket T-Shirt, 
-            Baby Doll T-Shirt, Wide Neck off Shoulder T-Shirt, Yoke Neck T-Shirt]
+            Baby Doll T-Shirt, Wide Neck off Shoulder T-Shirt, Yoke Neck T-Shirt, UnderShirt]
         comment: >
 
     anatomy:
@@ -334,7 +335,7 @@ footwear: # footwear is also considered clothing in the literature, but we are s
             comment: >
                 left blank                   
 
-accessories:
+accessory:
     hat:
         type:
         all_types:
@@ -581,6 +582,24 @@ accessories:
 
     sunglasses:
         type:
+            - Aviator / Pilot
+            - Cat Eye
+            - Oval
+            - Semi-Rimless
+            - Shield
+            - Wayfarer
+            - Butterfly
+            - Clubmaster
+            - Rectangle
+            - Round
+            - Square
+            - Oversize
+            - Hexagonal
+            - Embellished
+            - Sporty
+            - Tiny
+            - Flip-Up
+            - Wrap Around
         all-types:
         comment: >
         
@@ -650,7 +669,7 @@ material:
         - Qiviut 
         - Vicuna 
         - Llama 
-        - Cashgora)
+        - Cashgora
         - Linen / Flax
         - Cotton
         - Jute
@@ -690,8 +709,8 @@ post-processing-of-garments:
         
         
 
-images:
-    number: Val # TYPE INT; number of images, 3 here for example 
+image:
+    len: 3 # TYPE INT; number of images, 3 here for example 
     urls:
         url1: 
         url2: 
@@ -725,16 +744,27 @@ images:
             - Professional-shooting
             - Personal-shooting
             
-captions: # unlimited number of captions, normally a few of them
-    - Blah blha blah
-    - To be or not to be
+annotation: # unlimited number of captions, normally a few of them
+    caption:
+        - Blah blha blah
+        - To be or not to be        
+    bounding-box:
+    mask:
+    '3D-mesh':
+    
+    
     
     
 sustainability:
-    recycled-material: Y # options: Y(Yes) / N(No)
-    sustainability-grade: 8 # a measure from 1 to 10 (10 being best)
+    recycled-material: Y 
+    sustainability-grade: 8 #
+    organic:
+    slow-fashion: true 
+    fast-fashion: false
     other:
     comment: > 
+        recycled-material;  Y(Yes) / N(No). 
+        sustainability-grade;  a measure from 1 to 10 (10 being best)
     
 
 personal-characteristics: # and preferences, info are non-obligatory, in general and abide to GDPR

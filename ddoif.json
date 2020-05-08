@@ -1,5 +1,5 @@
 {
- "version": 0.1,
+ "__version__": 0.1,
  "info": {
   "date-created": "dd-month-yyyy",
   "manufacturer": null,
@@ -10,7 +10,7 @@
   "description": null,
   "country": null,
   "city": null,
-  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to the the image of the image with the code, \n"
+  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code, \n"
  },
  "clothing": {
   "jacket": {
@@ -30,14 +30,14 @@
     "Shearling Jacket",
     "Anorak Jacket",
     "Quilted Jacket",
-    "Puffer (Down) Jacket",
+    "Puffer /Down Jacket",
     "Barbour Beaufort Jacket",
     "Barbour Bedale Jacket",
     "Barbour Ashby Jacket",
     "Drawstring Jacket",
     "Cropped Jacket",
+    "Parka Jacket",
     "Overcoat",
-    "Parka",
     "Pea Coat",
     "Trench Coat",
     "Raincoat",
@@ -389,8 +389,7 @@
     "Polo Shirt",
     "SweatShirt",
     "Tunic Shirt",
-    "Tuxedo / Formal Shirt",
-    "UnderShirt"
+    "Tuxedo / Formal Shirt"
    ],
    "comment": ""
   },
@@ -415,7 +414,8 @@
     "Pocket T-Shirt",
     "Baby Doll T-Shirt",
     "Wide Neck off Shoulder T-Shirt",
-    "Yoke Neck T-Shirt"
+    "Yoke Neck T-Shirt",
+    "UnderShirt"
    ],
    "comment": ""
   },
@@ -702,7 +702,7 @@
    }
   }
  },
- "accessories": {
+ "accessory": {
   "hat": {
    "type": null,
    "all_types": [
@@ -953,7 +953,26 @@
    "comment": ""
   },
   "sunglasses": {
-   "type": null,
+   "type": [
+    "Aviator / Pilot",
+    "Cat Eye",
+    "Oval",
+    "Semi-Rimless",
+    "Shield",
+    "Wayfarer",
+    "Butterfly",
+    "Clubmaster",
+    "Rectangle",
+    "Round",
+    "Square",
+    "Oversize",
+    "Hexagonal",
+    "Embellished",
+    "Sporty",
+    "Tiny",
+    "Flip-Up",
+    "Wrap Around"
+   ],
    "all-types": null,
    "comment": ""
   },
@@ -1029,7 +1048,7 @@
    "Qiviut",
    "Vicuna",
    "Llama",
-   "Cashgora)",
+   "Cashgora",
    "Linen / Flax",
    "Cotton",
    "Jute",
@@ -1063,8 +1082,8 @@
   "all-types": null,
   "comment": "This is a description of the post processing comes here,  like how the Denim is bleached and processed It mainly does not follow a starndard. Therefore, 'all-types' can be left empty.\n"
  },
- "images": {
-  "number": "Val",
+ "image": {
+  "len": 3,
   "urls": {
    "url1": null,
    "url2": null,
@@ -1106,15 +1125,23 @@
    ]
   }
  },
- "captions": [
-  "Blah blha blah",
-  "To be or not to be"
- ],
+ "annotation": {
+  "caption": [
+   "Blah blha blah",
+   "To be or not to be"
+  ],
+  "bounding-box": null,
+  "mask": null,
+  "3D-mesh": null
+ },
  "sustainability": {
   "recycled-material": "Y",
   "sustainability-grade": 8,
+  "organic": null,
+  "slow-fashion": true,
+  "fast-fashion": false,
   "other": null,
-  "comment": ""
+  "comment": "recycled-material;  Y(Yes) / N(No).  sustainability-grade;  a measure from 1 to 10 (10 being best)\n"
  },
  "personal-characteristics": {
   "age": null,
