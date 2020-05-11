@@ -25,11 +25,3 @@ https://github.com/adrienverge/yamllint
 
 
 
-
-
-
-print(ddoif_dict['ddoif']['clothing']['skirt']['type'])
-x= ddoif_dict
-
-
-
