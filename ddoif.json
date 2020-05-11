@@ -724,7 +724,7 @@
     "Skully Hat",
     "Sombrero",
     "Straw Hat",
-    "Top Hat / Topper Hat / Cylinder Hat",
+    "Top / Topper / Cylinder Hat",
     "Trapper Hat",
     "Bora Bora Booney II  Hat",
     "Fascinator",
@@ -1080,7 +1080,18 @@
  },
  "post-processing-of-garments": {
   "type": null,
-  "all-types": "-bleach - wrinkle - pleat - shred - rip - strech",
+  "all-types": [
+   "Bleach",
+   "Wrinkle",
+   "Pleat",
+   "Shred",
+   "Rip",
+   "Strech",
+   "Rinse",
+   "Wash",
+   "Tin",
+   "Coat"
+  ],
   "comment": "This is a description of the post processing comes here,  like how the Denim is bleached and processed It mainly does not follow a starndard. Therefore, 'all-types' can be left empty.\n"
  },
  "image": {
