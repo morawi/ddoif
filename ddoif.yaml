@@ -710,6 +710,12 @@ material:
 post-processing-of-garments:
     type: 
     all-types: 
+        -bleach
+        - wrinkle
+        - pleat
+        - shred
+        - rip
+        - strech
     comment: > 
         This is a description of the post processing comes here, 
         like how the Denim is bleached and processed
