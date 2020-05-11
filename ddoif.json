@@ -1021,7 +1021,6 @@
   "type": null,
   "all-types": [
    "Denim",
-   "Cord",
    "Jersey",
    "Ribbed",
    "Softshell",
@@ -1030,10 +1029,12 @@
    "Fleece",
    "Chiffon",
    "Blends",
+   "Cord",
    "Corduroy",
+   "Needlecord",
    "Cotton and Polyester Blends"
   ],
-  "comment": ""
+  "comment": "Cord vs  Corduroy, are they the same?\n"
  },
  "material": {
   "type": null,
