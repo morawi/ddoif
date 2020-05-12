@@ -29,6 +29,7 @@
 # 1. The hyphen is needed to be able to convert the yaml to xml, and then, backward xml to yaml
 # 2. All keys are in lower case letters
 # 3. Initials of entry names are capitalized
+# 4. Double quotation marks "" are used to mare text if needed, example, "O'Reilly"
 #
 #
 # 
@@ -100,7 +101,7 @@ clothing:
             Draped / Sarong-Draped Skirt, Layered Skirt, Gored Skirt, Godet Skirt, 
             Trumpet Skirt, Wrap Skirt, Divided Skirt, 
             Pleated Skirt, Asymmetrical Hem Skirt, Bubble Skirt, Yoke Skirt, Tulip Skirt, 
-            Tiered (Gypsy) Skirt, Accordion Skirt, 
+            Tiered / Gypsy Skirt, Accordion Skirt, 
             Asymmetrical Skirt, Bell Shaped Skirt, Bustled Skirt, Button Skirt, Up Skirt, 
             Broomstick Skirt, Circular / Circle Skirt, 
             Cowl Skirt, Culottes Skirt, Denim Skirt, Fix Box Skirt, Flared Skirt, 
@@ -305,7 +306,7 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Brogue Shoe, Clog, Court Shoe, Derby Shoe, Gladiator Shoe,  
                 High-Top Shoe, Loafer, Mary Janes Shoe, Moccasin, Monk Shoe, Motorcycle Shoe, Oxford Shoe, 
                 Peep-Toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
-                Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats, D’Orsay Shoe, 
+                Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats, "D’Orsay Shoe", 
                 Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers]
                 
             comment: >
@@ -314,17 +315,17 @@ footwear: # footwear is also considered clothing in the literature, but we are s
         sandal:
             type:
             all-types:
-                [Wood Sandals, Tatami Sandals, Leather Sandals, Rope Sandals, 
-                Metallic Sandals, Wedge Women Sandals, Flat Sandals, Rubber Sandals]
+                [Wood Sandal, Tatami Sandal, Leather Sandal, Rope Sandal, 
+                Metallic Sandal, Wedge Sandal, Flat Sandal, Rubber Sandal]
             comment: >
             
             
         boot:
             type:
             all-types:
-                [Wellington Boots, Leather And Knit Booties Platform Shoe, 
-                Platform Boot, Chelsea Boots, Chukka Boots, Crotch-High Boots, 
-                Paddock Boots, Rain Boots, Riding Boots, Slouchy Boots, Cowboy Boots, 
+                [Wellington Boot, Platform Ankle Boot, 
+                Platform Boot, Chelsea Boot, Chukka Boot, Crotch-High Boot, 
+                Paddock Boot, Rain Boot, Riding Boot, Slouchy Boot, Cowboy Boot, 
                 Gumboots, Go-Go Boot]
             comment: >
             
@@ -349,10 +350,9 @@ accessory:
             - Baseball Cap
             - Beanie
             - Beret
-            - Boater
-            - Bonnet
-            - Bucket
-            - Cloche
+            - Bonnet Hat
+            - Bucket Hat
+            - Cloche Hat
             - Cowboy Hat
             - Deerstalker
             - Derby Hat
@@ -374,10 +374,8 @@ accessory:
             - Bowler Hat
             - Snapback Hat
             - Dad Hat
-            - Flat Cap
-            - Boater Hat
-            - Pork Pie Hat
-            - Top Hat
+            - Flat Cap            
+            - Pork Pie Hat            
             - Chullo Hat For Men
             - Ascot Cap 
             - Royal Ascot Hat
@@ -637,10 +635,12 @@ color:
 pattern:
     type:  # for example, stribes
     all-types: # this can by dynamic
-        - Horizental Stribes
-        - Vertical Stribes 
+        - Horizental Stripes
+        - Vertical Stripes 
         - Circles
         - Flowers
+        - Hawaiian
+        - Grid
     comment: > 
         More patterns need to be added
 
@@ -688,7 +688,7 @@ material:
         - Fur 
         - Fake / Imitation / Faux / Snthetic / Artificial  Fur
         - Fake / Imitation / Faux / Snthetic / Artificial Leather 
-        - Polymers (polyester, teflon etc.) # we have to add them separately
+        - Polymers (polyester, teflon, etc.) # we have to add them separately
         - Asbestos
         - Glass fibre
         - Ryon / Artificial-Silk # (made of bamboo plant), also called artificial silk
