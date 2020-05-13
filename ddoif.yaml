@@ -57,7 +57,25 @@ info:
         barcode-url (qr-code-url) is a link to an image of the code, 
 
 
-clothing: 
+clothing:
+    seatshirt:
+        type:
+        all-types:
+        
+    hoodie:
+        type:
+        all-types:
+            - Baja Hoodie
+            - Black Hoodie
+            - Designer Hoodie
+            - Fur Hoodie
+            - Over-the-Head Hoodie
+            - Polo Hoodie
+            - Skate Hoodie
+            - Skull Hoodie
+            - Slim-Fit Hoodie
+            - Zip-Up Hoodie
+
     sweater: 
         type:
         all-types:        
@@ -329,9 +347,10 @@ footwear: # footwear is also considered clothing in the literature, but we are s
             all-types:
                 [Athletic Shoe, Ballet Shoe, Boat Shoe, Bootie Shoe, Boyfriend Shoe, 
                 Brogue Shoe, Clog, Court Shoe, Derby Shoe, Gladiator Shoe,  
-                High-Top Shoe, Loafer, Mary Janes Shoe, Moccasin, Monk Shoe, Motorcycle Shoe, Oxford Shoe, 
+                High-Top Shoe, Loafer Shoe, Mary Janes Shoe, Moccasin, Monk Shoe,
+                Motorcycle Shoe, Oxford Shoe, "D’Orsay Shoe",
                 Peep-Toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
-                Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats, "D’Orsay Shoe", 
+                Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats,  
                 Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers]
                 
             comment: >
@@ -632,6 +651,7 @@ accessory:
             - Wrap Around
         all-types:
         comment: >
+            can beb called eyewear
         
         
     jewellery:
@@ -650,6 +670,25 @@ accessory:
         type:
         all-types:
         comment: >
+            
+    tie:
+        type:
+        all-types:
+        - Apron Necktie
+        - Ascot Tie
+        - Bowtie
+        - Bolo/Bola Tie
+        - Cravat Necktie
+        - Sailor Tie
+        - String Tie
+        - Seven-Fold Tie
+        - Clip-on Tie
+        - Kipper Tie
+        - Skinny Tie
+        - Up Cycle Fashion Neckwear
+        - Neckerchief
+        comment: >
+    
     
     umbrella:
         type:
@@ -657,9 +696,6 @@ accessory:
         comment: >
    
     
-    
-    
-        
            
                        
 color: 
@@ -767,11 +803,9 @@ post-processing-of-garments:
         - Tin
         - Coat
     comment: > 
-        This is a description of the post processing comes here, 
+        This is a description of the post processing, 
         like how the Denim is bleached and processed
-        It mainly does not follow a starndard.
-        Therefore, 'all-types' can be left empty.
-        
+               
         
 
 image:

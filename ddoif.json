@@ -13,6 +13,25 @@
   "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code, \n"
  },
  "clothing": {
+  "seatshirt": {
+   "type": null,
+   "all-types": null
+  },
+  "hoodie": {
+   "type": null,
+   "all-types": [
+    "Baja Hoodie",
+    "Black Hoodie",
+    "Designer Hoodie",
+    "Fur Hoodie",
+    "Over-the-Head Hoodie",
+    "Polo Hoodie",
+    "Skate Hoodie",
+    "Skull Hoodie",
+    "Slim-Fit Hoodie",
+    "Zip-Up Hoodie"
+   ]
+  },
   "sweater": {
    "type": null,
    "all-types": [
@@ -629,12 +648,13 @@
      "Derby Shoe",
      "Gladiator Shoe",
      "High-Top Shoe",
-     "Loafer",
+     "Loafer Shoe",
      "Mary Janes Shoe",
      "Moccasin",
      "Monk Shoe",
      "Motorcycle Shoe",
      "Oxford Shoe",
+     "D\u00e2\u20ac\u2122Orsay Shoe",
      "Peep-Toe Shoe",
      "Platform Shoe",
      "Pointe Shoe",
@@ -645,7 +665,6 @@
      "Sport Shoe",
      "Toe Shoe",
      "Ballet Flats",
-     "D\u00e2\u20ac\u2122Orsay Shoe",
      "Espadrille Shoe",
      "Flip-flops",
      "Mules",
@@ -994,7 +1013,7 @@
     "Wrap Around"
    ],
    "all-types": null,
-   "comment": ""
+   "comment": "can beb called eyewear\n"
   },
   "jewellery": {
    "type": null,
@@ -1010,6 +1029,25 @@
   "scarf": {
    "type": null,
    "all-types": null,
+   "comment": ""
+  },
+  "tie": {
+   "type": null,
+   "all-types": [
+    "Apron Necktie",
+    "Ascot Tie",
+    "Bowtie",
+    "Bolo/Bola Tie",
+    "Cravat Necktie",
+    "Sailor Tie",
+    "String Tie",
+    "Seven-Fold Tie",
+    "Clip-on Tie",
+    "Kipper Tie",
+    "Skinny Tie",
+    "Up Cycle Fashion Neckwear",
+    "Neckerchief"
+   ],
    "comment": ""
   },
   "umbrella": {
@@ -1130,7 +1168,7 @@
    "Tin",
    "Coat"
   ],
-  "comment": "This is a description of the post processing comes here,  like how the Denim is bleached and processed It mainly does not follow a starndard. Therefore, 'all-types' can be left empty.\n"
+  "comment": "This is a description of the post processing,  like how the Denim is bleached and processed\n       \n"
  },
  "image": {
   "len": 3,
