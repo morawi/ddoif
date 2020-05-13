@@ -13,6 +13,29 @@
   "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code, \n"
  },
  "clothing": {
+  "sweater": {
+   "type": null,
+   "all-types": [
+    "Boyfriend Sweater",
+    "Cardigan Sweater",
+    "Crew Neck Sweater",
+    "Grandpa Sweater",
+    "Half-Zip Sweater",
+    "Mock Turtleneck Sweater",
+    "Raglan Sleeve Sweater",
+    "Roll Neck Sweater",
+    "Set-in Sleeve Sweater",
+    "Shawl Collar Sweater",
+    "Sweater Vest",
+    "Turtleneck Sweater"
+   ],
+   "comment": "also known as jumper\n"
+  },
+  "blouse": {
+   "type": null,
+   "all-types": null,
+   "comment": "womens upper garment resembling a shirt, typically with a collar, buttons, and sleeves.\n"
+  },
   "jacket": {
    "type": null,
    "all-types": [
@@ -978,6 +1001,21 @@
    "description": null,
    "all-types": null,
    "comment": ""
+  },
+  "braces": {
+   "type": null,
+   "all-types": null,
+   "comment": "also known as suspenders\n"
+  },
+  "scarf": {
+   "type": null,
+   "all-types": null,
+   "comment": ""
+  },
+  "umbrella": {
+   "type": null,
+   "all-types": null,
+   "comment": ""
   }
  },
  "color": {
@@ -1012,7 +1050,8 @@
    "Circles",
    "Flowers",
    "Hawaiian",
-   "Grid"
+   "Grid",
+   "Pailletteness"
   ],
   "comment": "More patterns need to be added\n\n    \n"
  },

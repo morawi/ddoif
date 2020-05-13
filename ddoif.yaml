@@ -55,7 +55,32 @@ info:
     comment: >
         date-example 01-September-2019
         barcode-url (qr-code-url) is a link to an image of the code, 
+
+
 clothing: 
+    sweater: 
+        type:
+        all-types:        
+            - Boyfriend Sweater
+            - Cardigan Sweater
+            - Crew Neck Sweater
+            - Grandpa Sweater
+            - Half-Zip Sweater
+            - Mock Turtleneck Sweater
+            - Raglan Sleeve Sweater
+            - Roll Neck Sweater
+            - Set-in Sleeve Sweater
+            - Shawl Collar Sweater
+            - Sweater Vest
+            - Turtleneck Sweater
+        comment: >
+            also known as jumper
+    
+    blouse:
+        type:
+        all-types:
+        comment: >
+            womens upper garment resembling a shirt, typically with a collar, buttons, and sleeves.
     jacket:
         type:
         all-types:
@@ -614,6 +639,26 @@ accessory:
         description: # description of color material and design
         all-types:
         comment: >
+    
+    braces: 
+        type:
+        all-types:
+        comment: >
+            also known as suspenders
+            
+    scarf:
+        type:
+        all-types:
+        comment: >
+    
+    umbrella:
+        type:
+        all-types:
+        comment: >
+   
+    
+    
+    
         
            
                        
@@ -641,6 +686,7 @@ pattern:
         - Flowers
         - Hawaiian
         - Grid
+        - Pailletteness
     comment: > 
         More patterns need to be added
 
