@@ -20,7 +20,7 @@
 # 'all-types' contains all the possible item classes
 # 'comment' may contain some comments about the names, classes, for example, ambiguity.
 #
-# Some times the item has sub-items. Future realeases should have more sub-items.
+# Some times the item has sub-items. Future releases should have more sub-items.
 # For now, we'll keep it simple,in general.
 #
 #
@@ -160,11 +160,11 @@ clothing:
         type:
         all-types: # this arrangement can be used instead of the above used for skirt
             [Shift Dress, A-line (Aline) Dress, Tent Dress, Yoke Dress, 
-            Empire line Dress, Dirndl Dress, Sheath Dress, Low or drop waist Dress, 
+            Empire line Dress, Dirndl Dress, Sheath Dress, Low / Drop waist Dress, 
             Tunic Dress, Princess seam Dress, Blouson Dress, Shirt waist Dress, 
             Wrap around Dress, Peasant Dress, Baby doll Dress, Bodycon Dress, Cocktail Dress, 
-            Debutante Dress, Skater Dress, Camisole Dress, Pinafore Dress / Jumber Dress, Granny Dress, 
-            Harem Dress, Trumpet Dress / Mermaid Dress, Maxi Dress, Apron Dress, 
+            Debutante Dress, Skater Dress, Camisole Dress, Pinafore / Jumber Dress, Granny Dress, 
+            Harem Dress, Trumpet / Mermaid Dress, Maxi Dress, Apron Dress, 
             Sweater Dress, Swing Dress, Tutu Dress, Sun Dress, Little Black Dress, 
             Coat Dress, Corset Dress, Balloon Dress , Bouffant Dress, Fit and flare Dress, 
             Handkerchief hem Dress, Gathered Dress, Kaftan Dress, Pillowcase Dress, Slip Dress, 
@@ -176,6 +176,8 @@ clothing:
             Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
             Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress]
         comment: >
+            Sling Dress, not sure if this one falls under the category of one of the above!
+            Same goes to Vest Dress
             
     gown:
         type:
@@ -345,7 +347,8 @@ clothing:
                 "Jacket's" vent
         keypoints:
             type:
-            all-types:
+                [Neckline Left, Neckline Right, Armpit Left]                    
+            all-types:                
                 - Neckline Left
                 - Neckline Right
                 - Center Front
@@ -371,7 +374,7 @@ clothing:
                 - Bottom Right In
                 - Bottom Right Out
             comment: >
-                Eacy type is a selection of different values ...
+                Eacy type is a selection of different values ... it is in fact can be stored as a binary vector
                                     Keypoints\Category	Blouse	Outwear	Trousers	Skirt	Dress
                                      Neckline Left	    Y	Y	N	N	Y
                                      Neckline Right	    Y	Y	N	N	Y

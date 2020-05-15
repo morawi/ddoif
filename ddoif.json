@@ -258,7 +258,7 @@
     "Handkerchief Hem Dress",
     "Bandage Dress"
    ],
-   "comment": ""
+   "comment": "Sling Dress, not sure if this one falls under the category of one of the above!\n"
   },
   "gown": {
    "type": null,
@@ -639,7 +639,11 @@
     "comment": "\"Jacket's\" vent\n"
    },
    "keypoints": {
-    "type": null,
+    "type": [
+     "Neckline Left",
+     "Neckline Right",
+     "Armpit Left"
+    ],
     "all-types": [
      "Neckline Left",
      "Neckline Right",
@@ -666,7 +670,7 @@
      "Bottom Right In",
      "Bottom Right Out"
     ],
-    "comment": "Eacy type is a selection of different values ...\n                    Keypoints\\Category\tBlouse\tOutwear\tTrousers\tSkirt\tDress\n                     Neckline Left\tY\tY\tN\tN\tY\n                     Neckline Right\tY\tY\tN\tN\tY\n                     Center Front\tY\tN\tN\tN\tY\n                     Shoulder Left\tY\tY\tN\tN\tY\n                     Shoulder Right\tY\tY\tN\tN\tY\n                     Armpit Left\tY\tY\tN\tN\tY\n                     Armpit Right\tY\tY\tN\tN\tY\n                     Waistline Left\tN\tY\tN\tN\tY\n                     Waistline Right\tN\tY\tN\tN\tY\n                     Cuff Left In\tY\tY\tN\tN\tY\n                     Cuff Left Out\tY\tY\tN\tN\tY\n                     Cuff Right In\tY\tY\tN\tN\tY\n                     Cuff Right Out\tY\tY\tN\tN\tY\n                     Top Hem Left\tY\tY\tN\tN\tN\n                     Top Hem Right\tY\tY\tN\tN\tN\n                     Waistband Left\tN\tN\tY\tY\tN\n                     Waistband Right\tN\tN\tY\tY\tN\n                     Hemline Left\tN\tN\tN\tY\tY\n                     Hemline Right\tN\tN\tN\tY\tY\n                     Crotch\t        N\tN\tY\tN\tN\n                     Bottom Left In\tN\tN\tY\tN\tN\n                     Bottom Left Out\tN\tN\tY\tN\tN\n                     Bottom Right In\tN\tN\tY\tN\tN\n                     Bottom Right Out\tN\tN\tY\tN\tN\n                \n"
+    "comment": "Eacy type is a selection of different values ... it is in fact can be stored as a binary vector\n                    Keypoints\\Category\tBlouse\tOutwear\tTrousers\tSkirt\tDress\n                     Neckline Left\t    Y\tY\tN\tN\tY\n                     Neckline Right\t    Y\tY\tN\tN\tY\n                     Center Front\t    Y\tN\tN\tN\tY\n                     Shoulder Left\t    Y\tY\tN\tN\tY\n                     Shoulder Right\t    Y\tY\tN\tN\tY\n                     Armpit Left\t    Y\tY\tN\tN\tY\n                     Armpit Right\t    Y\tY\tN\tN\tY\n                     Waistline Left\t    N\tY\tN\tN\tY\n                     Waistline Right\tN\tY\tN\tN\tY\n                     Cuff Left In\t    Y\tY\tN\tN\tY\n                     Cuff Left Out\t    Y\tY\tN\tN\tY\n                     Cuff Right In\t    Y\tY\tN\tN\tY\n                     Cuff Right Out\t    Y\tY\tN\tN\tY\n                     Top Hem Left\t    Y\tY\tN\tN\tN\n                     Top Hem Right\t    Y\tY\tN\tN\tN\n                     Waistband Left\t    N\tN\tY\tY\tN\n                     Waistband Right\tN\tN\tY\tY\tN\n                     Hemline Left\t    N\tN\tN\tY\tY\n                     Hemline Right\t    N\tN\tN\tY\tY\n                     Crotch\t            N\tN\tY\tN\tN\n                     Bottom Left In\t    N\tN\tY\tN\tN\n                     Bottom Left Out\tN\tN\tY\tN\tN\n                     Bottom Right In\tN\tN\tY\tN\tN\n                     Bottom Right Out\tN\tN\tY\tN\tN\n                \n"
    }
   }
  },
