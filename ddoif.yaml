@@ -335,6 +335,11 @@ clothing:
                 Lace Collar, Chinese V-Neck Collar, Graphic Collar, Notch Collar, 
                 Notch Shawl Collar, Flip Collar]
             comment: >
+        vent:
+            type:
+            all-types:
+            comment: > "Jacket's" vent
+            
                 
                 
                 
@@ -789,7 +794,7 @@ material:
     comment: > 
       
     
-post-processing-of-garments:
+post-processing-of-garments: 
     type: 
     all-types: 
         - Bleach
@@ -802,9 +807,13 @@ post-processing-of-garments:
         - Wash
         - Tin
         - Coat
+        - Hole
+        - Extra Pocket
+        - Ripped
     comment: > 
         This is a description of the post processing, 
-        like how the Denim is bleached and processed
+        like how the Denim is bleached and processed.
+        It can also be used for decoration, like, Ripped Jeans
                
         
 

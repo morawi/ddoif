@@ -1166,9 +1166,12 @@
    "Rinse",
    "Wash",
    "Tin",
-   "Coat"
+   "Coat",
+   "Hole",
+   "Extra Pocket",
+   "Ripped"
   ],
-  "comment": "This is a description of the post processing,  like how the Denim is bleached and processed\n       \n"
+  "comment": "This is a description of the post processing,  like how the Denim is bleached and processed. It can also be used for decoration, like, Ripped Jeans\n       \n"
  },
  "image": {
   "len": 3,
