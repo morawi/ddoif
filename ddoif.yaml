@@ -338,8 +338,68 @@ clothing:
         vent:
             type:
             all-types:
-            comment: > "Jacket's" vent
-            
+                - Centre Vent
+                - Side Vent
+                - No Vent
+            comment: > 
+                "Jacket's" vent
+        keypoints:
+            type:
+            all-types:
+                - Neckline Left
+                - Neckline Right
+                - Center Front
+                - Shoulder Left
+                - Shoulder Right
+                - Armpit Left
+                - Armpit Right
+                - Waistline Left
+                - Waistline Right
+                - Cuff Left In
+                - Cuff Left Out
+                - Cuff Right In
+                - Cuff Right Out
+                - Top Hem Left
+                - Top Hem Right
+                - Waistband Left
+                - Waistband Right
+                - Hemline Left
+                - Hemline Right
+                - Crotch
+                - Bottom Left In
+                - Bottom Left Out
+                - Bottom Right In
+                - Bottom Right Out
+            comment: >
+                Eacy type is a selection of different values ...
+                                    Keypoints\Category	Blouse	Outwear	Trousers	Skirt	Dress
+                                     Neckline Left	    Y	Y	N	N	Y
+                                     Neckline Right	    Y	Y	N	N	Y
+                                     Center Front	    Y	N	N	N	Y
+                                     Shoulder Left	    Y	Y	N	N	Y
+                                     Shoulder Right	    Y	Y	N	N	Y
+                                     Armpit Left	    Y	Y	N	N	Y
+                                     Armpit Right	    Y	Y	N	N	Y
+                                     Waistline Left	    N	Y	N	N	Y
+                                     Waistline Right	N	Y	N	N	Y
+                                     Cuff Left In	    Y	Y	N	N	Y
+                                     Cuff Left Out	    Y	Y	N	N	Y
+                                     Cuff Right In	    Y	Y	N	N	Y
+                                     Cuff Right Out	    Y	Y	N	N	Y
+                                     Top Hem Left	    Y	Y	N	N	N
+                                     Top Hem Right	    Y	Y	N	N	N
+                                     Waistband Left	    N	N	Y	Y	N
+                                     Waistband Right	N	N	Y	Y	N
+                                     Hemline Left	    N	N	N	Y	Y
+                                     Hemline Right	    N	N	N	Y	Y
+                                     Crotch	            N	N	Y	N	N
+                                     Bottom Left In	    N	N	Y	N	N
+                                     Bottom Left Out	N	N	Y	N	N
+                                     Bottom Right In	N	N	Y	N	N
+                                     Bottom Right Out	N	N	Y	N	N
+                                
+
+
                 
                 
                 

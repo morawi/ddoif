@@ -628,6 +628,45 @@
      "Flip Collar"
     ],
     "comment": ""
+   },
+   "vent": {
+    "type": null,
+    "all-types": [
+     "Centre Vent",
+     "Side Vent",
+     "No Vent"
+    ],
+    "comment": "\"Jacket's\" vent\n"
+   },
+   "keypoints": {
+    "type": null,
+    "all-types": [
+     "Neckline Left",
+     "Neckline Right",
+     "Center Front",
+     "Shoulder Left",
+     "Shoulder Right",
+     "Armpit Left",
+     "Armpit Right",
+     "Waistline Left",
+     "Waistline Right",
+     "Cuff Left In",
+     "Cuff Left Out",
+     "Cuff Right In",
+     "Cuff Right Out",
+     "Top Hem Left",
+     "Top Hem Right",
+     "Waistband Left",
+     "Waistband Right",
+     "Hemline Left",
+     "Hemline Right",
+     "Crotch",
+     "Bottom Left In",
+     "Bottom Left Out",
+     "Bottom Right In",
+     "Bottom Right Out"
+    ],
+    "comment": "Eacy type is a selection of different values ...\n                    Keypoints\\Category\tBlouse\tOutwear\tTrousers\tSkirt\tDress\n                     Neckline Left\tY\tY\tN\tN\tY\n                     Neckline Right\tY\tY\tN\tN\tY\n                     Center Front\tY\tN\tN\tN\tY\n                     Shoulder Left\tY\tY\tN\tN\tY\n                     Shoulder Right\tY\tY\tN\tN\tY\n                     Armpit Left\tY\tY\tN\tN\tY\n                     Armpit Right\tY\tY\tN\tN\tY\n                     Waistline Left\tN\tY\tN\tN\tY\n                     Waistline Right\tN\tY\tN\tN\tY\n                     Cuff Left In\tY\tY\tN\tN\tY\n                     Cuff Left Out\tY\tY\tN\tN\tY\n                     Cuff Right In\tY\tY\tN\tN\tY\n                     Cuff Right Out\tY\tY\tN\tN\tY\n                     Top Hem Left\tY\tY\tN\tN\tN\n                     Top Hem Right\tY\tY\tN\tN\tN\n                     Waistband Left\tN\tN\tY\tY\tN\n                     Waistband Right\tN\tN\tY\tY\tN\n                     Hemline Left\tN\tN\tN\tY\tY\n                     Hemline Right\tN\tN\tN\tY\tY\n                     Crotch\t        N\tN\tY\tN\tN\n                     Bottom Left In\tN\tN\tY\tN\tN\n                     Bottom Left Out\tN\tN\tY\tN\tN\n                     Bottom Right In\tN\tN\tY\tN\tN\n                     Bottom Right Out\tN\tN\tY\tN\tN\n                \n"
    }
   }
  },
