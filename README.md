@@ -9,3 +9,4 @@ Dependencies:
 - https://pypi.org/project/PyYAML/
 - https://pypi.org/project/ruamel.yaml/
 - https://pypi.org/project/dicttoxml/
+- https://pypi.org/project/opencv-python/
