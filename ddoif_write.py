@@ -5,37 +5,11 @@ Created on Wed May 20 12:41:11 2020
 @author: malrawi
 """
 
-#f you need to convert the dictionary to binary, you need to convert it to a string (JSON) as described in the previous answer, then you can convert it to binary.
-#
-#For example:
-#
+
 
 my_dict = {'key' : [1,2,3]}
 
 import json
-#def dict_to_binary(the_dict):
-#    str = json.dumps(the_dict)
-#    binary = ' '.join(format(ord(letter), 'b') for letter in str)
-#    return binary
-#
-#
-#def binary_to_dict(the_binary):
-#    jsn = ''.join(chr(int(x, 2)) for x in the_binary.split())
-#    d = json.loads(jsn)  
-#    return d
-#
-#bin = dict_to_binary(my_dict)
-#print (bin)
-#
-#dct = binary_to_dict(bin)
-#print( dct)
-
-#will give the output
-#
-#1111011 100010 1101011 100010 111010 100000 1011011 110001 101100 100000 110010 101100 100000 110011 1011101 1111101
-#
-#{u'key': [1, 2, 3]}
-
 
 def dict_to_binary(the_dict):
     dict_in_bytes = json.dumps(the_dict).encode('utf-8')
@@ -101,5 +75,32 @@ b'This   textample'
 remember new bytes over write previous bytes
 
 https://stackoverflow.com/questions/4388201/how-to-seek-and-append-to-a-binary-file-in-python
+
+'''
+
+'''
+
+def dict_to_binary(the_dict):
+    str = json.dumps(the_dict)
+    binary = ' '.join(format(ord(letter), 'b') for letter in str)
+    return binary
+
+
+def binary_to_dict(the_binary):
+    jsn = ''.join(chr(int(x, 2)) for x in the_binary.split())
+    d = json.loads(jsn)  
+    return d
+
+bin = dict_to_binary(my_dict)
+print (bin)
+
+dct = binary_to_dict(bin)
+print( dct)
+
+will give the output
+
+1111011 100010 1101011 100010 111010 100000 1011011 110001 101100 100000 110010 101100 100000 110011 1011101 1111101
+
+{u'key': [1, 2, 3]}
 
 '''
