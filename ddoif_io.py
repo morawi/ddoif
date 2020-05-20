@@ -3,13 +3,20 @@
 Created on Wed May 20 12:41:11 2020
 
 @author: malrawi
+
+
+
 """
 
 
 
-my_dict = {'key' : [1,2,3]}
 
+from ddoif_utils import read_yaml_as_dict
 import json
+
+import numpy as np
+import cv2
+
 
 def dict_to_binary(the_dict):
     dict_in_bytes = json.dumps(the_dict).encode('utf-8')
@@ -30,6 +37,9 @@ def ddoif_write(dict_in_bytes, out_f='ATest.ddof'):
         file.write(rserved_bytes) # bytes reserved for future edditions, in case one needs to add more info to the header
         file.write(nm_bytes_of_ddoif_structure)
         file.write(dict_in_bytes)
+        ''' Storing Media Files'''
+        
+        
         file.close()
         print('saved successfuly')
         
@@ -59,14 +69,25 @@ def ddoif_read(in_f='ATest.ddof'):
     
 
 
-
+# my_dict = {'key' : [1,2,3]}
+my_dict = read_yaml_as_dict('ddoif.yaml')
 dict_in_bytes, num_of_bytes = dict_to_binary(my_dict)
-
 ddoif_write(dict_in_bytes)
-
 xx= ddoif_read()
-    
-    
+
+
+img = cv2.imread(r"C:/Users/msalr/Desktop/testing_images/didi 2.png")
+# encode
+is_success, buffer = cv2.imencode(".png", img)
+if not is_success:
+    print('unable to read image')
+    exit()    
+# to Decode the image, 
+img2 = cv2.imdecode(buffer, flags=-1) # Return the loaded image as is (with alpha channel).
+
+
+
+
 
 
 ''' 
