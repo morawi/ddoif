@@ -1,19 +1,22 @@
 {
- "__version__": 0.1,
  "info": {
   "date-created": "dd-month-yyyy",
+  "last-change-time": "stores the time that the image was last changed",
+  "digital-signature": null,
   "manufacturer": null,
   "brand": null,
+  "designer": null,
   "contributor": null,
   "barcode-url": null,
   "qr-code-url": null,
   "description": null,
   "country": null,
   "city": null,
-  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code, \n"
+  "__version__": 0.1,
+  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code,  barcode and qr-code images can also be stored along in the DDOIF file\n"
  },
  "clothing": {
-  "seatshirt": {
+  "sweatshirt": {
    "type": null,
    "all-types": null
   },
@@ -186,7 +189,7 @@
     "Empire line Dress",
     "Dirndl Dress",
     "Sheath Dress",
-    "Low or drop waist Dress",
+    "Low / Drop waist Dress",
     "Tunic Dress",
     "Princess seam Dress",
     "Blouson Dress",
@@ -199,10 +202,10 @@
     "Debutante Dress",
     "Skater Dress",
     "Camisole Dress",
-    "Pinafore Dress / Jumber Dress",
+    "Pinafore / Jumber Dress",
     "Granny Dress",
     "Harem Dress",
-    "Trumpet Dress / Mermaid Dress",
+    "Trumpet / Mermaid Dress",
     "Maxi Dress",
     "Apron Dress",
     "Sweater Dress",
@@ -258,7 +261,7 @@
     "Handkerchief Hem Dress",
     "Bandage Dress"
    ],
-   "comment": "Sling Dress, not sure if this one falls under the category of one of the above!\n"
+   "comment": "Sling Dress, not sure if this one falls under the category of one of the above! Same goes to Vest Dress\n"
   },
   "gown": {
    "type": null,
@@ -460,218 +463,218 @@
     "UnderShirt"
    ],
    "comment": ""
+  }
+ },
+ "anatomy": {
+  "neckline": {
+   "type": null,
+   "all-types": [
+    "Asymmetric Neckline",
+    "Bateau / Boat Neck Neckline",
+    "Collared Neckline",
+    "Crossover Halter Style Neckline",
+    "Florentine Neckline",
+    "Grecian Neckline",
+    "Halter Neckline",
+    "Halter Strap Neckline",
+    "High Neck Illusion Neckline",
+    "Jewel Neckline",
+    "Keyhole Neckline",
+    "Off Shoulder / Bardot Neckline",
+    "Pentagon Neckline",
+    "Queen Anne Neckline",
+    "Sabrina Neckline",
+    "Scoop Neckline",
+    "Semi Sweetheart Neckline",
+    "Spaghetti Strap Neckline",
+    "Square Neckline",
+    "Straight Neckline",
+    "Strapless Neckline",
+    "Sweetheart Neckline",
+    "V Neck Wedding Band Neckline",
+    "Collared Neckline",
+    "Cowl Neckline",
+    "Crew Neckline",
+    "Notch Neckline",
+    "Portrait Neckline"
+   ],
+   "comment": ""
   },
-  "anatomy": {
-   "neckline": {
-    "type": null,
-    "all-types": [
-     "Asymmetric Neckline",
-     "Bateau / Boat Neck Neckline",
-     "Collared Neckline",
-     "Crossover Halter Style Neckline",
-     "Florentine Neckline",
-     "Grecian Neckline",
-     "Halter Neckline",
-     "Halter Strap Neckline",
-     "High Neck Illusion Neckline",
-     "Jewel Neckline",
-     "Keyhole Neckline",
-     "Off Shoulder / Bardot Neckline",
-     "Pentagon Neckline",
-     "Queen Anne Neckline",
-     "Sabrina Neckline",
-     "Scoop Neckline",
-     "Semi Sweetheart Neckline",
-     "Spaghetti Strap Neckline",
-     "Square Neckline",
-     "Straight Neckline",
-     "Strapless Neckline",
-     "Sweetheart Neckline",
-     "V Neck Wedding Band Neckline",
-     "Collared Neckline",
-     "Cowl Neckline",
-     "Crew Neckline",
-     "Notch Neckline",
-     "Portrait Neckline"
-    ],
-    "comment": ""
-   },
-   "sleeve": {
-    "type": null,
-    "all-types": [
-     "Raglan Sleeve",
-     "Normal Sleeve",
-     "Cap Sleeve",
-     "Cap-Extended Sleeve",
-     "Bracelet / Three-Fourth  Sleeve",
-     "Lantern Sleeve",
-     "Man\u00e2\u20ac\u2122s Shirt Sleeve With Cuff",
-     "Leg Of Mutton Sleeve",
-     "Juliet Sleeve",
-     "Long Bell Sleeve",
-     "Bell Sleeve",
-     "Frill Sleeve / Flute Sleeve",
-     "Pagoda Sleeve",
-     "Bishop Sleeve",
-     "Peasant Sleeve",
-     "Square Armhole Sleeve",
-     "Dolman/ Magyar Sleeve",
-     "Padded Shouldered Sleeve",
-     "Petal /Tulip / Lapped Sleeve",
-     "Marmaluke / Virago Sleeve",
-     "Angel Sleeve / Dalmation Sleeve",
-     "Butterfly Sleeve",
-     "Bag Sleeve",
-     "Draped Sleeve",
-     "Puff Sleeve",
-     "Drawstring Puff Sleeve",
-     "Epaulet Sleeve",
-     "Balloon Sleeve",
-     "Batwing Sleeve",
-     "Circle Sleeve / Flutter Sleeve",
-     "Wing  Ruffle Sleeve",
-     "Kimono Sleeve",
-     "Over Sleeve",
-     "Hanging Sleeve",
-     "Elbow Patched Sleeve",
-     "Slashed Sleeve",
-     "Strapped Or Banded Sleeve",
-     "Tailored Sleeve",
-     "Cape Sleeve",
-     "Mahoitres Sleeve",
-     "Gibson Girl Sleeve",
-     "Poet  Sleeve",
-     "Melon Sleeve",
-     "Gauntlet Sleeve (Pointed)",
-     "Cold-shouldered Sleeve"
-    ],
-    "comment": ""
-   },
-   "collar": {
-    "type": null,
-    "all-types": [
-     "Shirt Collar",
-     "Button Down Collar",
-     "Straight Band Collar",
-     "Shawl Collar",
-     "Mandarin Collar",
-     "Nehru Collar / Mao Collar / Cadet Collar",
-     "Polo/ Roll/ Turtle Collar",
-     "Peter Pan Collar",
-     "Shaped Shawl Collar",
-     "Ring Collar",
-     "Bateau Collar",
-     "Rounded Wing Tipped Collar",
-     "Butterfly Collar",
-     "Dog Ear Collar",
-     "Cossack Collar",
-     "Bishop Collar",
-     "Tab Collar",
-     "Button Down Collar",
-     "Revers Collar",
-     "Fish Mouth Revers",
-     "Clover Revers",
-     "L-Revers Collar",
-     "Tuxedo Collar",
-     "Giraffe Collar",
-     "Danton Collar",
-     "Napoleon High Coat Collar",
-     "Sailor Collar",
-     "Puritan Collar / Pilgrim Collar",
-     "Modesty Collar",
-     "Round Bertha Collar",
-     "Dutch Collar",
-     "Pierrot Collar",
-     "Ruff Collar",
-     "Frilled Stand Collar",
-     "Stand Collar With A Knot",
-     "Van Dyke Collar",
-     "Bertha Square Collar",
-     "Bertha Round Collar",
-     "Falling Band Collar",
-     "Partlet Collar",
-     "Cape Collar",
-     "Cascade Jabot Collar",
-     "Bib With Frill Collar",
-     "Eton Collar",
-     "Ascot Collar",
-     "Barbett Collar",
-     "Cowl Collar",
-     "Carcaille Collar",
-     "Convertible Open Collar",
-     "Convertible Closed Collar",
-     "Gorget Collar",
-     "Pussy Bow Collar",
-     "Fichu Collar",
-     "Detachable Collars",
-     "Turtleneck Collar",
-     "Rolled Collar",
-     "Flat Collar",
-     "Ornamented Collar",
-     "Tie / Bow Collar",
-     "Embroidered Collar",
-     "Side Collar",
-     "Embellished Collar",
-     "Flower Petal Collar",
-     "Double Collar",
-     "Italian Collar",
-     "Boat Collar",
-     "Portrait Collar",
-     "Johnny Collar",
-     "Half Collar",
-     "Flape Collar",
-     "Lace Collar",
-     "Chinese V-Neck Collar",
-     "Graphic Collar",
-     "Notch Collar",
-     "Notch Shawl Collar",
-     "Flip Collar"
-    ],
-    "comment": ""
-   },
-   "vent": {
-    "type": null,
-    "all-types": [
-     "Centre Vent",
-     "Side Vent",
-     "No Vent"
-    ],
-    "comment": "\"Jacket's\" vent\n"
-   },
-   "keypoints": {
-    "type": [
-     "Neckline Left",
-     "Neckline Right",
-     "Armpit Left"
-    ],
-    "all-types": [
-     "Neckline Left",
-     "Neckline Right",
-     "Center Front",
-     "Shoulder Left",
-     "Shoulder Right",
-     "Armpit Left",
-     "Armpit Right",
-     "Waistline Left",
-     "Waistline Right",
-     "Cuff Left In",
-     "Cuff Left Out",
-     "Cuff Right In",
-     "Cuff Right Out",
-     "Top Hem Left",
-     "Top Hem Right",
-     "Waistband Left",
-     "Waistband Right",
-     "Hemline Left",
-     "Hemline Right",
-     "Crotch",
-     "Bottom Left In",
-     "Bottom Left Out",
-     "Bottom Right In",
-     "Bottom Right Out"
-    ],
-    "comment": "Eacy type is a selection of different values ... it is in fact can be stored as a binary vector\n                    Keypoints\\Category\tBlouse\tOutwear\tTrousers\tSkirt\tDress\n                     Neckline Left\t    Y\tY\tN\tN\tY\n                     Neckline Right\t    Y\tY\tN\tN\tY\n                     Center Front\t    Y\tN\tN\tN\tY\n                     Shoulder Left\t    Y\tY\tN\tN\tY\n                     Shoulder Right\t    Y\tY\tN\tN\tY\n                     Armpit Left\t    Y\tY\tN\tN\tY\n                     Armpit Right\t    Y\tY\tN\tN\tY\n                     Waistline Left\t    N\tY\tN\tN\tY\n                     Waistline Right\tN\tY\tN\tN\tY\n                     Cuff Left In\t    Y\tY\tN\tN\tY\n                     Cuff Left Out\t    Y\tY\tN\tN\tY\n                     Cuff Right In\t    Y\tY\tN\tN\tY\n                     Cuff Right Out\t    Y\tY\tN\tN\tY\n                     Top Hem Left\t    Y\tY\tN\tN\tN\n                     Top Hem Right\t    Y\tY\tN\tN\tN\n                     Waistband Left\t    N\tN\tY\tY\tN\n                     Waistband Right\tN\tN\tY\tY\tN\n                     Hemline Left\t    N\tN\tN\tY\tY\n                     Hemline Right\t    N\tN\tN\tY\tY\n                     Crotch\t            N\tN\tY\tN\tN\n                     Bottom Left In\t    N\tN\tY\tN\tN\n                     Bottom Left Out\tN\tN\tY\tN\tN\n                     Bottom Right In\tN\tN\tY\tN\tN\n                     Bottom Right Out\tN\tN\tY\tN\tN\n                \n"
-   }
+  "sleeve": {
+   "type": null,
+   "all-types": [
+    "Raglan Sleeve",
+    "Normal Sleeve",
+    "Cap Sleeve",
+    "Cap-Extended Sleeve",
+    "Bracelet / Three-Fourth  Sleeve",
+    "Lantern Sleeve",
+    "Man\u00e2\u20ac\u2122s Shirt Sleeve With Cuff",
+    "Leg Of Mutton Sleeve",
+    "Juliet Sleeve",
+    "Long Bell Sleeve",
+    "Bell Sleeve",
+    "Frill Sleeve / Flute Sleeve",
+    "Pagoda Sleeve",
+    "Bishop Sleeve",
+    "Peasant Sleeve",
+    "Square Armhole Sleeve",
+    "Dolman/ Magyar Sleeve",
+    "Padded Shouldered Sleeve",
+    "Petal /Tulip / Lapped Sleeve",
+    "Marmaluke / Virago Sleeve",
+    "Angel Sleeve / Dalmation Sleeve",
+    "Butterfly Sleeve",
+    "Bag Sleeve",
+    "Draped Sleeve",
+    "Puff Sleeve",
+    "Drawstring Puff Sleeve",
+    "Epaulet Sleeve",
+    "Balloon Sleeve",
+    "Batwing Sleeve",
+    "Circle Sleeve / Flutter Sleeve",
+    "Wing  Ruffle Sleeve",
+    "Kimono Sleeve",
+    "Over Sleeve",
+    "Hanging Sleeve",
+    "Elbow Patched Sleeve",
+    "Slashed Sleeve",
+    "Strapped Or Banded Sleeve",
+    "Tailored Sleeve",
+    "Cape Sleeve",
+    "Mahoitres Sleeve",
+    "Gibson Girl Sleeve",
+    "Poet  Sleeve",
+    "Melon Sleeve",
+    "Gauntlet Sleeve (Pointed)",
+    "Cold-shouldered Sleeve"
+   ],
+   "comment": ""
+  },
+  "collar": {
+   "type": null,
+   "all-types": [
+    "Shirt Collar",
+    "Button Down Collar",
+    "Straight Band Collar",
+    "Shawl Collar",
+    "Mandarin Collar",
+    "Nehru Collar / Mao Collar / Cadet Collar",
+    "Polo/ Roll/ Turtle Collar",
+    "Peter Pan Collar",
+    "Shaped Shawl Collar",
+    "Ring Collar",
+    "Bateau Collar",
+    "Rounded Wing Tipped Collar",
+    "Butterfly Collar",
+    "Dog Ear Collar",
+    "Cossack Collar",
+    "Bishop Collar",
+    "Tab Collar",
+    "Button Down Collar",
+    "Revers Collar",
+    "Fish Mouth Revers",
+    "Clover Revers",
+    "L-Revers Collar",
+    "Tuxedo Collar",
+    "Giraffe Collar",
+    "Danton Collar",
+    "Napoleon High Coat Collar",
+    "Sailor Collar",
+    "Puritan Collar / Pilgrim Collar",
+    "Modesty Collar",
+    "Round Bertha Collar",
+    "Dutch Collar",
+    "Pierrot Collar",
+    "Ruff Collar",
+    "Frilled Stand Collar",
+    "Stand Collar With A Knot",
+    "Van Dyke Collar",
+    "Bertha Square Collar",
+    "Bertha Round Collar",
+    "Falling Band Collar",
+    "Partlet Collar",
+    "Cape Collar",
+    "Cascade Jabot Collar",
+    "Bib With Frill Collar",
+    "Eton Collar",
+    "Ascot Collar",
+    "Barbett Collar",
+    "Cowl Collar",
+    "Carcaille Collar",
+    "Convertible Open Collar",
+    "Convertible Closed Collar",
+    "Gorget Collar",
+    "Pussy Bow Collar",
+    "Fichu Collar",
+    "Detachable Collars",
+    "Turtleneck Collar",
+    "Rolled Collar",
+    "Flat Collar",
+    "Ornamented Collar",
+    "Tie / Bow Collar",
+    "Embroidered Collar",
+    "Side Collar",
+    "Embellished Collar",
+    "Flower Petal Collar",
+    "Double Collar",
+    "Italian Collar",
+    "Boat Collar",
+    "Portrait Collar",
+    "Johnny Collar",
+    "Half Collar",
+    "Flape Collar",
+    "Lace Collar",
+    "Chinese V-Neck Collar",
+    "Graphic Collar",
+    "Notch Collar",
+    "Notch Shawl Collar",
+    "Flip Collar"
+   ],
+   "comment": ""
+  },
+  "vent": {
+   "type": null,
+   "all-types": [
+    "Centre Vent",
+    "Side Vent",
+    "No Vent"
+   ],
+   "comment": "\"Jacket's\" vent\n"
+  },
+  "keypoints": {
+   "type": [
+    "Neckline Left",
+    "Neckline Right",
+    "Armpit Left"
+   ],
+   "all-types": [
+    "Neckline Left",
+    "Neckline Right",
+    "Center Front",
+    "Shoulder Left",
+    "Shoulder Right",
+    "Armpit Left",
+    "Armpit Right",
+    "Waistline Left",
+    "Waistline Right",
+    "Cuff Left In",
+    "Cuff Left Out",
+    "Cuff Right In",
+    "Cuff Right Out",
+    "Top Hem Left",
+    "Top Hem Right",
+    "Waistband Left",
+    "Waistband Right",
+    "Hemline Left",
+    "Hemline Right",
+    "Crotch",
+    "Bottom Left In",
+    "Bottom Left Out",
+    "Bottom Right In",
+    "Bottom Right Out"
+   ],
+   "comment": "Eacy type is a selection of different values ... it is in fact can be stored as a binary vector\n                    Keypoints\\Category\tBlouse\tOutwear\tTrousers\tSkirt\tDress\n                     Neckline Left\t    Y\tY\tN\tN\tY\n                     Neckline Right\t    Y\tY\tN\tN\tY\n                     Center Front\t    Y\tN\tN\tN\tY\n                     Shoulder Left\t    Y\tY\tN\tN\tY\n                     Shoulder Right\t    Y\tY\tN\tN\tY\n                     Armpit Left\t    Y\tY\tN\tN\tY\n                     Armpit Right\t    Y\tY\tN\tN\tY\n                     Waistline Left\t    N\tY\tN\tN\tY\n                     Waistline Right\tN\tY\tN\tN\tY\n                     Cuff Left In\t    Y\tY\tN\tN\tY\n                     Cuff Left Out\t    Y\tY\tN\tN\tY\n                     Cuff Right In\t    Y\tY\tN\tN\tY\n                     Cuff Right Out\t    Y\tY\tN\tN\tY\n                     Top Hem Left\t    Y\tY\tN\tN\tN\n                     Top Hem Right\t    Y\tY\tN\tN\tN\n                     Waistband Left\t    N\tN\tY\tY\tN\n                     Waistband Right\tN\tN\tY\tY\tN\n                     Hemline Left\t    N\tN\tN\tY\tY\n                     Hemline Right\t    N\tN\tN\tY\tY\n                     Crotch\t            N\tN\tY\tN\tN\n                     Bottom Left In\t    N\tN\tY\tN\tN\n                     Bottom Left Out\tN\tN\tY\tN\tN\n                     Bottom Right In\tN\tN\tY\tN\tN\n                     Bottom Right Out\tN\tN\tY\tN\tN\n                \n"
   }
  },
  "footwear": {
@@ -1197,7 +1200,7 @@
   ],
   "comment": ""
  },
- "post-processing-of-garments": {
+ "post-processing": {
   "type": null,
   "all-types": [
    "Bleach",
@@ -1214,50 +1217,7 @@
    "Extra Pocket",
    "Ripped"
   ],
-  "comment": "This is a description of the post processing,  like how the Denim is bleached and processed. It can also be used for decoration, like, Ripped Jeans\n       \n"
- },
- "image": {
-  "len": 3,
-  "urls": {
-   "url1": null,
-   "url2": null,
-   "url3": null
-  },
-  "mode": {
-   "mod1": null,
-   "mod2": null,
-   "mod3": null
-  },
-  "resolution": {
-   "res1": null,
-   "resolution2": null,
-   "resolution3": null
-  },
-  "description": {
-   "des1": null,
-   "des2": null,
-   "des3": null
-  },
-  "imaging-device": {
-   "idv1": null,
-   "idv2": null,
-   "idv3": null
-  },
-  "image-quality-indicator-type": {
-   "iqi1": null,
-   "iqi2": null,
-   "iqi3": null
-  },
-  "imaging-location": {
-   "type": null,
-   "all-types": [
-    "Outdoor",
-    "Indoor",
-    "Studio",
-    "Professional-shooting",
-    "Personal-shooting"
-   ]
-  }
+  "comment": "This is a description of the post processing,  like how the Denim is bleached and processed. It can also be used for decoration, like, Ripped Jeans\n       \n\n\n\n    \n"
  },
  "annotation": {
   "caption": [
@@ -1405,7 +1365,7 @@
     "Dry-cleaning, normal cycle. Any solvent except trichloroethylene",
     "Dry-clean, normal cycle. Petroleum solvent only"
    ],
-   "comment": "\"F_US is F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en\" P_US, same as F_US but with a P symbol.  \"C_CROSS is a crossed circle, see in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en\"\n"
+   "comment": "\"F_US is F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en\" P_US, same as F_US but with a P symbol.  \"C_CROSS is a crossed circle, see in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en\"\n            \n"
   },
   "supplementary-care": {
    "type": null,
@@ -1427,6 +1387,36 @@
     "1 dots (30\u00c2\u00b0C Cool)"
    ],
    "comment": ""
+  }
+ },
+ "media": {
+  "comment": "DDOIF file can have multiple media files for the same item, could be a few images at different; images and videos; images, 3D objects, and videos; etc.\n",
+  "mode": null,
+  "resolution": null,
+  "description": null,
+  "imaging-device": null,
+  "media-quality-indicator-type": null,
+  "media-type": null,
+  "memory-chunks": {
+   "length": {
+    "comment": "4 bytes, big-endian  length in bytes, for example 5 refers to 5 bytes being reserved for the data field       \n        \n"
+   },
+   "CRC": {
+    "comment": "cyclic redundancy code/checksum; 4 bytes.  The CRC is a network-byte-order CRC-32 computed over the chunk type and chunk data, but not the length\n"
+   },
+   "chunk-name": {
+    "comment": "8 bytes reserved Images; PNG, JPEG, JPEG-LS, BMP, APNG, GIF,  Video; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV, 3D Objects; STL (STereoLithography; a 3D file format that can be used in 3D printing),  OBJ (similar to sTL), FBX (3D file format that supports geometry and appearance related properties  like color and texture),  DAE ( COLLADA format supports geometry, appearance related properties  like color, material, textures, and animation)\n"
+   }
+  },
+  "imaging-location": {
+   "type": null,
+   "all-types": [
+    "Outdoor",
+    "Indoor",
+    "Studio",
+    "Professional-shooting",
+    "Personal-shooting"
+   ]
   }
  }
 }
