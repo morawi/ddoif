@@ -21,10 +21,10 @@ def binary_to_dict(dict_in_binary):
     return the_dict
 
 
-def ddoif_write(dict_in_bytes):
+def ddoif_write(dict_in_bytes, out_f='ATest.ddof'):
     with open('ATest.ddof', 'wb') as file:            
         reserved_bytes_for_futuer = 16
-        rserved_bytes = (0).to_bytes(reserved_bytes_for_futuer, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
+        rserved_bytes = (1).to_bytes(reserved_bytes_for_futuer, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
         nm_bytes_of_ddoif_structure = (len(dict_in_bytes)).to_bytes(4, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
         file.write(bytes('DDOIF', 'utf-8')) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
         file.write(rserved_bytes) # bytes reserved for future edditions, in case one needs to add more info to the header
@@ -32,6 +32,30 @@ def ddoif_write(dict_in_bytes):
         file.write(dict_in_bytes)
         file.close()
         print('saved successfuly')
+        
+
+def ddoif_read(in_f='ATest.ddof'):
+    with open('ATest.ddof', 'rb') as file:            
+        reserved_bytes_for_futuer = 16  
+        is_ddoif = file.read(5) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
+        if is_ddoif != bytes('DDOIF', 'utf-8'):
+            print('Not a DDOIF file'); exit()
+        dump = file.read(reserved_bytes_for_futuer) # bytes reserved for future edditions, in case one needs to add more info to the header
+        if not dump: 
+            print('Something went wrong in the reserved strucure, please check the file')
+        nm_bytes_of_ddoif_structure = file.read(4)
+        if nm_bytes_of_ddoif_structure:
+            nm_bytes_of_ddoif_structure = int.from_bytes(nm_bytes_of_ddoif_structure, 'big')
+        else:
+            print('could  not read bytes')
+            exit()          
+            
+        dict_in_bytes = file.read(nm_bytes_of_ddoif_structure)
+        file.close()
+        print('laoded successfuly')
+        ddoif_dict = binary_to_dict(dict_in_bytes)
+        
+        return ddoif_dict
     
 
 
@@ -39,6 +63,8 @@ def ddoif_write(dict_in_bytes):
 dict_in_bytes, num_of_bytes = dict_to_binary(my_dict)
 
 ddoif_write(dict_in_bytes)
+
+xx= ddoif_read()
     
     
 
@@ -50,6 +76,9 @@ then to convert back from bytes you can use json.loads(s.decode('utf-8'))
 read(file, 'ab') or 'rb+'  , but seems 'r+b' for python2
 'ab' forces all writes to happen at the end of the file. You probably want 'r+b'.
 
+
+https://stackoverflow.com/questions/40890697/python3-reading-a-binary-file-4-bytes-at-a-time-and-xor-it-with-a-4-byte-long-k
+https://stackoverflow.com/questions/4388201/how-to-seek-and-append-to-a-binary-file-in-python
 
 
 using seek:
@@ -75,7 +104,6 @@ OUTPUT
 b'This   textample'
 remember new bytes over write previous bytes
 
-https://stackoverflow.com/questions/4388201/how-to-seek-and-append-to-a-binary-file-in-python
 
 '''
 
