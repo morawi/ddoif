@@ -13,8 +13,7 @@ Created on Wed May 20 12:41:11 2020
 
 from ddoif_utils import read_yaml_as_dict
 import json
-
-# import numpy as np
+import binascii
 import cv2
 
 
@@ -36,22 +35,23 @@ def remove_space_from_string(s):
     return s
 
 def ddoif_write(dict_in_bytes, media_buffer='', out_f='ATest.ddof'):
-    with open('ATest.ddof', 'wb') as file:            
+    with open('ATest.ddof', 'wb') as file:   
+        ddoif_header = b"\x89" + "DDOIF\r\n\x1A\n".encode('utf-8') # 10 bytes signature / header
+        file.write(ddoif_header) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
         reserved_bytes_for_futuer = 16
-        rserved_bytes = (1).to_bytes(reserved_bytes_for_futuer, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
-        nm_bytes_of_ddoif_structure = (len(dict_in_bytes)).to_bytes(4, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
-        file.write(bytes('DDOIF', 'utf-8')) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
+        rserved_bytes = (0).to_bytes(reserved_bytes_for_futuer, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
         file.write(rserved_bytes) # bytes reserved for future edditions, in case one needs to add more info to the header
+        nm_bytes_of_ddoif_structure = (len(dict_in_bytes)).to_bytes(4, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')                
         file.write(nm_bytes_of_ddoif_structure)
         file.write(dict_in_bytes)
         ''' Storing Media Files'''
         for i in range(len(media_buffer['buffer'])):  
-            buffer_name = media_buffer['media_name'][i] # need to store it into 4 bytes
-            buffer_name = string_to_8_bytes(buffer_name) 
+            buffer_name = media_buffer['media_name'][i] 
+            buffer_name = string_to_8_bytes(buffer_name) # to be stored into 8 bytes 
             file.write(buffer_name)
-            # crc_buffer = (binascii.crc32(buffer)).to_bytes(4, byteorder='big'); file.write(crc)
-            # file.write(crc_buffer) # 4 bytes
             buffer = media_buffer['buffer'][i]
+            CRC_buffer = (binascii.crc32(buffer)).to_bytes(4, byteorder='big'); 
+            file.write(CRC_buffer) # 4 bytes            
             nm_bytes_of_buffer = (len(buffer)).to_bytes(4, byteorder='big')
             file.write(nm_bytes_of_buffer)
             file.write(buffer)            
@@ -86,7 +86,7 @@ def ddoif_read(in_f='ATest.ddof'):
 
 
 # my_dict = {'key' : [1,2,3]}
-my_dict = read_yaml_as_dict('ddoif.yaml')
+my_dict = read_yaml_as_dict('ddoif_dictionary.yaml')
 dict_in_bytes, num_of_bytes = dict_to_binary(my_dict)
 
 img = cv2.imread(r"C:/Users/msalr/Desktop/testing_images/didi 2.png")
