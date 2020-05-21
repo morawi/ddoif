@@ -1405,7 +1405,7 @@
     "comment": "cyclic redundancy code/checksum; 4 bytes.  The CRC is a network-byte-order CRC-32 computed over the chunk type and chunk data, but not the length\n"
    },
    "chunk-name": {
-    "comment": "8 bytes reserved Images; PNG, JPEG, BMP, APNG, GIF, JPEG-LS (not supported yet), Video; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV, 3D Objects; STL (STereoLithography; a 3D file format that can be used in 3D printing),  OBJ (similar to sTL), FBX (3D file format that supports geometry and appearance related properties  like color and texture),  DAE ( COLLADA format supports geometry, appearance related properties  like color, material, textures, and animation)\n"
+    "comment": "8 bytes reserved Images; PNG, JPEG / JPG, BMP, APNG, GIF, JPEG-LS / JPG-LS, Video; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV, 3D Objects; STL (STereoLithography; a 3D file format that can be used in 3D printing),  OBJ (similar to sTL), FBX (3D file format that supports geometry and appearance related properties  like color and texture),  DAE ( COLLADA format supports geometry, appearance related properties  like color, material, textures, and animation)\n"
    }
   },
   "imaging-location": {

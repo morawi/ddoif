@@ -1076,7 +1076,7 @@ media:
         chunk-name: 
             comment: >
                 8 bytes reserved
-                Images; PNG, JPEG, BMP, APNG, GIF, JPEG-LS (not supported yet),
+                Images; PNG, JPEG / JPG, BMP, APNG, GIF, JPEG-LS / JPG-LS,
                 Video; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV,
                 3D Objects; STL (STereoLithography; a 3D file format that can be used in 3D printing), 
                 OBJ (similar to sTL), FBX (3D file format that supports geometry and appearance related properties 
