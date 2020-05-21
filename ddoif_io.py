@@ -14,21 +14,28 @@ Created on Wed May 20 12:41:11 2020
 from ddoif_utils import read_yaml_as_dict
 import json
 
-import numpy as np
+# import numpy as np
 import cv2
 
 
 def dict_to_binary(the_dict):
     dict_in_bytes = json.dumps(the_dict).encode('utf-8')
-    num_of_bytes= len(dict_in_bytes)
+    num_of_bytes= len(dict_in_bytes) # seems this is important step to remove the tuple!
     return dict_in_bytes, num_of_bytes
 
 def binary_to_dict(dict_in_binary):
     the_dict = json.loads(dict_in_binary.decode('utf-8'))
     return the_dict
 
+def string_to_8_bytes(s):
+    s8 = "_"*(8-len(s)) + s
+    s8 = bytes(s8, 'utf-8', 'big')
+    return s8
+def remove_space_from_string(s):
+    s= s.replace('_', '') 
+    return s
 
-def ddoif_write(dict_in_bytes, out_f='ATest.ddof'):
+def ddoif_write(dict_in_bytes, media_buffer='', out_f='ATest.ddof'):
     with open('ATest.ddof', 'wb') as file:            
         reserved_bytes_for_futuer = 16
         rserved_bytes = (1).to_bytes(reserved_bytes_for_futuer, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
@@ -38,7 +45,16 @@ def ddoif_write(dict_in_bytes, out_f='ATest.ddof'):
         file.write(nm_bytes_of_ddoif_structure)
         file.write(dict_in_bytes)
         ''' Storing Media Files'''
-        
+        for i in range(len(media_buffer['buffer'])):  
+            buffer_name = media_buffer['media_name'][i] # need to store it into 4 bytes
+            buffer_name = string_to_8_bytes(buffer_name) 
+            file.write(buffer_name)
+            # crc_buffer = (binascii.crc32(buffer)).to_bytes(4, byteorder='big'); file.write(crc)
+            # file.write(crc_buffer) # 4 bytes
+            buffer = media_buffer['buffer'][i]
+            nm_bytes_of_buffer = (len(buffer)).to_bytes(4, byteorder='big')
+            file.write(nm_bytes_of_buffer)
+            file.write(buffer)            
         
         file.close()
         print('saved successfuly')
@@ -72,16 +88,29 @@ def ddoif_read(in_f='ATest.ddof'):
 # my_dict = {'key' : [1,2,3]}
 my_dict = read_yaml_as_dict('ddoif.yaml')
 dict_in_bytes, num_of_bytes = dict_to_binary(my_dict)
-ddoif_write(dict_in_bytes)
-xx= ddoif_read()
-
 
 img = cv2.imread(r"C:/Users/msalr/Desktop/testing_images/didi 2.png")
 # encode
-is_success, buffer = cv2.imencode(".png", img)
+media_format = "png"
+is_success, buffer = cv2.imencode("."+ media_format, img)
 if not is_success:
     print('unable to read image')
     exit()    
+
+# fill the buffer with different media buffers
+media_buffer={}
+media_buffer['buffer'] = []; media_buffer['media_name'] = []
+media_buffer['buffer'].append(buffer)
+media_buffer['media_name'].append(media_format.upper())
+
+# experiment, adding it twice
+media_buffer['buffer'].append(buffer)
+media_buffer['media_name'].append(media_format.upper())
+
+ddoif_write(dict_in_bytes, media_buffer = media_buffer)
+xx= ddoif_read()
+
+
 # to Decode the image, 
 img2 = cv2.imdecode(buffer, flags=-1) # Return the loaded image as is (with alpha channel).
 
