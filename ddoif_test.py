@@ -16,9 +16,9 @@ from ddoif_utils import yaml_to_xml, read_yaml_as_dict, yaml_to_json
 save_as_xml=True
 
 path= 'C:/MyPrograms/ddoif/'
-yaml_fname = 'ddoif.yaml'
-xml_fname = 'ddoif.xml' 
-json_fname= 'ddoif.json'
+yaml_fname = 'ddoif_dictionary.yaml'
+xml_fname = 'ddoif_dictionary.xml' 
+json_fname= 'ddoif_dictionary.json'
 
 yaml_to_json(yaml_fname, json_fname)
 
