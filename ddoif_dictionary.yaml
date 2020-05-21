@@ -1067,7 +1067,7 @@ media:
         length:
             comment: >
                 4 bytes, big-endian 
-                length in bytes, for example 5 refers to 5 bytes being reserved for the data field       
+                media chunk length in bytes, for example 5 refers to 5 bytes being reserved for the data field       
                         
         CRC: 
             comment: >
@@ -1076,7 +1076,7 @@ media:
         chunk-name: 
             comment: >
                 8 bytes reserved
-                Images; PNG, JPEG, JPEG-LS, BMP, APNG, GIF, 
+                Images; PNG, JPEG, BMP, APNG, GIF, JPEG-LS (not supported yet),
                 Video; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV,
                 3D Objects; STL (STereoLithography; a 3D file format that can be used in 3D printing), 
                 OBJ (similar to sTL), FBX (3D file format that supports geometry and appearance related properties 
