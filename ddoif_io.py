@@ -15,6 +15,7 @@ from ddoif_utils import read_yaml_as_dict
 import json
 import binascii
 import cv2
+import numpy as np
 
 
 def dict_to_binary(the_dict):
@@ -34,23 +35,26 @@ def remove_space_from_string(s):
     s= s.replace('_', '') 
     return s
 
-def ddoif_write(dict_in_bytes, media_buffer='', out_f='ATest.ddof'):
+def ddoif_write(ddoif_dict, media_buffer='', out_f='ATest.ddof'):
+    dict_in_bytes, num_bytes = dict_to_binary(ddoif_dict)
     with open('ATest.ddof', 'wb') as file:   
-        ddoif_header = b"\x89" + "DDOIF\r\n\x1A\n".encode('utf-8') # 10 bytes signature / header
+        ddoif_header = b"\x89" + "DDOIF\r\n\x1A\n".encode('ascii') # 10 bytes signature / header
         file.write(ddoif_header) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
         reserved_bytes_for_futuer = 16
         rserved_bytes = (0).to_bytes(reserved_bytes_for_futuer, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')
         file.write(rserved_bytes) # bytes reserved for future edditions, in case one needs to add more info to the header
-        nm_bytes_of_ddoif_structure = (len(dict_in_bytes)).to_bytes(4, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')                
+        nm_bytes_of_ddoif_structure = (num_bytes).to_bytes(4, byteorder='big')   # getting  num_bytes = int.from_bytes(xx, 'big')                
         file.write(nm_bytes_of_ddoif_structure)
         file.write(dict_in_bytes)
         ''' Storing Media Files'''
-        for i in range(len(media_buffer['buffer'])):  
-            buffer_name = media_buffer['media_name'][i] 
+        num_buffers = len(media_buffer['buffer'])
+        file.write( (num_buffers).to_bytes(2, byteorder='big') )        
+        for i in range(num_buffers):  
+            buffer_name = media_buffer['media_format'][i] 
             buffer_name = string_to_8_bytes(buffer_name) # to be stored into 8 bytes 
             file.write(buffer_name)
             buffer = media_buffer['buffer'][i]
-            CRC_buffer = (binascii.crc32(buffer)).to_bytes(4, byteorder='big'); 
+            CRC_buffer = (binascii.crc32(buffer)).to_bytes(4, byteorder='big')
             file.write(CRC_buffer) # 4 bytes            
             nm_bytes_of_buffer = (len(buffer)).to_bytes(4, byteorder='big')
             file.write(nm_bytes_of_buffer)
@@ -61,37 +65,47 @@ def ddoif_write(dict_in_bytes, media_buffer='', out_f='ATest.ddof'):
         
 
 def ddoif_read(in_f='ATest.ddof'):
-    with open('ATest.ddof', 'rb') as file:            
+    with open('ATest.ddof', 'rb') as file:
+        media_buffer={}; media_buffer['buffer'] = []; media_buffer['media_format'] = []  
         reserved_bytes_for_futuer = 16  
-        is_ddoif = file.read(5) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
-        if is_ddoif != bytes('DDOIF', 'utf-8'):
+        is_ddoif = file.read(10) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
+        if is_ddoif != b"\x89" + "DDOIF\r\n\x1A\n".encode('ascii'):
             print('Not a DDOIF file'); exit()
         dump = file.read(reserved_bytes_for_futuer) # bytes reserved for future edditions, in case one needs to add more info to the header
         if not dump: 
             print('Something went wrong in the reserved strucure, please check the file')
         nm_bytes_of_ddoif_structure = file.read(4)
-        if nm_bytes_of_ddoif_structure:
-            nm_bytes_of_ddoif_structure = int.from_bytes(nm_bytes_of_ddoif_structure, 'big')
-        else:
-            print('could  not read bytes')
-            exit()          
-            
+        nm_bytes_of_ddoif_structure = int.from_bytes(nm_bytes_of_ddoif_structure, 'big')
         dict_in_bytes = file.read(nm_bytes_of_ddoif_structure)
-        file.close()
-        print('laoded successfuly')
         ddoif_dict = binary_to_dict(dict_in_bytes)
         
-        return ddoif_dict
+        num_buffers = int.from_bytes( file.read(2), 'big')
+        
+        for i in range(num_buffers): 
+            media_format = file.read(8).decode(encoding='utf-8')
+            media_buffer['media_format'].append( remove_space_from_string(media_format))
+            CRC_buffer = file.read(4)
+            nm_bytes_of_buffer = int.from_bytes( file.read(4), 'big')
+            buffer = file.read(nm_bytes_of_buffer)            
+            # if CRC_buffer != (binascii.crc32(buffer)).to_bytes(4, byteorder='big'): print('problem in CRC'); exit()
+            buffer = np.frombuffer(buffer, dtype=np.uint8)
+            media_buffer['buffer'].append(buffer)            
+            
+        file.close()
+        print('laoded successfuly')
+        
+        
+        return ddoif_dict, media_buffer
     
 
 
 # my_dict = {'key' : [1,2,3]}
-my_dict = read_yaml_as_dict('ddoif_dictionary.yaml')
-dict_in_bytes, num_of_bytes = dict_to_binary(my_dict)
+ddoif_dict = read_yaml_as_dict('ddoif_dictionary.yaml')
+
 
 img = cv2.imread(r"C:/Users/msalr/Desktop/testing_images/didi 2.png")
 # encode
-media_format = "png"
+media_format = "JPG-LS" # png, bmp
 is_success, buffer = cv2.imencode("."+ media_format, img)
 if not is_success:
     print('unable to read image')
@@ -99,87 +113,21 @@ if not is_success:
 
 # fill the buffer with different media buffers
 media_buffer={}
-media_buffer['buffer'] = []; media_buffer['media_name'] = []
+media_buffer['buffer'] = []; media_buffer['media_format'] = []
 media_buffer['buffer'].append(buffer)
-media_buffer['media_name'].append(media_format.upper())
+media_buffer['media_format'].append(media_format.upper())
 
 # experiment, adding it twice
 media_buffer['buffer'].append(buffer)
-media_buffer['media_name'].append(media_format.upper())
+media_buffer['media_format'].append(media_format.upper())
 
-ddoif_write(dict_in_bytes, media_buffer = media_buffer)
-xx= ddoif_read()
+ddoif_write(ddoif_dict, media_buffer = media_buffer)
+ddoif_dict2, media_buffer2= ddoif_read()
 
 
 # to Decode the image, 
-img2 = cv2.imdecode(buffer, flags=-1) # Return the loaded image as is (with alpha channel).
+img2 = cv2.imdecode(media_buffer2['buffer'][0], flags=-1) # Return the loaded image as is (with alpha channel).
 
 
 
 
-
-
-''' 
-to get to bytes you can use json.dumps(variables).encode('utf-8') 
-then to convert back from bytes you can use json.loads(s.decode('utf-8'))
-
-read(file, 'ab') or 'rb+'  , but seems 'r+b' for python2
-'ab' forces all writes to happen at the end of the file. You probably want 'r+b'.
-
-
-https://stackoverflow.com/questions/40890697/python3-reading-a-binary-file-4-bytes-at-a-time-and-xor-it-with-a-4-byte-long-k
-https://stackoverflow.com/questions/4388201/how-to-seek-and-append-to-a-binary-file-in-python
-
-
-using seek:
-    
-    NOTE : Remember new bytes over write previous bytes
-
-As per python 3 syntax
-
-with open('myfile.dat', 'wb') as file:
-    b = bytearray(b'This is a sample')
-    file.write(b)
-
-with open('myfile.dat', 'rb+') as file:
-    file.seek(5)
-    b1 = bytearray(b'  text')
-    #remember new bytes over write previous bytes
-    file.write(b1)
-
-with open('myfile.dat', 'rb') as file:
-    print(file.read())
-OUTPUT
-
-b'This   textample'
-remember new bytes over write previous bytes
-
-
-'''
-
-'''
-
-def dict_to_binary(the_dict):
-    str = json.dumps(the_dict)
-    binary = ' '.join(format(ord(letter), 'b') for letter in str)
-    return binary
-
-
-def binary_to_dict(the_binary):
-    jsn = ''.join(chr(int(x, 2)) for x in the_binary.split())
-    d = json.loads(jsn)  
-    return d
-
-bin = dict_to_binary(my_dict)
-print (bin)
-
-dct = binary_to_dict(bin)
-print( dct)
-
-will give the output
-
-1111011 100010 1101011 100010 111010 100000 1011011 110001 101100 100000 110010 101100 100000 110011 1011101 1111101
-
-{u'key': [1, 2, 3]}
-
-'''
