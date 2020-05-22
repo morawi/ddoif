@@ -12,8 +12,11 @@
   "description": null,
   "country": null,
   "city": null,
+  "Media type": "application / ddof",
+  "Type of format": "Fashion Data Organization and Exchange",
+  "Magic number": "89 44 44 4f 49 46 0d 0a 1a 0a",
   "__version__": 0.1,
-  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code,  barcode and qr-code images can also be stored along in the DDOIF file\n"
+  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code,  barcode and qr-code images can also be stored along in the DDOIF file Media type; a two-part identifier for file formats and format contents transmitted on the Internet Magic number; this is the file signature\n"
  },
  "clothing": {
   "sweatshirt": {
