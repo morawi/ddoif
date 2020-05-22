@@ -10,3 +10,5 @@ Dependencies:
 - https://pypi.org/project/ruamel.yaml/
 - https://pypi.org/project/dicttoxml/
 - https://pypi.org/project/opencv-python/
+- https://pypi.org/project/PyWavefront/
+- https://pypi.org/project/pyglet/

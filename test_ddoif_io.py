@@ -15,7 +15,7 @@ from ddoif_io import ddoif_read, ddoif_write
 ddoif_dict = read_yaml_as_dict('ddoif_dictionary.yaml')
 
 obj_3D = pywavefront.Wavefront('C:/Users/msalr/Desktop/testing_images/Tshirt.obj', \
-                               strict=True, encoding="iso-8859-1", parse=False, cache=True)
+                               strict=False, encoding="utf-8", parse=True, cache=True)
 
 img = cv2.imread("C:/Users/msalr/Desktop/testing_images/didi 2.png")
 # encode
