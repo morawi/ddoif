@@ -7,18 +7,17 @@
 # =============================================================================
 # This is a protocol of fashion items containing 
 # names, vocabulary and terminology of clothing and accessories 
-# Each item has the following structure:
+# Each item has the following structure, in a recursive manner:
 #       item:
-#         type: 
-#         all-types:
+#         classes:
 #             -x,
 #             -y,
 #             ...
 #             -z
 #         comment: >
 # where 'type' is one name selected from all-types {x, y, ..., z}
-# 'all-types' contains all the possible item classes
-# 'comment' may contain some comments about the names, classes, for example, ambiguity.
+# 'classes' contains all the possible item classes
+# 'comment' may contain some comments about the names, classes, ambiguity, etc.
 #
 # Some times the item has sub-items. Future releases should have more sub-items.
 # For now, we'll keep it simple,in general.
@@ -30,14 +29,13 @@
 # 2. All keys are in lower case letters
 # 3. Initials of entry names are capitalized
 # 4. Double quotation marks "" are used to mare text if needed, example, "O'Reilly"
-#
+# 5. Forward slash will be used if an item that has several names, e.g., Trumpet / Mermaid Dress
 #
 # 
 # =============================================================================
 
 
 # This should go under manufacturing tags, then, we may have another copy called predicted tags
-
 
 
 
@@ -52,31 +50,39 @@ info:
     contributor:   
     barcode-url:
     qr-code-url: # a link to the image of the QR code
+    style code:
     description:
     country: 
     city:
-    Media type: application / ddof
-    Type of format: Fashion Data Organization and Exchange
-    Magic number: "89 44 44 4f 49 46 0d 0a 1a 0a"
-        
+    media type: application / ddof
+    type of format: Fashion Data Organization and Exchange
+    magic number: "89 44 44 4f 49 46 0d 0a 1a 0a"
+    digital signature:
+    gdpr:    
+   
             
     '__version__': 0.1
-    comment: >
+    comment: |
         date-example 01-September-2019
         barcode-url (qr-code-url) is a link to an image of the code, 
         barcode and qr-code images can also be stored along in the DDOIF file
-        Media type; a two-part identifier for file formats and format contents transmitted on the Internet
-        Magic number; this is the file signature
+        Media type is a two-part identifier for file formats and format contents transmitted on the Internet
+        Magic number is the file signature 
+        GDPR Privacy issues are a big concern for a large number of customers and legislators, and this is another element that must be contained in any ICT protocol. Hence, our aim is to make use of fashion data and trends, GDPR and other related policies, and user feedback to define an ICT protocol for the fashion wholesale and retail companies.
+        ai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.
 
 
+ai-model:
+    mask-rcnn:
+    panoptic:
+    nlp:
+    
 clothing:
     sweatshirt:
-        type:
-        all-types:
+        classes:
         
     hoodie:
-        type:
-        all-types:
+        classes:
             - Baja Hoodie
             - Black Hoodie
             - Designer Hoodie
@@ -89,8 +95,7 @@ clothing:
             - Zip-Up Hoodie
 
     sweater: 
-        type:
-        all-types:        
+        classes:        
             - Boyfriend Sweater
             - Cardigan Sweater
             - Crew Neck Sweater
@@ -107,13 +112,11 @@ clothing:
             also known as jumper
     
     blouse:
-        type:
-        all-types:
-        comment: >
+        classes:
+        comment: |
             womens upper garment resembling a shirt, typically with a collar, buttons, and sleeves.
     jacket:
-        type:
-        all-types:
+        classes:
             [Blazer Jacket, Suit Jacket, Sport Jacket,
             Bomber Jacket, Long Bomber Jacket, Biker Jacket, Trucker Jacket, 
             Denim Jacket, Track Jacket, Blouson Jacket, Hooded Jacket, Shearling Jacket, 
@@ -122,11 +125,10 @@ clothing:
             Barbour Ashby Jacket, Drawstring Jacket, Cropped Jacket, Parka Jacket,
             Overcoat, Pea Coat, Trench Coat, Raincoat, Crombie Coat, 
             Tuxedo Suit, Pantsuits]
-    comment: >
+    comment: |
             
     vest:
-        type:
-        all-types:
+        classes:
             - Travel Vest
             - Sweater Vest
             - Gilets Vest
@@ -144,13 +146,12 @@ clothing:
             - Hooded Vest
             - High Neck Vest
             - Fringe Vest
-        comment: >
+        comment: |
             There are other vest types; Denim Vest, Fur Vest, and Leather Vest. But these differ by material.
             
     # Womenswear
     skirt:            
-        type: Mini # this is the type chosen, one picked from 'all-types'
-        all-types:  
+        classes:  
             [A-Line Skirt, Fitted / Pencil / Tube Skirt, Drindl Skirt, Mini Skirt, 
             Bondage Skirt, Pelmet Skirt, Micro Mini Skirt, 
             Draped / Sarong-Draped Skirt, Layered Skirt, Gored Skirt, Godet Skirt, 
@@ -166,11 +167,10 @@ clothing:
             Ruffled Skirt, Sarong Skirt, Sheath Skirt, Skater Skirt, 
             Skort Skirt, Straight Skirt, Trouser Skirt, Tulle Skirt, Tutu Skirt, 
             Under Skirt, Wrap / Wrap-Around Skirt, Ball Gown Skirt, Hoop Skirt, Ballet Skirt]
-        comment: >
+        comment: |
         
     dress:
-        type:
-        all-types: # this arrangement can be used instead of the above used for skirt
+        classes: # this arrangement can be used instead of the above used for skirt
             [Shift Dress, A-line (Aline) Dress, Tent Dress, Yoke Dress, 
             Empire line Dress, Dirndl Dress, Sheath Dress, Low / Drop waist Dress, 
             Tunic Dress, Princess seam Dress, Blouson Dress, Shirt waist Dress, 
@@ -186,14 +186,14 @@ clothing:
             Smock Dress, Princess Silhouette Dress, Mermaid Silhouette Dress, T-shirt Dress, 
             Tea Length Dress, Denim Dress, Pinafore Dress,  Midi Dress, Mini Dress, Off the Shoulder, 
             Bardot Dress, Tube Dress, Qipao Dress, Long Sleeve Dress, Bell-Sleeve Dress, Blazer Dress, 
-            Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress]
-        comment: >
+            Sun Dress, Pouf Dress, Kimono Dress, Handkerchief Hem Dress, Bandage Dress
+            ]
+        comment: |
             Sling Dress, not sure if this one falls under the category of one of the above!
             Same goes to Vest Dress
             
     gown:
-        type:
-        all-types:
+        classes:
             - Ball Gown
             - Mermaid Gown
             - A-Line Gown
@@ -206,35 +206,32 @@ clothing:
             - Asymmetrical Gown
             - Tiered Gown
             - Panel Gown
-        comment: >
+        comment: |
         
     
     womens-short:    # Name confusion/conflict: Ladies vs Womens
-        type:
-        all-types:
+        classes:
             [Booty Shorts, Boy Shorts, Jamaican Shorts, Bermuda Shorts, 
             Knee length Shorts, Pedal pusher Shorts, Toreador Shorts, 
             Capri Boyfriend Shorts, Chino Shorts, Cut off Shorts, Wrap Shorts, 
             Cargo Shorts, Slipshort Skorts, Swimming trunk Shorts, Boxer Shorts, 
             Board Shorts, Knee hugger Shorts]
-        comment: >
+        comment: |
                 
     womens-pant: 
-        type: 
-        all-types:
+        classes:
             [Dress pants, Jeans, Overalls / Jumpsuits, Culottes, Harem Pants, 
             Baggy Pants, Bell Bottoms, Leggings, Tights, Punk Pants, Stirrup Pants, 
             Fatigue Trousers, Stovepipe pants (drainpipe trousers), Peg-Leg Pants, 
             Toreador Pants, Eastern Pants, Jodhpur Pants, Dungarees Pants, 
             Trousers Pants, Capris Pants, Yoga Pants, Palazzos Pants, Sweat Pants,
             Sailor Pants]
-        comment: >
+        comment: |
             pants vs trousers? how to connect the two?
  
        
     top-tee: 
-        type: 
-        all-types:
+        classes:
             [Asymmetrical Top, Bardot / Off-Shoulder Top, Batwing (Magyar/ Dolman) Top, 
             Bralette Top, Boxy Top, Blouson Top, Bodysuit Top, Bustier Top, Camisole Top, 
             Cape Top, Cardigans & Sweaters Crop Top, Choker Top, Corset Top, Collar Top, 
@@ -244,55 +241,50 @@ clothing:
             Raglan Sleeve Top, Spaghetti Strap Top, Sweatshirt Top, Swing Top, Shirt Top, Smock Top, 
             Shell Top, Tie Front Top, Tank Top, Tube Top, Tunic Top, T-Shirt / Surplice Top, 
             X-ray Top, Yoke Top]
-        comment: >
+        comment: |
          
     
     # Mens items, not sure if we have to add kids items, TODO
     mens-short:
-        type:
-        all-types:
+        classes:
             [Tennis Shorts, Running Shorts, Cargo Shorts, Pleated Shorts, 
             Flat Front Shorts, Denim Shorts, Bermuda Shorts, Board Shorts, 
             Chino Shorts, Leather Shorts, Plaid Shorts]
-        comment: >
+        comment: |
     
     mens-pant:
-        type:
-        all-types:
+        classes:
             - Khakis Pants
             - Pleated Pants
             - Cargo Pants 
             - Chinos Pants
             - Flat Fronts Pants
-        comment: >
+        comment: |
     
     
     mens-shirt:
-        type:
-        all-types:
+        classes:
             [Aloha Shirt, Baseball Shirt, Camp Shirt, Casual Shirt, Sports Shirt,
             Dress Shirt, Epaulette Shirt, Flannel / Lumberjack Shirt, Granddad Shirt, 
             Golf Shirt, Henley Shirt, Ivy league Shirt, Oxford Shirt, Jersey Shirt, 
             Night Shirt, Western Shirt, Polo Shirt, SweatShirt, Tunic Shirt, 
             Tuxedo / Formal Shirt]
-        comment: >
+        comment: |
     
     mens-tshirt: 
-        type:
-        all-types:
+        classes:
             [Basic Half Sleeve T-Shirt, Long Sleeve Crew Neck T-Shirt, 
             Polo Collar T-Shirt, V-neck T-Shirt, Douche Bag Neck (Scoop Neck) T-Shirt, 
             Henley Collar T-Shirt, Baseball T-Shirt, Raglan / Long Sleeve  T-Shirt, 
             Turtle Neck T-Shirt, Ringer T-Shirt, Cap Sleeve T-Shirt, Half (Singlet) T-Shirt, 
             Muscle T-Shirt , Half Muscle T-Shirt, Longline T-Shirt, Pocket T-Shirt, 
             Baby Doll T-Shirt, Wide Neck off Shoulder T-Shirt, Yoke Neck T-Shirt, UnderShirt]
-        comment: >
+        comment: |
                     
                 
 anatomy:
-    neckline: # necklines can be used for dress(es), top(tee)s, etc
-        type:
-        all-types:
+    neckline: # necklines can be used for dress(es), top(tee)s, etc        
+        classes:
             [Asymmetric Neckline, Bateau / Boat Neck Neckline, Collared Neckline, 
             Crossover Halter Style Neckline, Florentine Neckline, Grecian Neckline, 
             Halter Neckline, Halter Strap Neckline, High Neck Illusion Neckline, 
@@ -302,12 +294,11 @@ anatomy:
             Straight Neckline, Strapless Neckline, Sweetheart Neckline, 
             V Neck Wedding Band Neckline, Collared Neckline, Cowl Neckline, 
             Crew Neckline, Notch Neckline, Portrait Neckline]
-        comment: >
+        comment: |
         
         
-    sleeve:
-        type: 
-        all-types:
+    sleeve:         
+        classes:
             [Raglan Sleeve, Normal Sleeve, Cap Sleeve, Cap-Extended Sleeve, 
             Bracelet / Three-Fourth  Sleeve, Lantern Sleeve, 
             Man’s Shirt Sleeve With Cuff, Leg Of Mutton Sleeve, Juliet Sleeve, 
@@ -323,14 +314,17 @@ anatomy:
             Mahoitres Sleeve, Gibson Girl Sleeve, Poet  Sleeve, Melon Sleeve, 
             Gauntlet Sleeve (Pointed), Cold-shouldered Sleeve]
 
-        comment: >
+        comment: |
 
-
+    cuff:
+        classes:
+            
+        comment: |
+            TODO
     collar:
-        type:
-        all-types:
+        classes:
             [Shirt Collar, Button Down Collar, Straight Band Collar, 
-            Shawl Collar, Mandarin Collar,  Nehru Collar / Mao Collar / Cadet Collar, 
+            Shawl Collar, Mandarin Collar,  Nehru / Mao / Cadet Collar, 
             Polo/ Roll/ Turtle Collar, Peter Pan Collar, Shaped Shawl Collar, 
             Ring Collar, Bateau Collar, Rounded Wing Tipped Collar, Butterfly Collar, 
             Dog Ear Collar, Cossack Collar, Bishop Collar, Tab Collar, Button Down Collar, 
@@ -349,19 +343,17 @@ anatomy:
             Boat Collar, Portrait Collar, Johnny Collar, Half Collar, Flape Collar, 
             Lace Collar, Chinese V-Neck Collar, Graphic Collar, Notch Collar, 
             Notch Shawl Collar, Flip Collar]
-        comment: >
+        comment: |
+        
     vent:
-        type:
-        all-types:
+        classes:
             - Centre Vent
             - Side Vent
             - No Vent
-        comment: > 
+        comment: |
             "Jacket's" vent
     keypoints:
-        type:
-            [Neckline Left, Neckline Right, Armpit Left]                    
-        all-types:                
+        classes:                
             - Neckline Left
             - Neckline Right
             - Center Front
@@ -386,7 +378,7 @@ anatomy:
             - Bottom Left Out
             - Bottom Right In
             - Bottom Right Out
-        comment: >
+        comment: |
             Eacy type is a selection of different values ... it is in fact can be stored as a binary vector
                                 Keypoints\Category	Blouse	Outwear	Trousers	Skirt	Dress
                                  Neckline Left	    Y	Y	N	N	Y
@@ -413,16 +405,12 @@ anatomy:
                                  Bottom Left Out	N	N	Y	N	N
                                  Bottom Right In	N	N	Y	N	N
                                  Bottom Right Out	N	N	Y	N	N
-                            
-
-            
+                                        
 
 footwear: # footwear is also considered clothing in the literature, but we are separating it as it has different anatomy
-    type:
-    all-types:
+    classes:
         shoe:
-            type:
-            all-types:
+            classes:
                 [Athletic Shoe, Ballet Shoe, Boat Shoe, Bootie Shoe, Boyfriend Shoe, 
                 Brogue Shoe, Clog, Court Shoe, Derby Shoe, Gladiator Shoe,  
                 High-Top Shoe, Loafer Shoe, Mary Janes Shoe, Moccasin, Monk Shoe,
@@ -431,30 +419,25 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats,  
                 Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers]
                 
-            comment: >
-            
+            comment: |
             
         sandal:
-            type:
-            all-types:
+            classes:
                 [Wood Sandal, Tatami Sandal, Leather Sandal, Rope Sandal, 
                 Metallic Sandal, Wedge Sandal, Flat Sandal, Rubber Sandal]
-            comment: >
-            
+            comment: |
             
         boot:
-            type:
-            all-types:
+            classes:
                 [Wellington Boot, Platform Ankle Boot, 
                 Platform Boot, Chelsea Boot, Chukka Boot, Crotch-High Boot, 
                 Paddock Boot, Rain Boot, Riding Boot, Slouchy Boot, Cowboy Boot, 
                 Gumboots, Go-Go Boot]
-            comment: >
-            
+            comment: |
             
         heel:
-            type:
-            all-types:                             
+            
+            classes:                             
                 [Ankle Strap Heel, Ballroom Dance Heel, Basic Pumps Block Heel, 
                 Chunky Heel, Comma Heel, Cone Heel, Corset Heel, Cuban Heel, 
                 Cut Out Heel, Decorative Heel, Espadrille Heel, Fantasy Heel, 
@@ -462,12 +445,10 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Kitten Heel, Lace-Up Heel, Medium Heel, Peep Toe Heel, Platform Heel, 
                 Sculptural Heel, Slingback Heel, Spool Heel, Stacked Heel, Stiletto Heel, 
                 T-Strap Heel, Wedge Heel, Louis / Pompadour]
-            comment: >
+            comment: |
                 left blank                   
-
 accessory:
-    hat:
-        type:
+    hat:        
         all_types:
             - Baseball Cap
             - Beanie
@@ -511,13 +492,10 @@ accessory:
             - Cartwheel Hat
             - Tennis Hat           
             - Colourful Braided Straw Hat
-        comment: >
-            
-        
+        comment: |
         
     bag: # bag / purse
-        type: 
-        all-types:
+        classes:
             - Hand Bag
             - Hobo Bag
             - Tote Bag
@@ -556,11 +534,10 @@ accessory:
             - Pack Bag 
             - Sackpack 
             - Backsack           
-        comment: >
+        comment: |
                    
         handle: # bag handle
-            type:
-            all-types:
+            classes:
                 - Leather / Synthetic Leather Handle
                 - Leather / Synthetic Leather Handle
                 - Fabric Handle
@@ -578,12 +555,11 @@ accessory:
                 - Shoulder Handle
                 - Bracelet Handl
                 - Top Handle
-            comment: >
+            comment: |
             
         strap:
             width:
-                type:
-                all-types:                              
+                classes:                              
                     - Extra Slender & Drawcord Straps (3/8-inch)
                     - Slender Width Straps (1/2-inch)
                     - Standard Width Straps (3/4-inch)
@@ -591,12 +567,10 @@ accessory:
                     - Wide Width Straps (3/2-inch)
                     - Extra Wide Width Straps (2-inch)
                     - Chain Straps (varying in width from 1/4-inch to 5/8-inch)
-                comment: >
-                
+                comment: |
                 
             drop-length:
-                type:
-                all-types:                
+                classes:                
                     - Wristlet (6 to 10-inch range)
                     - Short Handle (12 to 20-inch range)
                     - Shoulder (30-inch range)
@@ -604,11 +578,10 @@ accessory:
                     - Crossbody (50-inch range)
                     - Extra Long (60-inch range)
                     - Adjustable (22 to 60-inch range)
-                comment: >
+                comment: |
 
     glove:
-        type:
-        all-types:
+        classes:
             - Touch Screen Gloves
             - Silk Liners Gloves
             - Thermal Insulation Mittens Gloves
@@ -639,11 +612,10 @@ accessory:
             - Convertible Gloves
             - Food Servicing Gloves
             - Weightlifting Gloves
-        comment: >
+        comment: |
             
     belt:
-        type:
-        all-types:
+        classes:
             - Autogrip Belt
             - Bow Knot Belt
             - Broad Belt
@@ -677,12 +649,11 @@ accessory:
             - Bow Belt
             - Garter Belt
             - Peplum Belt
-        comment: >
+        comment: |
 
 
     sock:
-        type:
-        all-types:
+        classes:
             - Dress Sock
             - Casual Sock
             - Sport Sock
@@ -705,10 +676,10 @@ accessory:
             - Split Toe Sock
             - Fishnet Sock
             - Fence Net Sock
-        comment: >
+        comment: |
 
     sunglasses:
-        type:
+        classes:
             - Aviator / Pilot
             - Cat Eye
             - Oval
@@ -727,31 +698,27 @@ accessory:
             - Tiny
             - Flip-Up
             - Wrap Around
-        all-types:
-        comment: >
+        comment: |
             can beb called eyewear
         
         
     jewellery:
-        type:
+        classes:
         description: # description of color material and design
-        all-types:
-        comment: >
+       
+        comment: |
     
     braces: 
-        type:
-        all-types:
+        classes:
         comment: >
             also known as suspenders
             
     scarf:
-        type:
-        all-types:
-        comment: >
+        classes:
+        comment: |
             
     tie:
-        type:
-        all-types:
+        classes:
         - Apron Necktie
         - Ascot Tie
         - Bowtie
@@ -765,13 +732,11 @@ accessory:
         - Skinny Tie
         - Up Cycle Fashion Neckwear
         - Neckerchief
-        comment: >
-    
+        comment: |
     
     umbrella:
-        type:
-        all-types:
-        comment: >
+        classes:
+        comment: |
    
     
            
@@ -792,22 +757,35 @@ color:
         Not yet known how to estimate this
 
 pattern:
-    type:  # for example, stribes
-    all-types: # this can by dynamic
+    classes: # this can by dynamic
         - Horizental Stripes
         - Vertical Stripes 
         - Circles
         - Flowers
+        - Floral and Stripes
         - Hawaiian
         - Grid
         - Pailletteness
-    comment: > 
+        - Polak Dot
+        - Polak Zebra Stripes
+        - Ruffle
+        - 
+    comment: |
+        dsensity mimics "pattern density|
         More patterns need to be added
+   
+pattern-density:
+    classes:
+        - tiny
+        - small
+        - medium
+        - large
+        - huge    
+    comment: |
 
             
 fabric:
-    type:
-    all-types:
+    classes:
         - Denim
         - Jersey
         - Ribbed
@@ -821,13 +799,12 @@ fabric:
         - Corduroy
         - Needlecord
         - Cotton and Polyester Blends
-    comment: >
+    comment: |
             Cord vs  Corduroy, are they the same?
 
 
 material:
-    type: 
-    all-types: 
+    classes: 
         - Lambswool 
         - Cashmere 
         - Merino wool
@@ -851,7 +828,7 @@ material:
         - Polymers (polyester, teflon, etc.) # we have to add them separately
         - Asbestos
         - Glass fibre
-        - Ryon / Artificial-Silk # (made of bamboo plant), also called artificial silk
+        - Ryon / Artificial Silk # (made of bamboo plant), also called artificial silk
         - Visocse
         - Acrylic
         - Spandex
@@ -864,12 +841,12 @@ material:
         - Twill
         - Diolen 
         - Fiberglass
-    comment: > 
+    comment: |
+        Ryon / Artificial Silk  is made of bamboo plant, also called artificial silk
       
     
 post-processing: 
-    type: 
-    all-types: 
+    classes: 
         - Bleach
         - Wrinkle
         - Pleat
@@ -883,22 +860,15 @@ post-processing:
         - Hole
         - Extra Pocket
         - Ripped
-    comment: > 
-        This is a description of the post processing, 
-        like how the Denim is bleached and processed.
+    comment: |
+        This is a description of the post processing, like how the Denim is bleached and processed.
         It can also be used for decoration, like, Ripped Jeans
                
         
 
 
             
-annotation: # unlimited number of captions, normally a few of them
-    caption:
-        - Blah blha blah
-        - To be or not to be        
-    bounding-box:
-    mask:
-    '3D-mesh':
+
     
         
     
@@ -909,7 +879,7 @@ sustainability:
     slow-fashion: true 
     fast-fashion: false
     other:
-    comment: > 
+    comment: |
         recycled-material;  Y(Yes) / N(No). 
         sustainability-grade;  a measure from 1 to 10 (10 being best)
     
@@ -918,50 +888,41 @@ personal-characteristics: # and preferences, info are non-obligatory, in general
     age:
     gendre:
     fitting-preferences:
-        type: loose
-        all-types: 
+        classes: 
             - loose
             - slim
             - regular
             - normal 
     primary-preferred-color:
-        type:
-        all-types:
+        classes:
     secondary-preferred-color:
-        type:
-        all-types:
-    
+        classes:
     weight: # Kg
     height: # cm
-    size:
-        waste: # cm
-        chest: # cm
+    waste-size: # cm
+    chest-size: # cm
     occupation:
+        classes:
     country-of-residence:
     country-of-origin:
     skin-color-value: 
-        type:
-        all-types:
+        classes:
     skin-color-name:
-        type: 
-        all-types:
+        classes:
     primary-language:
     secondary-language:
     religious-preference:
-        type:
-        all-types:
+        classes:
     ethnic-group:
-        type:
-        all-types:
+        classes:
     customer-comments-review: 
-    comment: > 
-        review field is used to store customers review on products, it may or maynot be available
+    comment: |
+        Review field is used to store customers review on products, it may or maynot be available
                 
     
 care: 
     washing:
-        type:
-        all-types:
+        classes:
             - Wash in commercial machine in water not exceeding 95°C, at normal setting
             - Wash in commercial machine in water not exceeding 95°C, at permanent press setting 
             - Wash in domestic or commercial machine in water not exceeding 70°C, at normal setting
@@ -981,20 +942,18 @@ care:
             - Wash in domestic or commercial machine at any temperature, at normal setting
             - Hand wash only
             - Do not wash
-        comment: > 
+        comment: |
         
             
     bleaching:
-        type:
-        all-types:
+        classes:
             - Use any bleach when needed
             - Use only non-chlorine bleach when needed
             - Do not bleach
-        comment: > 
+        comment: |
         
     drying:
-        type:
-        all-types:                    
+        classes:                    
             - Tumble dry at high heat (not exceeding 75°C) at normal setting
             - Tumble dry at medium heat (not exceeding 65°C) at normal setting
             - Tumble dry at medium heat (not exceeding 65°C) at permanent press setting
@@ -1008,22 +967,20 @@ care:
             - After extraction of excess water, dry the article on a suitable flat surface
             - Dry in the shade
             - Do not dry
-        comment: > 
+        comment: |
             
         
     ironing:
-        type:
-        all-types:
+        classes:
             - Iron with or without steam by hand, or press on commercial equipment, at a high temperature (not exceeding 200°C). Recommended temperature for cotton and linen textiles
             - Iron with or without steam by hand, or press on commercial equipment, at a medium temperature (not exceeding 150°C). Recommended temperature for polyester, rayon, silk, triacetate and wool textiles
             - Iron with or without steam by hand, or press on commercial equipment, at a low temperature (not exceeding 110°C). Recommended temperature for acetate, acrylic, modacrylic, nylon, polypropylene and spandex textiles
             - Do not steam
             - Do not iron or press
-        comment: > 
+        comment: |
         
     dry-cleaning: # Professional Textile Care Symbols
-        type:
-        all-types:
+        classes:
             - A Dry-cleaning in all solvents normally used for dry-cleaning - this includes all solvents listed for the symbol P, plus trichloroethylene and 1,1, 1-trichloroethane
             - F Dry-cleaning in trifluorotrichloroethane, white spirit (distillation temperature between 150°C and 210°C, flash point 38°C to 60°C) Normal cleansing procedures without restrictions
             - P Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Normal cleansing procedures without restrictions
@@ -1033,31 +990,37 @@ care:
             - D_ Do not dry-clean
             - Dry-cleaning, normal cycle. Any solvent except trichloroethylene
             - Dry-clean, normal cycle. Petroleum solvent only
-        comment: > 
+        comment: |
             "F_US is F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en"
             P_US, same as F_US but with a P symbol. 
             "C_CROSS is a crossed circle, see in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en"
                         
     
     supplementary-care:
-        type:
-        all-types:            
+        classes:            
             - Do not wring
             - Wet-clean
             - Do not wet-clean
-        comment: > 
+        comment: | 
         
     water-temperature-dot-symbol:
-        type:
-        all-types:
+        classes:
             - 6 dots (95°C Near boil)
             - 5 dots (70°C Extremely hot)
             - 4 dots (60°C Very hot)
             - 3 dots (50°C Hot)
             - 2 dots (40°C Warm)
             - 1 dots (30°C Cool)
-        comment: > 
-                    
+        comment: |
+
+annotation: # unlimited number of captions, normally a few of them
+    caption:
+        - Blah blha blah
+        - To be or not to be        
+    bounding-box:
+    mask:
+    '3D-mesh':
+    comment: |
 
 media:
     comment: >
@@ -1068,20 +1031,19 @@ media:
     resolution:        
     description:
     imaging-device: 
-    media-quality-indicator-type:
-    media-type:    
+    media-quality-indicator:
+    media-type-name:    
     memory-chunks:        
         length:
-            comment: >
+            comment: |
                 4 bytes, big-endian 
                 media chunk length in bytes, for example 5 refers to 5 bytes being reserved for the data field       
-                        
         CRC: 
-            comment: >
+            comment: |
                 cyclic redundancy code/checksum; 4 bytes. 
                 The CRC is a network-byte-order CRC-32 computed over the chunk type and chunk data, but not the length
         chunk-name: 
-            comment: >
+            comment: |
                 8 bytes reserved
                 Images; PNG, JPEG / JPG, BMP, APNG, GIF, JPEG-LS / JPG-LS,
                 Video; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV,
@@ -1091,10 +1053,11 @@ media:
                 like color, material, textures, and animation)
             
     imaging-location: # locatoin and/or condition
-        type:
-        all-types:
+        classes:
             - Outdoor
             - Indoor
             - Studio
             - Professional-shooting
             - Personal-shooting
+        comment: |
+        

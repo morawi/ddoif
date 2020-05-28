@@ -3,7 +3,7 @@
 Towards a standaridized look of fashion data
 
 Objective:
-Enable interoperable data exchange between Fashion Industry and AI companies 
+Objective: Enable interoperable data exchange within and between Fashion Industry and AI companies
 
 Dependencies:
 - https://pypi.org/project/PyYAML/

@@ -37,7 +37,7 @@ def remove_space_from_string(s):
 
 def ddoif_write(ddoif_dict, media_buffer='', out_f='ATest.ddof'):
     dict_in_bytes, num_bytes = dict_to_binary(ddoif_dict)
-    with open('ATest.ddof', 'wb') as file:   
+    with open(out_f, 'wb') as file:   
         ddoif_header = b"\x89" + "DDOIF\r\n\x1A\n".encode('ascii') # 10 bytes signature / header
         file.write(ddoif_header) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
         reserved_bytes_for_futuer = 16
@@ -64,8 +64,8 @@ def ddoif_write(ddoif_dict, media_buffer='', out_f='ATest.ddof'):
         print('saved successfuly')
         
 
-def ddoif_read(in_f='ATest.ddof'):
-    with open('ATest.ddof', 'rb') as file:
+def ddoif_read(in_f='ATest.ddof', check_CRC=False):
+    with open(in_f, 'rb') as file:
         media_buffer={}; media_buffer['buffer'] = []; media_buffer['media_format'] = []  
         reserved_bytes_for_futuer = 16  
         is_ddoif = file.read(10) # the letters DDOIF, allowing a person to identify the format easily if it is viewed in a text editor
@@ -84,10 +84,11 @@ def ddoif_read(in_f='ATest.ddof'):
         for i in range(num_buffers): 
             media_format = file.read(8).decode(encoding='utf-8')
             media_buffer['media_format'].append( remove_space_from_string(media_format))
-            CRC_buffer = file.read(4)
+            CRC_buffer = file.read(4)            
             nm_bytes_of_buffer = int.from_bytes( file.read(4), 'big')
             buffer = file.read(nm_bytes_of_buffer)            
-            # if CRC_buffer != (binascii.crc32(buffer)).to_bytes(4, byteorder='big'): print('problem in CRC'); exit()
+            if CRC_buffer != (binascii.crc32(buffer)).to_bytes(4, byteorder='big') and check_CRC:
+                print('problem in CRC'); exit()
             buffer = np.frombuffer(buffer, dtype=np.uint8)
             media_buffer['buffer'].append(buffer)            
             

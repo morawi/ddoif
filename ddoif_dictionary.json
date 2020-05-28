@@ -12,20 +12,21 @@
   "description": null,
   "country": null,
   "city": null,
-  "Media type": "application / ddof",
-  "Type of format": "Fashion Data Organization and Exchange",
-  "Magic number": "89 44 44 4f 49 46 0d 0a 1a 0a",
+  "media type": "application / ddof",
+  "type of format": "Fashion Data Organization and Exchange",
+  "magic number": "89 44 44 4f 49 46 0d 0a 1a 0a",
+  "digital signature": null,
+  "gdpr": null,
+  "ai-model": null,
   "__version__": 0.1,
-  "comment": "date-example 01-September-2019 barcode-url (qr-code-url) is a link to an image of the code,  barcode and qr-code images can also be stored along in the DDOIF file Media type; a two-part identifier for file formats and format contents transmitted on the Internet Magic number; this is the file signature\n"
+  "comment": "date-example 01-September-2019\nbarcode-url (qr-code-url) is a link to an image of the code, \nbarcode and qr-code images can also be stored along in the DDOIF file\nMedia type is a two-part identifier for file formats and format contents transmitted on the Internet\nMagic number is the file signature \nGDPR Privacy issues are a big concern for a large number of customers and legislators, and this is another element that must be contained in any ICT protocol. Hence, our aim is to make use of fashion data and trends, GDPR and other related policies, and user feedback to define an ICT protocol for the fashion wholesale and retail companies.\nai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.\n"
  },
  "clothing": {
   "sweatshirt": {
-   "type": null,
-   "all-types": null
+   "classes": null
   },
   "hoodie": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Baja Hoodie",
     "Black Hoodie",
     "Designer Hoodie",
@@ -39,8 +40,7 @@
    ]
   },
   "sweater": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Boyfriend Sweater",
     "Cardigan Sweater",
     "Crew Neck Sweater",
@@ -57,13 +57,11 @@
    "comment": "also known as jumper\n"
   },
   "blouse": {
-   "type": null,
-   "all-types": null,
+   "classes": null,
    "comment": "womens upper garment resembling a shirt, typically with a collar, buttons, and sleeves.\n"
   },
   "jacket": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Blazer Jacket",
     "Suit Jacket",
     "Sport Jacket",
@@ -96,8 +94,7 @@
   },
   "comment": "",
   "vest": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Travel Vest",
     "Sweater Vest",
     "Gilets Vest",
@@ -119,8 +116,7 @@
    "comment": "There are other vest types; Denim Vest, Fur Vest, and Leather Vest. But these differ by material.\n"
   },
   "skirt": {
-   "type": "Mini",
-   "all-types": [
+   "classes": [
     "A-Line Skirt",
     "Fitted / Pencil / Tube Skirt",
     "Drindl Skirt",
@@ -183,8 +179,7 @@
    "comment": ""
   },
   "dress": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Shift Dress",
     "A-line (Aline) Dress",
     "Tent Dress",
@@ -264,11 +259,10 @@
     "Handkerchief Hem Dress",
     "Bandage Dress"
    ],
-   "comment": "Sling Dress, not sure if this one falls under the category of one of the above! Same goes to Vest Dress\n"
+   "comment": "Sling Dress, not sure if this one falls under the category of one of the above!\nSame goes to Vest Dress\n"
   },
   "gown": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Ball Gown",
     "Mermaid Gown",
     "A-Line Gown",
@@ -285,8 +279,7 @@
    "comment": ""
   },
   "womens-short": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Booty Shorts",
     "Boy Shorts",
     "Jamaican Shorts",
@@ -308,8 +301,7 @@
    "comment": ""
   },
   "womens-pant": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Dress pants",
     "Jeans",
     "Overalls / Jumpsuits",
@@ -338,8 +330,7 @@
    "comment": "pants vs trousers? how to connect the two?\n"
   },
   "top-tee": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Asymmetrical Top",
     "Bardot / Off-Shoulder Top",
     "Batwing (Magyar/ Dolman) Top",
@@ -388,8 +379,7 @@
    "comment": ""
   },
   "mens-short": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Tennis Shorts",
     "Running Shorts",
     "Cargo Shorts",
@@ -405,8 +395,7 @@
    "comment": ""
   },
   "mens-pant": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Khakis Pants",
     "Pleated Pants",
     "Cargo Pants",
@@ -416,8 +405,7 @@
    "comment": ""
   },
   "mens-shirt": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Aloha Shirt",
     "Baseball Shirt",
     "Camp Shirt",
@@ -442,8 +430,7 @@
    "comment": ""
   },
   "mens-tshirt": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Basic Half Sleeve T-Shirt",
     "Long Sleeve Crew Neck T-Shirt",
     "Polo Collar T-Shirt",
@@ -470,8 +457,7 @@
  },
  "anatomy": {
   "neckline": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Asymmetric Neckline",
     "Bateau / Boat Neck Neckline",
     "Collared Neckline",
@@ -504,8 +490,7 @@
    "comment": ""
   },
   "sleeve": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Raglan Sleeve",
     "Normal Sleeve",
     "Cap Sleeve",
@@ -555,14 +540,13 @@
    "comment": ""
   },
   "collar": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Shirt Collar",
     "Button Down Collar",
     "Straight Band Collar",
     "Shawl Collar",
     "Mandarin Collar",
-    "Nehru Collar / Mao Collar / Cadet Collar",
+    "Nehru / Mao / Cadet Collar",
     "Polo/ Roll/ Turtle Collar",
     "Peter Pan Collar",
     "Shaped Shawl Collar",
@@ -637,8 +621,7 @@
    "comment": ""
   },
   "vent": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Centre Vent",
     "Side Vent",
     "No Vent"
@@ -646,12 +629,7 @@
    "comment": "\"Jacket's\" vent\n"
   },
   "keypoints": {
-   "type": [
-    "Neckline Left",
-    "Neckline Right",
-    "Armpit Left"
-   ],
-   "all-types": [
+   "classes": [
     "Neckline Left",
     "Neckline Right",
     "Center Front",
@@ -681,11 +659,9 @@
   }
  },
  "footwear": {
-  "type": null,
-  "all-types": {
+  "classes": {
    "shoe": {
-    "type": null,
-    "all-types": [
+    "classes": [
      "Athletic Shoe",
      "Ballet Shoe",
      "Boat Shoe",
@@ -723,8 +699,7 @@
     "comment": ""
    },
    "sandal": {
-    "type": null,
-    "all-types": [
+    "classes": [
      "Wood Sandal",
      "Tatami Sandal",
      "Leather Sandal",
@@ -737,8 +712,7 @@
     "comment": ""
    },
    "boot": {
-    "type": null,
-    "all-types": [
+    "classes": [
      "Wellington Boot",
      "Platform Ankle Boot",
      "Platform Boot",
@@ -756,8 +730,7 @@
     "comment": ""
    },
    "heel": {
-    "type": null,
-    "all-types": [
+    "classes": [
      "Ankle Strap Heel",
      "Ballroom Dance Heel",
      "Basic Pumps Block Heel",
@@ -795,7 +768,6 @@
  },
  "accessory": {
   "hat": {
-   "type": null,
    "all_types": [
     "Baseball Cap",
     "Beanie",
@@ -843,8 +815,7 @@
    "comment": ""
   },
   "bag": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Hand Bag",
     "Hobo Bag",
     "Tote Bag",
@@ -886,8 +857,7 @@
    ],
    "comment": "",
    "handle": {
-    "type": null,
-    "all-types": [
+    "classes": [
      "Leather / Synthetic Leather Handle",
      "Leather / Synthetic Leather Handle",
      "Fabric Handle",
@@ -910,8 +880,7 @@
    },
    "strap": {
     "width": {
-     "type": null,
-     "all-types": [
+     "classes": [
       "Extra Slender & Drawcord Straps (3/8-inch)",
       "Slender Width Straps (1/2-inch)",
       "Standard Width Straps (3/4-inch)",
@@ -923,8 +892,7 @@
      "comment": ""
     },
     "drop-length": {
-     "type": null,
-     "all-types": [
+     "classes": [
       "Wristlet (6 to 10-inch range)",
       "Short Handle (12 to 20-inch range)",
       "Shoulder (30-inch range)",
@@ -938,8 +906,7 @@
    }
   },
   "glove": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Touch Screen Gloves",
     "Silk Liners Gloves",
     "Thermal Insulation Mittens Gloves",
@@ -974,8 +941,7 @@
    "comment": ""
   },
   "belt": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Autogrip Belt",
     "Bow Knot Belt",
     "Broad Belt",
@@ -1013,8 +979,7 @@
    "comment": ""
   },
   "sock": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Dress Sock",
     "Casual Sock",
     "Sport Sock",
@@ -1041,7 +1006,7 @@
    "comment": ""
   },
   "sunglasses": {
-   "type": [
+   "classes": [
     "Aviator / Pilot",
     "Cat Eye",
     "Oval",
@@ -1061,28 +1026,23 @@
     "Flip-Up",
     "Wrap Around"
    ],
-   "all-types": null,
    "comment": "can beb called eyewear\n"
   },
   "jewellery": {
-   "type": null,
+   "classes": null,
    "description": null,
-   "all-types": null,
    "comment": ""
   },
   "braces": {
-   "type": null,
-   "all-types": null,
+   "classes": null,
    "comment": "also known as suspenders\n"
   },
   "scarf": {
-   "type": null,
-   "all-types": null,
+   "classes": null,
    "comment": ""
   },
   "tie": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Apron Necktie",
     "Ascot Tie",
     "Bowtie",
@@ -1100,8 +1060,7 @@
    "comment": ""
   },
   "umbrella": {
-   "type": null,
-   "all-types": null,
+   "classes": null,
    "comment": ""
   }
  },
@@ -1130,21 +1089,34 @@
   "comment": "May include the major colors, and not everything,  generated using some computer vision algorithm.  This is the color at manufacturing time. Not yet known how to estimate this\n"
  },
  "pattern": {
-  "type": null,
-  "all-types": [
+  "classes": [
    "Horizental Stripes",
    "Vertical Stripes",
    "Circles",
    "Flowers",
+   "Floral and Stripes",
    "Hawaiian",
    "Grid",
-   "Pailletteness"
+   "Pailletteness",
+   "Polak Dot",
+   "Polak Zebra Stripes",
+   "Ruffle",
+   null
   ],
-  "comment": "More patterns need to be added\n\n    \n"
+  "comment": "dsensity mimics \"pattern density|\nMore patterns need to be added\n"
+ },
+ "pattern-density": {
+  "classes": [
+   "tiny",
+   "small",
+   "medium",
+   "large",
+   "huge"
+  ],
+  "comment": ""
  },
  "fabric": {
-  "type": null,
-  "all-types": [
+  "classes": [
    "Denim",
    "Jersey",
    "Ribbed",
@@ -1162,8 +1134,7 @@
   "comment": "Cord vs  Corduroy, are they the same?\n"
  },
  "material": {
-  "type": null,
-  "all-types": [
+  "classes": [
    "Lambswool",
    "Cashmere",
    "Merino wool",
@@ -1187,7 +1158,7 @@
    "Polymers (polyester, teflon, etc.)",
    "Asbestos",
    "Glass fibre",
-   "Ryon / Artificial-Silk",
+   "Ryon / Artificial Silk",
    "Visocse",
    "Acrylic",
    "Spandex",
@@ -1201,11 +1172,10 @@
    "Diolen",
    "Fiberglass"
   ],
-  "comment": ""
+  "comment": "Ryon / Artificial Silk  is made of bamboo plant, also called artificial silk\n"
  },
  "post-processing": {
-  "type": null,
-  "all-types": [
+  "classes": [
    "Bleach",
    "Wrinkle",
    "Pleat",
@@ -1220,16 +1190,7 @@
    "Extra Pocket",
    "Ripped"
   ],
-  "comment": "This is a description of the post processing,  like how the Denim is bleached and processed. It can also be used for decoration, like, Ripped Jeans\n       \n\n\n\n    \n"
- },
- "annotation": {
-  "caption": [
-   "Blah blha blah",
-   "To be or not to be"
-  ],
-  "bounding-box": null,
-  "mask": null,
-  "3D-mesh": null
+  "comment": "This is a description of the post processing, like how the Denim is bleached and processed.\nIt can also be used for decoration, like, Ripped Jeans\n       \n\n\n\n    \n"
  },
  "sustainability": {
   "recycled-material": "Y",
@@ -1238,14 +1199,13 @@
   "slow-fashion": true,
   "fast-fashion": false,
   "other": null,
-  "comment": "recycled-material;  Y(Yes) / N(No).  sustainability-grade;  a measure from 1 to 10 (10 being best)\n"
+  "comment": "recycled-material;  Y(Yes) / N(No). \nsustainability-grade;  a measure from 1 to 10 (10 being best)\n"
  },
  "personal-characteristics": {
   "age": null,
   "gendre": null,
   "fitting-preferences": {
-   "type": "loose",
-   "all-types": [
+   "classes": [
     "loose",
     "slim",
     "regular",
@@ -1253,47 +1213,40 @@
    ]
   },
   "primary-preferred-color": {
-   "type": null,
-   "all-types": null
+   "classes": null
   },
   "secondary-preferred-color": {
-   "type": null,
-   "all-types": null
+   "classes": null
   },
   "weight": null,
   "height": null,
-  "size": {
-   "waste": null,
-   "chest": null
+  "waste-size": null,
+  "chest-size": null,
+  "occupation": {
+   "classes": null
   },
-  "occupation": null,
   "country-of-residence": null,
   "country-of-origin": null,
   "skin-color-value": {
-   "type": null,
-   "all-types": null
+   "classes": null
   },
   "skin-color-name": {
-   "type": null,
-   "all-types": null
+   "classes": null
   },
   "primary-language": null,
   "secondary-language": null,
   "religious-preference": {
-   "type": null,
-   "all-types": null
+   "classes": null
   },
   "ethnic-group": {
-   "type": null,
-   "all-types": null
+   "classes": null
   },
   "customer-comments-review": null,
-  "comment": "review field is used to store customers review on products, it may or maynot be available\n        \n"
+  "comment": "Review field is used to store customers review on products, it may or maynot be available\n        \n"
  },
  "care": {
   "washing": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Wash in commercial machine in water not exceeding 95\u00c2\u00b0C, at normal setting",
     "Wash in commercial machine in water not exceeding 95\u00c2\u00b0C, at permanent press setting",
     "Wash in domestic or commercial machine in water not exceeding 70\u00c2\u00b0C, at normal setting",
@@ -1317,8 +1270,7 @@
    "comment": ""
   },
   "bleaching": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Use any bleach when needed",
     "Use only non-chlorine bleach when needed",
     "Do not bleach"
@@ -1326,8 +1278,7 @@
    "comment": ""
   },
   "drying": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Tumble dry at high heat (not exceeding 75\u00c2\u00b0C) at normal setting",
     "Tumble dry at medium heat (not exceeding 65\u00c2\u00b0C) at normal setting",
     "Tumble dry at medium heat (not exceeding 65\u00c2\u00b0C) at permanent press setting",
@@ -1345,8 +1296,7 @@
    "comment": ""
   },
   "ironing": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Iron with or without steam by hand, or press on commercial equipment, at a high temperature (not exceeding 200\u00c2\u00b0C). Recommended temperature for cotton and linen textiles",
     "Iron with or without steam by hand, or press on commercial equipment, at a medium temperature (not exceeding 150\u00c2\u00b0C). Recommended temperature for polyester, rayon, silk, triacetate and wool textiles",
     "Iron with or without steam by hand, or press on commercial equipment, at a low temperature (not exceeding 110\u00c2\u00b0C). Recommended temperature for acetate, acrylic, modacrylic, nylon, polypropylene and spandex textiles",
@@ -1356,8 +1306,7 @@
    "comment": ""
   },
   "dry-cleaning": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "A Dry-cleaning in all solvents normally used for dry-cleaning - this includes all solvents listed for the symbol P, plus trichloroethylene and 1,1, 1-trichloroethane",
     "F Dry-cleaning in trifluorotrichloroethane, white spirit (distillation temperature between 150\u00c2\u00b0C and 210\u00c2\u00b0C, flash point 38\u00c2\u00b0C to 60\u00c2\u00b0C) Normal cleansing procedures without restrictions",
     "P Dry-cleaning in tetrachloroethylene, monofluorotrichloro methane, trifluorotrichloroethane, and white spirit. Normal cleansing procedures without restrictions",
@@ -1368,11 +1317,10 @@
     "Dry-cleaning, normal cycle. Any solvent except trichloroethylene",
     "Dry-clean, normal cycle. Petroleum solvent only"
    ],
-   "comment": "\"F_US is F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en\" P_US, same as F_US but with a P symbol.  \"C_CROSS is a crossed circle, see in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en\"\n            \n"
+   "comment": "\"F_US is F letter with an underscore see symbol image in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-F-Line_tcm35-145836.jpg?la=en\"\nP_US, same as F_US but with a P symbol. \n\"C_CROSS is a crossed circle, see in https://www.coats.com/-/media/Coats/Information-Hub/Care-Labels/Euro-Dry-Cleaning-No_tcm35-145834.jpg?la=en\"\n            \n"
   },
   "supplementary-care": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Do not wring",
     "Wet-clean",
     "Do not wet-clean"
@@ -1380,8 +1328,7 @@
    "comment": ""
   },
   "water-temperature-dot-symbol": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "6 dots (95\u00c2\u00b0C Near boil)",
     "5 dots (70\u00c2\u00b0C Extremely hot)",
     "4 dots (60\u00c2\u00b0C Very hot)",
@@ -1392,34 +1339,44 @@
    "comment": ""
   }
  },
+ "annotation": {
+  "caption": [
+   "Blah blha blah",
+   "To be or not to be"
+  ],
+  "bounding-box": null,
+  "mask": null,
+  "3D-mesh": null,
+  "comment": ""
+ },
  "media": {
   "comment": "DDOIF file can have multiple media files for the same item, could be a few images at different; images and videos; images, 3D objects, and videos; etc.\n",
   "mode": null,
   "resolution": null,
   "description": null,
   "imaging-device": null,
-  "media-quality-indicator-type": null,
-  "media-type": null,
+  "media-quality-indicator": null,
+  "media-type-name": null,
   "memory-chunks": {
    "length": {
-    "comment": "4 bytes, big-endian  media chunk length in bytes, for example 5 refers to 5 bytes being reserved for the data field       \n        \n"
+    "comment": "4 bytes, big-endian \nmedia chunk length in bytes, for example 5 refers to 5 bytes being reserved for the data field       \n"
    },
    "CRC": {
-    "comment": "cyclic redundancy code/checksum; 4 bytes.  The CRC is a network-byte-order CRC-32 computed over the chunk type and chunk data, but not the length\n"
+    "comment": "cyclic redundancy code/checksum; 4 bytes. \nThe CRC is a network-byte-order CRC-32 computed over the chunk type and chunk data, but not the length\n"
    },
    "chunk-name": {
-    "comment": "8 bytes reserved Images; PNG, JPEG / JPG, BMP, APNG, GIF, JPEG-LS / JPG-LS, Video; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV, 3D Objects; STL (STereoLithography; a 3D file format that can be used in 3D printing),  OBJ (similar to sTL), FBX (3D file format that supports geometry and appearance related properties  like color and texture),  DAE ( COLLADA format supports geometry, appearance related properties  like color, material, textures, and animation)\n"
+    "comment": "8 bytes reserved\nImages; PNG, JPEG / JPG, BMP, APNG, GIF, JPEG-LS / JPG-LS,\nVideo; MP4, AVCHD, AVI, MOV, WMV, MKV, BDAV,\n3D Objects; STL (STereoLithography; a 3D file format that can be used in 3D printing), \nOBJ (similar to sTL), FBX (3D file format that supports geometry and appearance related properties \nlike color and texture),  DAE ( COLLADA format supports geometry, appearance related properties \nlike color, material, textures, and animation)\n"
    }
   },
   "imaging-location": {
-   "type": null,
-   "all-types": [
+   "classes": [
     "Outdoor",
     "Indoor",
     "Studio",
     "Professional-shooting",
     "Personal-shooting"
-   ]
+   ],
+   "comment": ""
   }
  }
 }
