@@ -9,6 +9,7 @@
   "contributor": null,
   "barcode-url": null,
   "qr-code-url": null,
+  "style code": null,
   "description": null,
   "country": null,
   "city": null,
@@ -17,9 +18,13 @@
   "magic number": "89 44 44 4f 49 46 0d 0a 1a 0a",
   "digital signature": null,
   "gdpr": null,
-  "ai-model": null,
   "__version__": 0.1,
   "comment": "date-example 01-September-2019\nbarcode-url (qr-code-url) is a link to an image of the code, \nbarcode and qr-code images can also be stored along in the DDOIF file\nMedia type is a two-part identifier for file formats and format contents transmitted on the Internet\nMagic number is the file signature \nGDPR Privacy issues are a big concern for a large number of customers and legislators, and this is another element that must be contained in any ICT protocol. Hence, our aim is to make use of fashion data and trends, GDPR and other related policies, and user feedback to define an ICT protocol for the fashion wholesale and retail companies.\nai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.\n"
+ },
+ "ai-model": {
+  "mask-rcnn": null,
+  "panoptic": null,
+  "nlp": null
  },
  "clothing": {
   "sweatshirt": {
@@ -539,6 +544,10 @@
    ],
    "comment": ""
   },
+  "cuff": {
+   "classes": null,
+   "comment": "TODO\n"
+  },
   "collar": {
    "classes": [
     "Shirt Collar",
@@ -655,7 +664,7 @@
     "Bottom Right In",
     "Bottom Right Out"
    ],
-   "comment": "Eacy type is a selection of different values ... it is in fact can be stored as a binary vector\n                    Keypoints\\Category\tBlouse\tOutwear\tTrousers\tSkirt\tDress\n                     Neckline Left\t    Y\tY\tN\tN\tY\n                     Neckline Right\t    Y\tY\tN\tN\tY\n                     Center Front\t    Y\tN\tN\tN\tY\n                     Shoulder Left\t    Y\tY\tN\tN\tY\n                     Shoulder Right\t    Y\tY\tN\tN\tY\n                     Armpit Left\t    Y\tY\tN\tN\tY\n                     Armpit Right\t    Y\tY\tN\tN\tY\n                     Waistline Left\t    N\tY\tN\tN\tY\n                     Waistline Right\tN\tY\tN\tN\tY\n                     Cuff Left In\t    Y\tY\tN\tN\tY\n                     Cuff Left Out\t    Y\tY\tN\tN\tY\n                     Cuff Right In\t    Y\tY\tN\tN\tY\n                     Cuff Right Out\t    Y\tY\tN\tN\tY\n                     Top Hem Left\t    Y\tY\tN\tN\tN\n                     Top Hem Right\t    Y\tY\tN\tN\tN\n                     Waistband Left\t    N\tN\tY\tY\tN\n                     Waistband Right\tN\tN\tY\tY\tN\n                     Hemline Left\t    N\tN\tN\tY\tY\n                     Hemline Right\t    N\tN\tN\tY\tY\n                     Crotch\t            N\tN\tY\tN\tN\n                     Bottom Left In\t    N\tN\tY\tN\tN\n                     Bottom Left Out\tN\tN\tY\tN\tN\n                     Bottom Right In\tN\tN\tY\tN\tN\n                     Bottom Right Out\tN\tN\tY\tN\tN\n                \n"
+   "comment": "Eacy type is a selection of different values ... it is in fact can be stored as a binary vector\n                    Keypoints\\Category\tBlouse\tOutwear\tTrousers\tSkirt\tDress\n                     Neckline Left\t    Y\tY\tN\tN\tY\n                     Neckline Right\t    Y\tY\tN\tN\tY\n                     Center Front\t    Y\tN\tN\tN\tY\n                     Shoulder Left\t    Y\tY\tN\tN\tY\n                     Shoulder Right\t    Y\tY\tN\tN\tY\n                     Armpit Left\t    Y\tY\tN\tN\tY\n                     Armpit Right\t    Y\tY\tN\tN\tY\n                     Waistline Left\t    N\tY\tN\tN\tY\n                     Waistline Right\tN\tY\tN\tN\tY\n                     Cuff Left In\t    Y\tY\tN\tN\tY\n                     Cuff Left Out\t    Y\tY\tN\tN\tY\n                     Cuff Right In\t    Y\tY\tN\tN\tY\n                     Cuff Right Out\t    Y\tY\tN\tN\tY\n                     Top Hem Left\t    Y\tY\tN\tN\tN\n                     Top Hem Right\t    Y\tY\tN\tN\tN\n                     Waistband Left\t    N\tN\tY\tY\tN\n                     Waistband Right\tN\tN\tY\tY\tN\n                     Hemline Left\t    N\tN\tN\tY\tY\n                     Hemline Right\t    N\tN\tN\tY\tY\n                     Crotch\t            N\tN\tY\tN\tN\n                     Bottom Left In\t    N\tN\tY\tN\tN\n                     Bottom Left Out\tN\tN\tY\tN\tN\n                     Bottom Right In\tN\tN\tY\tN\tN\n                     Bottom Right Out\tN\tN\tY\tN\tN\n                            \n"
   }
  },
  "footwear": {
@@ -762,9 +771,19 @@
      "Wedge Heel",
      "Louis / Pompadour"
     ],
-    "comment": "left blank                   \n"
+    "comment": "left blank    \n"
    }
-  }
+  },
+  "toe shape": [
+   "Budapester Toe",
+   "Classic Round Toe",
+   "Almond Toe",
+   "Pointy Toe",
+   "Soft Square",
+   "Square Toe",
+   "Chiseled",
+   "Elongated"
+  ]
  },
  "accessory": {
   "hat": {

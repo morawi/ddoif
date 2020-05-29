@@ -446,7 +446,18 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Sculptural Heel, Slingback Heel, Spool Heel, Stacked Heel, Stiletto Heel, 
                 T-Strap Heel, Wedge Heel, Louis / Pompadour]
             comment: |
-                left blank                   
+                left blank    
+    toe shape: # not sure if we need to move this to annatomy
+        - Budapester Toe
+        - Classic Round Toe
+        - Almond Toe 
+        - Pointy Toe 
+        - Soft Square 
+        - Square Toe
+        - Chiseled
+        - Elongated
+        
+    
 accessory:
     hat:        
         all_types:
