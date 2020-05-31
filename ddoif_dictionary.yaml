@@ -283,6 +283,9 @@ clothing:
                     
                 
 anatomy:
+    Frill: 
+    Pleate:
+    
     neckline: # necklines can be used for dress(es), top(tee)s, etc        
         classes:
             [Asymmetric Neckline, Bateau / Boat Neck Neckline, Collared Neckline, 
@@ -417,7 +420,8 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 Motorcycle Shoe, Oxford Shoe, "D’Orsay Shoe",
                 Peep-Toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
                 Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats,  
-                Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers]
+                Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers,
+                Crocs Shoes]
                 
             comment: |
             
@@ -769,6 +773,7 @@ color:
 
 pattern:
     classes: # this can by dynamic
+        - Solid / Plane
         - Horizental Stripes
         - Vertical Stripes 
         - Circles
@@ -780,7 +785,13 @@ pattern:
         - Polak Dot
         - Polak Zebra Stripes
         - Ruffle
-        - 
+        - Geometry
+        - Leopard / Animal
+        - Zebra
+        - Plaid
+        - Graphic
+        - Fractal
+        
     comment: |
         dsensity mimics "pattern density|
         More patterns need to be added
@@ -1034,7 +1045,7 @@ annotation: # unlimited number of captions, normally a few of them
     comment: |
 
 media:
-    comment: >
+    comment: |
         DDOIF file can have multiple media files for the same item, could be a few images
         at different; images and videos; images, 3D objects, and videos; etc.
     
