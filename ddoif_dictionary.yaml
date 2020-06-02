@@ -72,6 +72,13 @@ info:
         ai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.
 
 
+sizing:
+    classes: 
+        - Loose
+        - Slim
+        - Regular / Appropriate
+        - Normal 
+        
 ai-model:
     mask-rcnn:
     panoptic:
@@ -80,6 +87,69 @@ ai-model:
 clothing:
     sweatshirt:
         classes:
+        
+    romper:
+        classes:
+            - Strapless Romper
+            - Lace Romper
+            - Maxi Romper
+            - Contemporary Romper
+            -  Dress Style Romper
+            - Overlay Romper
+            - Off-shoulder Romper
+            - One Shoulder Romper
+            - Tie Strap Romper
+            - Ruffle Romper
+            - Bardot Romper
+            - Fluted Sleeve Romper
+            - Dip Hem Skirt Romper
+            - Peplum Romper
+            - Halter Neck Romper
+            - Cartographer Romper
+            - Denim Romper
+            - Scoop Neck Romper
+            - Cold-Shoulder Romper
+            - Kimono Sleeve Romper
+            - Frill Romper
+            - Tassel Romper
+            - Romper With Cape
+            - Back Cut Out Romper
+            - Cargo Romper
+            - Shirt Romper
+            - Gingham / Fabric Romper
+            - Cami Romper
+            - Choker Romper
+            - Lace Up Romper
+            - Caged Romper
+            - Colorblock Romper
+            - High Neck Romper
+            - Bandeau Romper
+            - Zip Up Romper
+            - Plunge Romper
+            - Pleated Romper
+            - Lace Up Sleeve Romper
+            - Spaghetti Romper
+            - Crochet Romper
+            - Pinafore Romper
+            - Tie Back Romper
+            - Criss Cross Romper
+            - Wrap Romper
+            - Cut Out Elbows Romper
+            - Tie Sleeve Romper
+            - Cross Back Romper
+            - Tuxedo Romper
+            - Sporty Romper
+            - Bandage Romper
+            - Beach Romper
+            - Split Sleeve Romper
+            - Racer Front Romper
+            - Beaded Romper
+            - Backless Romper
+            - Leather Romper
+            - Sequins Romper
+            - Strappy Romper
+            - Sheer Romper
+            - Butterfly Sleeve Romper
         
     hoodie:
         classes:
@@ -209,7 +279,7 @@ clothing:
         comment: |
         
     
-    womens-short:    # Name confusion/conflict: Ladies vs Womens
+    womens-shorts:    # Name confusion/conflict: Ladies vs Womens
         classes:
             [Booty Shorts, Boy Shorts, Jamaican Shorts, Bermuda Shorts, 
             Knee length Shorts, Pedal pusher Shorts, Toreador Shorts, 
@@ -245,7 +315,7 @@ clothing:
          
     
     # Mens items, not sure if we have to add kids items, TODO
-    mens-short:
+    mens-shorts:
         classes:
             [Tennis Shorts, Running Shorts, Cargo Shorts, Pleated Shorts, 
             Flat Front Shorts, Denim Shorts, Bermuda Shorts, Board Shorts, 
@@ -283,8 +353,74 @@ clothing:
                     
                 
 anatomy:
-    Frill: 
-    Pleate:
+    overlap:
+#    overlap
+#extended part of the under lap pattern piece with buttons (or button holes)
+#Note 1 to entry: For digital garments, the horizontal/vertical margin where the material overlaps, focusing on the buttons, is defined to create an opening.
+    slit:
+        - xx
+        
+    placket:
+    
+    opening:    
+        - Faced opening
+        - Placket opening
+        - Hemmed opening
+        - False placket opening
+        - Bias Bound opening
+        - Fly Opening 
+        - Seam opening
+        - Overlapped opening
+        - Back opening
+        - Gathered opening
+    
+        
+    vent:
+        classes:
+            - Centre Vent
+            - Side / Double Vent
+            - No Vent
+        comment: |
+            "Jacket's" vent
+    pockets:
+        classes:
+        comment: |
+        
+    ruffle: 
+        classes:
+            - Single Edge Ruffles
+            - Double Edge Ruffles
+            - Double Width Ruffles
+            - Water Fall Ruffles
+            - Circular Ruffles 
+        comment: |
+    
+    pleat:
+        classes: |
+            - Regular Pleat
+            - Kick Pleat
+            - Inverted Pleat
+            - Box Pleat
+            - Knife Pleat
+            - Accordion Pleat
+            - Sari Pleat
+            - Fancy Pleat
+        comment: |
+        
+    cuff:
+        classes:
+            - One Button Barrel Cuff
+            - Long One Button Barrel Cuff
+            - One Button Mitered Cuff
+            - Two Button Rounded Cuff
+            - Two Button Mitered Cuff
+            - French Cuff
+            - Rounded French Cuff
+            - Convertible Square Cuff
+            - Soft One Button Cuff
+            - Soft Long One Button Cuff
+            - Soft Square Two Button Cuff
+        comment: | 
     
     neckline: # necklines can be used for dress(es), top(tee)s, etc        
         classes:
@@ -304,12 +440,12 @@ anatomy:
         classes:
             [Raglan Sleeve, Normal Sleeve, Cap Sleeve, Cap-Extended Sleeve, 
             Bracelet / Three-Fourth  Sleeve, Lantern Sleeve, 
-            Man’s Shirt Sleeve With Cuff, Leg Of Mutton Sleeve, Juliet Sleeve, 
-            Long Bell Sleeve, Bell Sleeve, Frill Sleeve / Flute Sleeve, 
+            "Man's Shirt Sleeve With Cuff" , Leg Of Mutton Sleeve, Juliet Sleeve, 
+            Long Bell Sleeve, Bell Sleeve, Frill / Flute Sleeve, 
             Pagoda Sleeve, Bishop Sleeve, Peasant Sleeve, Square Armhole Sleeve, 
             Dolman/ Magyar Sleeve, Padded Shouldered Sleeve, 
             Petal /Tulip / Lapped Sleeve, Marmaluke / Virago Sleeve, 
-            Angel Sleeve / Dalmation Sleeve, Butterfly Sleeve, Bag Sleeve, Draped Sleeve,
+            Angel / Dalmation Sleeve, Butterfly Sleeve, Bag Sleeve, Draped Sleeve,
             Puff Sleeve, Drawstring Puff Sleeve, Epaulet Sleeve, Balloon Sleeve, 
             Batwing Sleeve, Circle Sleeve / Flutter Sleeve, Wing  Ruffle Sleeve, 
             Kimono Sleeve, Over Sleeve, Hanging Sleeve, Elbow Patched Sleeve, 
@@ -319,11 +455,7 @@ anatomy:
 
         comment: |
 
-    cuff:
-        classes:
-            
-        comment: |
-            TODO
+    
     collar:
         classes:
             [Shirt Collar, Button Down Collar, Straight Band Collar, 
@@ -348,13 +480,7 @@ anatomy:
             Notch Shawl Collar, Flip Collar]
         comment: |
         
-    vent:
-        classes:
-            - Centre Vent
-            - Side Vent
-            - No Vent
-        comment: |
-            "Jacket's" vent
+    
     keypoints:
         classes:                
             - Neckline Left
@@ -417,11 +543,12 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 [Athletic Shoe, Ballet Shoe, Boat Shoe, Bootie Shoe, Boyfriend Shoe, 
                 Brogue Shoe, Clog, Court Shoe, Derby Shoe, Gladiator Shoe,  
                 High-Top Shoe, Loafer Shoe, Mary Janes Shoe, Moccasin, Monk Shoe,
-                Motorcycle Shoe, Oxford Shoe, "D’Orsay Shoe",
+                Motorcycle Shoe, Oxford Shoe, "D'Orsay Shoe",
                 Peep-Toe Shoe, Platform Shoe, Pointe Shoe, Pumps Shoe, Saddle Shoe, 
                 Slingback Shoe, Soccer Shoe, Sport Shoe, Toe Shoe, Ballet Flats,  
                 Espadrille Shoe, Flip-flops, Mules, Slip-on, Sneakers,
                 Crocs Shoes]
+                
                 
             comment: |
             
@@ -463,8 +590,12 @@ footwear: # footwear is also considered clothing in the literature, but we are s
         
     
 accessory:
+    wallate:
+        classes:
+        comment: |
+        
     hat:        
-        all_types:
+        classes:
             - Baseball Cap
             - Beanie
             - Beret
@@ -748,6 +879,7 @@ accessory:
         - Up Cycle Fashion Neckwear
         - Neckerchief
         comment: |
+    headband:
     
     umbrella:
         classes:
@@ -784,13 +916,18 @@ pattern:
         - Pailletteness
         - Polak Dot
         - Polak Zebra Stripes
-        - Ruffle
+        - Ruffle Print
         - Geometry
         - Leopard / Animal
         - Zebra
         - Plaid
         - Graphic
         - Fractal
+        - Logo Printed
+        - Scene Printed
+        - Text Printed
+        - Scene-Text Printed
+        
         
     comment: |
         dsensity mimics "pattern density|
@@ -804,25 +941,38 @@ pattern-density:
         - large
         - huge    
     comment: |
-
+            
+    
+fabric-make:
+    classes:
+        - woven
+        - knitted
             
 fabric:
     classes:
-        - Denim
-        - Jersey
-        - Ribbed
-        - Softshell
-        - Hardshell
-        - Lace
-        - Fleece
-        - Chiffon
-        - Blends
-        - Cord
-        - Corduroy
-        - Needlecord
-        - Cotton and Polyester Blends
+        
+        [Aertex Fabric, Aida cloth Fabric, Baize Fabric, Batiste Fabric, 
+        "Bird's Eye Knit Fabric", Bombazine Fabric, Brocade Fabric, Buckram Fabric, 
+        Cable Knit Fabric, Calico Fabric, Cambric Fabric, Charmeuse Fabric, Chenille Fabric, 
+        Corduroy Fabric, Casement Fabric, Cheese Cloth Fabric, Cheviot Fabric, Chiffon Fabric, 
+        Chino Fabric, Chintz Fabric, Crepe Fabric, Crewel Fabric, Damask Fabric, Denim Fabric, 
+        Dimity Fabric, Drill Fabric, Double Knit Fabric, Duck / Canvas Fabric, Felt Fabric, 
+        Fiberglass Fabric, Filter Fabric, Flannel Fabric, Flat / Jersey Knit Fabric, 
+        Fleece Knit Fabric, Foulard Fabric, Fustian Fabric, Gabardine Fabric, Gauze Fabric, 
+        Georgette Fabric, Gingham Fabric, Grey / Greige Fabric, Industrial Fabric, 
+        Intarsia Knit Fabric, Interlock Stitch Knit Fabric, Jacquard Knit Fabric, 
+        Kashmir Silk Fabric, Khadi Fabric, Khaki Fabric, Lame Fabric, Laminated Fabric, 
+        Lawn Fabric, Leno Fabric, Linsey-Woolsey Fabric, Madras Fabric, Madras Muslin Net Fabric,
+        Mousseline Fabric, Muslin Fabric, Narrow Fabric, Organdy Fabric, Organza Fabric,
+        Oxford Fabric, Percale Fabric, Plain Fabric, Pointelle Knit Fabric, Poplin Fabric, 
+        Purl Knit Fabric, Quilted Fabric, Raschel Knit Fabric, Reflective Fabric, 
+        Rib Stitch Knit Fabric, Satin / Sateen Fabric, Shantung Fabric, Sheeting Fabric, 
+        Sliver Knit Fabric, Taffeta Fabric, Stretch Fabric, Tartan Fabric, Terry Knitted Fabric, 
+        Terry Cloth Fabric, Ticking Fabric, Tissue Fabric, Tricot Knit Fabric, 
+        Velour Knitted Fabric, Velvet Fabric, Voile Fabric, Warp Knitted Fabric, 
+        Whipcord Fabric, Needlecord Fabric, Lace Fabric, Hardshell Fabric, Softshell Fabric]
     comment: |
-            Cord vs  Corduroy, are they the same?
+            knit
 
 
 material:
@@ -863,10 +1013,12 @@ material:
         - Twill
         - Diolen 
         - Fiberglass
+        - Cotton and Polyester Blends
     comment: |
         Ryon / Artificial Silk  is made of bamboo plant, also called artificial silk
       
-    
+
+        
 post-processing: 
     classes: 
         - Bleach
@@ -881,7 +1033,6 @@ post-processing:
         - Coat
         - Hole
         - Extra Pocket
-        - Ripped
     comment: |
         This is a description of the post processing, like how the Denim is bleached and processed.
         It can also be used for decoration, like, Ripped Jeans
@@ -909,12 +1060,7 @@ sustainability:
 personal-characteristics: # and preferences, info are non-obligatory, in general and abide to GDPR
     age:
     gendre:
-    fitting-preferences:
-        classes: 
-            - loose
-            - slim
-            - regular
-            - normal 
+    
     primary-preferred-color:
         classes:
     secondary-preferred-color:
@@ -1083,3 +1229,20 @@ media:
             - Personal-shooting
         comment: |
         
+
+
+#weave types
+#https://wwd.com/fashion-dictionary/
+#
+#Watteau back
+#The back of a garment in which box pleats are placed at the center back and the fabric released by these pleats falls loosely to the bottom of the garment. The name of this style derives from Jean Antoine Watteau, a French artist of the 18th century, in whose paintings women wore dresses with this design feature. The name was not applied to these designs until the 19th century. Today the style continues to be popular, especially in nightgowns and robes.
+#weave types
+#Fabrics made from yarns that are woven on a loom can be constructed in various ways. Lengthwise or warp yarns are placed on the loom first, and crosswise or weft (also called filling) yarns are interlaced with the warps. There are three basic weaves: plain weave, twill weave, and satin weave. In the plain weave, yarns in the first row of the weft cross over one warp yarn, under one, over one, etc., across the width of the fabric. In the second row, the weft passed under the first warp, over the second, under the third, etc. The third row follows the same pattern as the first. This is the simplest weave. By varying the kinds of yarns used, color of yarns, and size of yarns, many different fabrics can be produced. If several rows of weft yarns cross over several rows of warp yarns at a time, a variation of the plain weave called the basket weave can be made. In the twill weave, weft yarns interlace with warp yarns in a specified regular pattern. The resulting fabric has a diagonal line (called a wale) on the surface. For the satin weave, weft yarns float over then interlace with warp yarns in patterns that do not produce a diagonal line. By using loosely twisted filament fibers with high luster, the characteristic sheen of satin fabrics is produced. More complicated patterns produced on special looms, such as the dobby or jacquard, utilize combinations of the basic weaves to achieve very decorative fabrics.
+#weft and warp knits
+#Knitting is the formation of fabrics from yarns by creating interconnected loops. Knits may be made from one long, continuous yarn (as in hand knitting) or from sets of yarns. In weft knits, yarns run and interlock across the fabric. In warp knits, the yarns run or interlock in the lengthwise direction. Hand knitting is a form of weft knitting, but weft knits are also made on machines. Weft knits stretch more than warp knits. If stitches break, a run or ladder forms in the lengthwise direction. The most common types of weft knits are jersey (also called single or plain knits) in which all stitches are pulled to the same side of the fabric, so that one side of the fabric is smooth and the other side has loops. Knitted velour, terrycloth, fleece, imitation furs, plush, and other knitted pile fabrics are weft knits, as are doubleknits. Warp knits are more stable and resist runs. The most common fabrics made by warp knitting are tricots, which are made in varying weights, and raschel knits which can be made in complicated patterns that simulate lace or crochet.
+#X
+#
+#Y
+#yarn types
+#Yarns are made by twisting or otherwise binding fibers together and are used to construct fabrics. The fibers that are made into yarns can be long, continuous strands, called filaments, which can be twisted together loosely or more tightly. Filament yarns are made from either silk or manufactured fibers. Short, staple fibers (cotton, wool, linen, or manufactured fibers or silk cut into short lengths) must be twisted so that they will hold together to form a yarn. Yarns may be classified according to the number of parts. A single yarn is just one yarn, a ply yarn consists of two or more single yarns twisted together, and a cord yarn is made of two or more ply yarns twisted together. Yarns with a regular surface and diameter are called simple yarns. Those made to create decorative effects are known as novelty or fancy yarns. A novelty yarn can be a single yarn, such as a slub yarn in which some parts of the yarn are twisted tightly and other parts more loosely, or a ply yarn such as a bouclé yarn in which a decorative yarn makes irregular, decorative loops around a base yarn. By varying the structure of yarns, an enormous number of different types of yarns and decorative effects can be created.
+#

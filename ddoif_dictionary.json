@@ -21,6 +21,14 @@
   "__version__": 0.1,
   "comment": "date-example 01-September-2019\nbarcode-url (qr-code-url) is a link to an image of the code, \nbarcode and qr-code images can also be stored along in the DDOIF file\nMedia type is a two-part identifier for file formats and format contents transmitted on the Internet\nMagic number is the file signature \nGDPR Privacy issues are a big concern for a large number of customers and legislators, and this is another element that must be contained in any ICT protocol. Hence, our aim is to make use of fashion data and trends, GDPR and other related policies, and user feedback to define an ICT protocol for the fashion wholesale and retail companies.\nai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.\n"
  },
+ "sizing": {
+  "classes": [
+   "Loose",
+   "Slim",
+   "Regular / Appropriate",
+   "Normal"
+  ]
+ },
  "ai-model": {
   "mask-rcnn": null,
   "panoptic": null,
@@ -29,6 +37,70 @@
  "clothing": {
   "sweatshirt": {
    "classes": null
+  },
+  "romper": {
+   "classes": [
+    "Strapless Romper",
+    "Lace Romper",
+    "Maxi Romper",
+    "Contemporary Romper",
+    "Dress Style Romper",
+    "Overlay Romper",
+    "Off-shoulder Romper",
+    "One Shoulder Romper",
+    "Tie Strap Romper",
+    "Ruffle Romper",
+    "Bardot Romper",
+    "Fluted Sleeve Romper",
+    "Dip Hem Skirt Romper",
+    "Peplum Romper",
+    "Halter Neck Romper",
+    "Cartographer Romper",
+    "Denim Romper",
+    "Scoop Neck Romper",
+    "Cold-Shoulder Romper",
+    "Kimono Sleeve Romper",
+    "Frill Romper",
+    "Tassel Romper",
+    "Romper With Cape",
+    "Back Cut Out Romper",
+    "Cargo Romper",
+    "Shirt Romper",
+    "Gingham / Fabric Romper",
+    "Cami Romper",
+    "Choker Romper",
+    "Lace Up Romper",
+    "Caged Romper",
+    "Colorblock Romper",
+    "High Neck Romper",
+    "Bandeau Romper",
+    "Zip Up Romper",
+    "Plunge Romper",
+    "Pleated Romper",
+    "Lace Up Sleeve Romper",
+    "Spaghetti Romper",
+    "Crochet Romper",
+    "Pinafore Romper",
+    "Tie Back Romper",
+    "Criss Cross Romper",
+    "Wrap Romper",
+    "Cut Out Elbows Romper",
+    "Tie Sleeve Romper",
+    "Cross Back Romper",
+    "Tuxedo Romper",
+    "Sporty Romper",
+    "Bandage Romper",
+    "Beach Romper",
+    "Split Sleeve Romper",
+    "Racer Front Romper",
+    "Beaded Romper",
+    "Backless Romper",
+    "Leather Romper",
+    "Sequins Romper",
+    "Strappy Romper",
+    "Sheer Romper",
+    "Butterfly Sleeve Romper"
+   ]
   },
   "hoodie": {
    "classes": [
@@ -283,7 +355,7 @@
    ],
    "comment": ""
   },
-  "womens-short": {
+  "womens-shorts": {
    "classes": [
     "Booty Shorts",
     "Boy Shorts",
@@ -383,7 +455,7 @@
    ],
    "comment": ""
   },
-  "mens-short": {
+  "mens-shorts": {
    "classes": [
     "Tennis Shorts",
     "Running Shorts",
@@ -461,6 +533,65 @@
   }
  },
  "anatomy": {
+  "overlap": null,
+  "slit": [
+   "xx"
+  ],
+  "placket": null,
+  "opening": [
+   "Faced opening",
+   "Placket opening",
+   "Hemmed opening",
+   "False placket opening",
+   "Bias Bound opening",
+   "Fly Opening",
+   "Seam opening",
+   "Overlapped opening",
+   "Back opening",
+   "Gathered opening"
+  ],
+  "vent": {
+   "classes": [
+    "Centre Vent",
+    "Side / Double Vent",
+    "No Vent"
+   ],
+   "comment": "\"Jacket's\" vent\n"
+  },
+  "pockets": {
+   "classes": null,
+   "comment": ""
+  },
+  "ruffle": {
+   "classes": [
+    "Single Edge Ruffles",
+    "Double Edge Ruffles",
+    "Double Width Ruffles",
+    "Water Fall Ruffles",
+    "Circular Ruffles"
+   ],
+   "comment": ""
+  },
+  "pleat": {
+   "classes": "- Regular Pleat\n- Kick Pleat\n- Inverted Pleat\n- Box Pleat\n- Knife Pleat\n- Accordion Pleat\n- Sari Pleat\n- Fancy Pleat\n",
+   "comment": ""
+  },
+  "cuff": {
+   "classes": [
+    "One Button Barrel Cuff",
+    "Long One Button Barrel Cuff",
+    "One Button Mitered Cuff",
+    "Two Button Rounded Cuff",
+    "Two Button Mitered Cuff",
+    "French Cuff",
+    "Rounded French Cuff",
+    "Convertible Square Cuff",
+    "Soft One Button Cuff",
+    "Soft Long One Button Cuff",
+    "Soft Square Two Button Cuff"
+   ],
+   "comment": ""
+  },
   "neckline": {
    "classes": [
     "Asymmetric Neckline",
@@ -502,12 +633,12 @@
     "Cap-Extended Sleeve",
     "Bracelet / Three-Fourth  Sleeve",
     "Lantern Sleeve",
-    "Man\u00e2\u20ac\u2122s Shirt Sleeve With Cuff",
+    "Man's Shirt Sleeve With Cuff",
     "Leg Of Mutton Sleeve",
     "Juliet Sleeve",
     "Long Bell Sleeve",
     "Bell Sleeve",
-    "Frill Sleeve / Flute Sleeve",
+    "Frill / Flute Sleeve",
     "Pagoda Sleeve",
     "Bishop Sleeve",
     "Peasant Sleeve",
@@ -516,7 +647,7 @@
     "Padded Shouldered Sleeve",
     "Petal /Tulip / Lapped Sleeve",
     "Marmaluke / Virago Sleeve",
-    "Angel Sleeve / Dalmation Sleeve",
+    "Angel / Dalmation Sleeve",
     "Butterfly Sleeve",
     "Bag Sleeve",
     "Draped Sleeve",
@@ -543,10 +674,6 @@
     "Cold-shouldered Sleeve"
    ],
    "comment": ""
-  },
-  "cuff": {
-   "classes": null,
-   "comment": "TODO\n"
   },
   "collar": {
    "classes": [
@@ -629,14 +756,6 @@
    ],
    "comment": ""
   },
-  "vent": {
-   "classes": [
-    "Centre Vent",
-    "Side Vent",
-    "No Vent"
-   ],
-   "comment": "\"Jacket's\" vent\n"
-  },
   "keypoints": {
    "classes": [
     "Neckline Left",
@@ -688,7 +807,7 @@
      "Monk Shoe",
      "Motorcycle Shoe",
      "Oxford Shoe",
-     "D\u00e2\u20ac\u2122Orsay Shoe",
+     "D'Orsay Shoe",
      "Peep-Toe Shoe",
      "Platform Shoe",
      "Pointe Shoe",
@@ -703,7 +822,8 @@
      "Flip-flops",
      "Mules",
      "Slip-on",
-     "Sneakers"
+     "Sneakers",
+     "Crocs Shoes"
     ],
     "comment": ""
    },
@@ -786,8 +906,12 @@
   ]
  },
  "accessory": {
+  "wallate": {
+   "classes": null,
+   "comment": ""
+  },
   "hat": {
-   "all_types": [
+   "classes": [
     "Baseball Cap",
     "Beanie",
     "Beret",
@@ -1078,6 +1202,7 @@
    ],
    "comment": ""
   },
+  "headband": null,
   "umbrella": {
    "classes": null,
    "comment": ""
@@ -1109,6 +1234,7 @@
  },
  "pattern": {
   "classes": [
+   "Solid / Plane",
    "Horizental Stripes",
    "Vertical Stripes",
    "Circles",
@@ -1119,8 +1245,17 @@
    "Pailletteness",
    "Polak Dot",
    "Polak Zebra Stripes",
-   "Ruffle",
-   null
+   "Ruffle Print",
+   "Geometry",
+   "Leopard / Animal",
+   "Zebra",
+   "Plaid",
+   "Graphic",
+   "Fractal",
+   "Logo Printed",
+   "Scene Printed",
+   "Text Printed",
+   "Scene-Text Printed"
   ],
   "comment": "dsensity mimics \"pattern density|\nMore patterns need to be added\n"
  },
@@ -1134,23 +1269,107 @@
   ],
   "comment": ""
  },
+ "fabric-make": {
+  "classes": [
+   "woven",
+   "knitted"
+  ]
+ },
  "fabric": {
   "classes": [
-   "Denim",
-   "Jersey",
-   "Ribbed",
-   "Softshell",
-   "Hardshell",
-   "Lace",
-   "Fleece",
-   "Chiffon",
-   "Blends",
-   "Cord",
-   "Corduroy",
-   "Needlecord",
-   "Cotton and Polyester Blends"
+   "Aertex Fabric",
+   "Aida cloth Fabric",
+   "Baize Fabric",
+   "Batiste Fabric",
+   "Bird's Eye Knit Fabric",
+   "Bombazine Fabric",
+   "Brocade Fabric",
+   "Buckram Fabric",
+   "Cable Knit Fabric",
+   "Calico Fabric",
+   "Cambric Fabric",
+   "Charmeuse Fabric",
+   "Chenille Fabric",
+   "Corduroy Fabric",
+   "Casement Fabric",
+   "Cheese Cloth Fabric",
+   "Cheviot Fabric",
+   "Chiffon Fabric",
+   "Chino Fabric",
+   "Chintz Fabric",
+   "Crepe Fabric",
+   "Crewel Fabric",
+   "Damask Fabric",
+   "Denim Fabric",
+   "Dimity Fabric",
+   "Drill Fabric",
+   "Double Knit Fabric",
+   "Duck / Canvas Fabric",
+   "Felt Fabric",
+   "Fiberglass Fabric",
+   "Filter Fabric",
+   "Flannel Fabric",
+   "Flat / Jersey Knit Fabric",
+   "Fleece Knit Fabric",
+   "Foulard Fabric",
+   "Fustian Fabric",
+   "Gabardine Fabric",
+   "Gauze Fabric",
+   "Georgette Fabric",
+   "Gingham Fabric",
+   "Grey / Greige Fabric",
+   "Industrial Fabric",
+   "Intarsia Knit Fabric",
+   "Interlock Stitch Knit Fabric",
+   "Jacquard Knit Fabric",
+   "Kashmir Silk Fabric",
+   "Khadi Fabric",
+   "Khaki Fabric",
+   "Lame Fabric",
+   "Laminated Fabric",
+   "Lawn Fabric",
+   "Leno Fabric",
+   "Linsey-Woolsey Fabric",
+   "Madras Fabric",
+   "Madras Muslin Net Fabric",
+   "Mousseline Fabric",
+   "Muslin Fabric",
+   "Narrow Fabric",
+   "Organdy Fabric",
+   "Organza Fabric",
+   "Oxford Fabric",
+   "Percale Fabric",
+   "Plain Fabric",
+   "Pointelle Knit Fabric",
+   "Poplin Fabric",
+   "Purl Knit Fabric",
+   "Quilted Fabric",
+   "Raschel Knit Fabric",
+   "Reflective Fabric",
+   "Rib Stitch Knit Fabric",
+   "Satin / Sateen Fabric",
+   "Shantung Fabric",
+   "Sheeting Fabric",
+   "Sliver Knit Fabric",
+   "Taffeta Fabric",
+   "Stretch Fabric",
+   "Tartan Fabric",
+   "Terry Knitted Fabric",
+   "Terry Cloth Fabric",
+   "Ticking Fabric",
+   "Tissue Fabric",
+   "Tricot Knit Fabric",
+   "Velour Knitted Fabric",
+   "Velvet Fabric",
+   "Voile Fabric",
+   "Warp Knitted Fabric",
+   "Whipcord Fabric",
+   "Needlecord Fabric",
+   "Lace Fabric",
+   "Hardshell Fabric",
+   "Softshell Fabric"
   ],
-  "comment": "Cord vs  Corduroy, are they the same?\n"
+  "comment": "knit\n"
  },
  "material": {
   "classes": [
@@ -1189,7 +1408,8 @@
    "Stretch Cotton",
    "Twill",
    "Diolen",
-   "Fiberglass"
+   "Fiberglass",
+   "Cotton and Polyester Blends"
   ],
   "comment": "Ryon / Artificial Silk  is made of bamboo plant, also called artificial silk\n"
  },
@@ -1206,8 +1426,7 @@
    "Tin",
    "Coat",
    "Hole",
-   "Extra Pocket",
-   "Ripped"
+   "Extra Pocket"
   ],
   "comment": "This is a description of the post processing, like how the Denim is bleached and processed.\nIt can also be used for decoration, like, Ripped Jeans\n       \n\n\n\n    \n"
  },
@@ -1223,14 +1442,6 @@
  "personal-characteristics": {
   "age": null,
   "gendre": null,
-  "fitting-preferences": {
-   "classes": [
-    "loose",
-    "slim",
-    "regular",
-    "normal"
-   ]
-  },
   "primary-preferred-color": {
    "classes": null
   },
@@ -1369,7 +1580,7 @@
   "comment": ""
  },
  "media": {
-  "comment": "DDOIF file can have multiple media files for the same item, could be a few images at different; images and videos; images, 3D objects, and videos; etc.\n",
+  "comment": "DDOIF file can have multiple media files for the same item, could be a few images\nat different; images and videos; images, 3D objects, and videos; etc.\n",
   "mode": null,
   "resolution": null,
   "description": null,

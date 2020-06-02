@@ -22,8 +22,13 @@ Links
 
 # https://pypi.org/project/dicttoxml/
 # https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/
+# https://stackoverflow.com/questions/3790454/how-do-i-break-a-string-over-multiple-lines
 
 ''' 
+
+# very important on fabric make and types
+https://www.textileschool.com/171/textile-fabric-types-comprehensive-list-of-textile-fabrics/ 
+
 1- YAML Multi Documents
 YAML format allows multiple documents to be embedded in a single file. They only have to be separated with a line containing triple-dash separator ---.
 
@@ -103,3 +108,69 @@ myfile.write(mydata)
 # !!python/object/apply:module.f	value of f(...)
     
 
+
+
+''' 
+to get to bytes you can use json.dumps(variables).encode('utf-8') 
+then to convert back from bytes you can use json.loads(s.decode('utf-8'))
+
+read(file, 'ab') or 'rb+'  , but seems 'r+b' for python2
+'ab' forces all writes to happen at the end of the file. You probably want 'r+b'.
+
+
+https://stackoverflow.com/questions/40890697/python3-reading-a-binary-file-4-bytes-at-a-time-and-xor-it-with-a-4-byte-long-k
+https://stackoverflow.com/questions/4388201/how-to-seek-and-append-to-a-binary-file-in-python
+
+
+using seek:
+    
+    NOTE : Remember new bytes over write previous bytes
+
+As per python 3 syntax
+
+with open('myfile.dat', 'wb') as file:
+    b = bytearray(b'This is a sample')
+    file.write(b)
+
+with open('myfile.dat', 'rb+') as file:
+    file.seek(5)
+    b1 = bytearray(b'  text')
+    #remember new bytes over write previous bytes
+    file.write(b1)
+
+with open('myfile.dat', 'rb') as file:
+    print(file.read())
+OUTPUT
+
+b'This   textample'
+remember new bytes over write previous bytes
+
+
+'''
+
+'''
+
+def dict_to_binary(the_dict):
+    str = json.dumps(the_dict)
+    binary = ' '.join(format(ord(letter), 'b') for letter in str)
+    return binary
+
+
+def binary_to_dict(the_binary):
+    jsn = ''.join(chr(int(x, 2)) for x in the_binary.split())
+    d = json.loads(jsn)  
+    return d
+
+bin = dict_to_binary(my_dict)
+print (bin)
+
+dct = binary_to_dict(bin)
+print( dct)
+
+will give the output
+
+1111011 100010 1101011 100010 111010 100000 1011011 110001 101100 100000 110010 101100 100000 110011 1011101 1111101
+
+{u'key': [1, 2, 3]}
+
+'''
