@@ -12,3 +12,5 @@ Dependencies:
 - https://pypi.org/project/opencv-python/
 - https://pypi.org/project/PyWavefront/
 - https://pypi.org/project/pyglet/
+
+![ddoif-classes](https://github.com/morawi/ddoif/blob/master/figures/ddoif.jpg)
