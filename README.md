@@ -2,7 +2,7 @@
 
 Towards a standaridized look of fashion data
 
-DDOIF is pronounced this way /di?d??f/
+DDOIF is pronounced this way /di?d??f/  di?d??f
 
 Objective:
 Objective: Enable interoperable data exchange within and between Fashion Industry and AI companies
