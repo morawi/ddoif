@@ -13,5 +13,5 @@ Dependencies:
 - https://pypi.org/project/PyWavefront/
 - https://pypi.org/project/pyglet/
 
-ddoif-classes
+## ddoif-classes
 ![ddoif-classes](https://github.com/morawi/ddoif/blob/master/figures/ddoif.jpg)
