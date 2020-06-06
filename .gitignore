@@ -129,4 +129,3 @@ dmypy.json
 .pyre/
 
 # ignore folders used for figures
-figures/
