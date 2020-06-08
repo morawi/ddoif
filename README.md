@@ -35,10 +35,6 @@ Dependencies:
 ![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/footwear_class.svg)
 
 
-Media-class             |  Info-class         
-:-------------------------:|:-------------------------:
-![](https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/info.svg)  
-
 
 Media-class             |  Info-class             |  post-processing-class              |  Fabric-class              |  material-class             
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
