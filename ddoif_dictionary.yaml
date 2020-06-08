@@ -43,7 +43,6 @@
 info:
     date-created: dd-month-yyyy
     last-change-time: stores the time that the image was last changed
-    digital-signature:
     manufacturer: 
     brand:
     designer:
