@@ -35,9 +35,9 @@ Dependencies:
 ![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/footwear_class.svg)
 
 
-## Media-class             |  ## Info-class
+Media-class             |  Info-class
 :-------------------------:|:-------------------------:
-![Media-class https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![Info-class](https://github.com/morawi/ddoif/blob/master/figures/info.svg)
+![] https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/info.svg)
   
 
 
