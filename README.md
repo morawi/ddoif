@@ -4,8 +4,8 @@ Towards a standaridized look of fashion data
 
 DDOIF is pronounced this way /di?d??f/  &di?d??f
 
-Objective:
-Objective: Enable interoperable data exchange within and between Fashion Industry and AI companies
+## Objective:
+Enable interoperable data exchange within and between Fashion Industry and AI companies
 
 Dependencies:
 - https://pypi.org/project/PyYAML/
