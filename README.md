@@ -37,7 +37,8 @@ Dependencies:
 
 Media-class             |  Info-class
 :-------------------------:|:-------------------------:
-![] https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/info.svg)
+![]https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/info.svg)
+
   
 
 
