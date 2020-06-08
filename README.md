@@ -18,11 +18,15 @@ Dependencies:
 ## DDOIF-classes
 ![DDOIF-classes](https://github.com/morawi/ddoif/blob/master/figures/ddoif.svg)
 
+
+
 ## Anatomy-class
 ![Anatomy-class](https://github.com/morawi/ddoif/blob/master/figures/anatomy.svg)
 
 ## Clothing-class
 ![Clothing-class](https://github.com/morawi/ddoif/blob/master/figures/clothing_classes.svg)
+
+
 
 ## Accessory-class
 ![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/accessory_class.svg)
@@ -30,6 +34,11 @@ Dependencies:
 ## Footwear-class
 ![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/footwear_class.svg)
 
+
+## Media-class             |  ## Info-class
+:-------------------------:|:-------------------------:
+![Media-class https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![Info-class](https://github.com/morawi/ddoif/blob/master/figures/info.svg)
+  
 
 
 
