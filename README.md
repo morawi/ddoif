@@ -17,3 +17,17 @@ Dependencies:
 
 ## DDOIF-classes
 ![DDOIF-classes](https://github.com/morawi/ddoif/blob/master/figures/ddoif.svg)
+
+## Anatomy-classes
+![Anatomy-classes](https://github.com/morawi/ddoif/blob/master/figures/anatomy.svg)
+
+## Clothing-classes
+![Clothing-classes](https://github.com/morawi/ddoif/blob/master/figures/clothing_classes.svg)
+
+## Accessory-classes
+![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/accessory_class.svg)
+
+
+
+
+
