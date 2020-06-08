@@ -16,4 +16,4 @@ Dependencies:
 - https://pypi.org/project/pyglet/
 
 ## DDOIF-classes
-![DDOIF-classes](https://github.com/morawi/ddoif/blob/master/figures/ddoif.jpg)
+![DDOIF-classes](https://github.com/morawi/ddoif/blob/master/figures/ddoif.svg)
