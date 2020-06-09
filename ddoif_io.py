@@ -4,7 +4,7 @@ Created on Wed May 20 12:41:11 2020
 
 @author: malrawi
 
-
+This module takes care of ddoif input / ouptut functions
 
 """
 

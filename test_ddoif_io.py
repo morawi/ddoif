@@ -45,9 +45,7 @@ for i, img_name in enumerate(image_names):
     media_buffer['buffer'].append(buffer)
     media_buffer['media_format'].append(media_format.upper())    
     
-ddoif_write(ddoif_dict, media_buffer = media_buffer, out_f='Jacket.ddof')
-    
-    
+ddoif_write(ddoif_dict, media_buffer = media_buffer, out_f='Jacket.ddof')       
 ddoif_dict2, media_buffer2= ddoif_read(in_f='Jacket.ddof')# to Decode the image, 
 img2 = cv2.imdecode(media_buffer2['buffer'][0], flags=-1) # Return the loaded image as is (with alpha channel).
 img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)
