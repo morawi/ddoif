@@ -2,7 +2,9 @@
 
 Towards a standaridized look of fashion data
 
-DDOIF is pronounced this way /di?d??f/  &di?d??f
+DDOIF is pronounced this way:
+![DDOIF-classes](https://github.com/morawi/ddoif/blob/master/figures/symbol.svg)
+
 
 ## Objective:
 Enable interoperable data exchange within and between Fashion Industry and AI companies
