@@ -17,6 +17,12 @@ Dependencies:
 - https://pypi.org/project/PyWavefront/
 - https://pypi.org/project/pyglet/
 
+## DDOIF Manual 
+The manual conains important information about the DDOIF file structure and API usage. It demonstrates the functions that can be used to handle a #".ddof" file.
+For DDOIF Manual see ![](https://github.com/morawi/ddoif/blob/master/Manual/ddoif_manual.doc)
+
+## Fashion classes that according to DDOIF dictionary are shown below.
+
 ## DDOIF-classes
 ![DDOIF-classes](https://github.com/morawi/ddoif/blob/master/figures/ddoif.svg)
 
