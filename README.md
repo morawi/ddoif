@@ -38,7 +38,7 @@ Dependencies:
 ## Fabric-class
 ![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/fabric_class.svg)
 
-Media-class             |  Info-class             |  post-processing-class              |  Pattern-class              |  material-class             
+Media-class             |  Info-class             |  Post-processing-class              |  Pattern-class              |  Material-class             
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/info.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/post-processing.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/pattern.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/material_class.svg)  
   
