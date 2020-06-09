@@ -5,15 +5,10 @@ Created on Tue Apr 28 23:20:19 2020
 @author: malrawi
 
 
-
-
-
 """
 
 
 from ddoif_utils import yaml_to_xml, read_yaml_as_dict, yaml_to_json
-
-save_as_xml=True
 
 path= 'C:/MyPrograms/ddoif/'
 yaml_fname = 'ddoif_dictionary.yaml'
