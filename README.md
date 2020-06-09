@@ -19,7 +19,7 @@ Enable interoperable data exchange within and between Fashion Industry and AI co
 
 ## DDOIF Manual 
 The manual conains important information about the DDOIF file structure and API usage. It demonstrates the functions that can be used to handle a ".ddof" file. See 
-![Manual](https://github.com/morawi/ddoif/blob/master/Manual/) folder for details 
+[Manual](https://github.com/morawi/ddoif/blob/master/Manual/) folder for details 
 
 ## Fashion classes according to DDOIF dictionary are graphically shown below.
 
