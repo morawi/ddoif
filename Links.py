@@ -70,6 +70,28 @@ myfile.write(mydata)
 '''
 
 
+"""
+
+
+1- 
+YAML Multi Documents
+YAML format allows multiple documents to be embedded in a single file. They only have to be separated with a line containing triple-dash separator ---.
+
+YAMLJSON
+document: this is document 1
+---
+document: this is document 2
+
+for details see https://gettaurus.org/docs/YAMLTutorial/
+
+
+2- To check the correctness of the ymal file use:
+https://github.com/adrienverge/yamllint
+
+
+"""
+
+
 
 # YAML tags and Python types, and more in https://pyyaml.org/wiki/PyYAMLDocumentation
 # The following table describes how nodes with different tags are converted to Python objects.
