@@ -2,7 +2,6 @@
  "info": {
   "date-created": "dd-month-yyyy",
   "last-change-time": "stores the time that the image was last changed",
-  "digital-signature": null,
   "manufacturer": null,
   "brand": null,
   "designer": null,
@@ -899,11 +898,12 @@
    "Classic Round Toe",
    "Almond Toe",
    "Pointy Toe",
-   "Soft Square",
+   "Soft Square Toe",
    "Square Toe",
-   "Chiseled",
-   "Elongated"
-  ]
+   "Chiseled Toe",
+   "Elongated Toe"
+  ],
+  "sole": null
  },
  "accessory": {
   "wallate": {
@@ -1257,17 +1257,17 @@
    "Text Printed",
    "Scene-Text Printed"
   ],
-  "comment": "dsensity mimics \"pattern density|\nMore patterns need to be added\n"
- },
- "pattern-density": {
-  "classes": [
-   "tiny",
-   "small",
-   "medium",
-   "large",
-   "huge"
-  ],
-  "comment": ""
+  "pattern-density": {
+   "classes": [
+    "tiny",
+    "small",
+    "medium",
+    "large",
+    "huge"
+   ],
+   "comment": ""
+  },
+  "comment": "dsensity mimics \"pattern density|\nMore patterns need to be added\n\n    \n"
  },
  "fabric-make": {
   "classes": [

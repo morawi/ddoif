@@ -582,10 +582,12 @@ footwear: # footwear is also considered clothing in the literature, but we are s
         - Classic Round Toe
         - Almond Toe 
         - Pointy Toe 
-        - Soft Square 
+        - Soft Square Toe
         - Square Toe
-        - Chiseled
-        - Elongated
+        - Chiseled Toe
+        - Elongated Toe
+    sole: 
+    
         
     
 accessory:
@@ -919,6 +921,7 @@ pattern:
         - Geometry
         - Leopard / Animal
         - Zebra
+        - Snake
         - Plaid
         - Graphic
         - Fractal
@@ -926,20 +929,20 @@ pattern:
         - Scene Printed
         - Text Printed
         - Scene-Text Printed
-        
+    pattern-density:
+        classes:
+            - tiny
+            - small
+            - medium
+            - large
+            - huge    
+        comment: |
+          
         
     comment: |
         dsensity mimics "pattern density|
         More patterns need to be added
    
-pattern-density:
-    classes:
-        - tiny
-        - small
-        - medium
-        - large
-        - huge    
-    comment: |
             
     
 fabric-make:
@@ -1221,8 +1224,8 @@ media:
             
     imaging-location: # locatoin and/or condition
         classes:
-            - Outdoor
-            - Indoor
+            - Outdoors
+            - Indoors
             - Studio
             - Professional-shooting
             - Personal-shooting
