@@ -3,8 +3,6 @@
 Towards a standaridized look of fashion data
 
 
-DDOIF is pronounced this way:
-
 ![symbol](https://github.com/morawi/ddoif/blob/master/figures/symbol.svg)
 
 
