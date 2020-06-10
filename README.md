@@ -40,14 +40,8 @@ The manual conains important information about the DDOIF file structure and API 
 ![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/accessory_class.svg)
 
 ## Footwear-Class
-!Footwear-Classes](https://github.com/morawi/ddoif/blob/master/figures/footwear_class.svg)
+![Footwear-Classes](https://github.com/morawi/ddoif/blob/master/figures/footwear_class.svg)
 
-
-## Fabric-Class
-![Accessory-classes](https://github.com/morawi/ddoif/blob/master/figures/fabric_class.svg)
-
-## Care-Class
-![](https://github.com/morawi/ddoif/blob/master/figures/care.svg)
 
 Fabric-Class             |  Care-Class                         
 :-------------------------:|:-------------------------:
