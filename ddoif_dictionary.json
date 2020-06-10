@@ -20,12 +20,29 @@
   "__version__": 0.1,
   "comment": "date-example 01-September-2019\nbarcode-url (qr-code-url) is a link to an image of the code, \nbarcode and qr-code images can also be stored along in the DDOIF file\nMedia type is a two-part identifier for file formats and format contents transmitted on the Internet\nMagic number is the file signature \nGDPR Privacy issues are a big concern for a large number of customers and legislators, and this is another element that must be contained in any ICT protocol. Hence, our aim is to make use of fashion data and trends, GDPR and other related policies, and user feedback to define an ICT protocol for the fashion wholesale and retail companies.\nai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.\n"
  },
- "sizing": {
-  "classes": [
-   "Loose",
+ "size_n_fit": {
+  "size-label": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL",
+   "XXL"
+  ],
+  "size-gendre": [
+   "Mens",
+   "Womens",
+   "Unisex"
+  ],
+  "size-chart": [
+   "TODO"
+  ],
+  "fit": [
+   "Skinny / Tight",
    "Slim",
-   "Regular / Appropriate",
-   "Normal"
+   "Regular / Straight/ Appropriate / Perfect",
+   "Normal",
+   "Loose"
   ]
  },
  "ai-model": {
@@ -532,22 +549,64 @@
   }
  },
  "anatomy": {
+  "toe-shape": [
+   "Budapester Toe",
+   "Classic Round Toe",
+   "Almond Toe",
+   "Pointy Toe",
+   "Soft Square Toe",
+   "Square Toe",
+   "Chiseled Toe",
+   "Elongated Toe"
+  ],
+  "sole": [
+   "Commando Sole",
+   "Leather Sole",
+   "Christy Wedge Sole",
+   "Dainite Sole",
+   "Rubber Camp Sole",
+   "Cork Nitrile Sole",
+   "Plantation Crepe Sole",
+   "Raw Cord"
+  ],
   "overlap": null,
   "slit": [
-   "xx"
+   "Side High / Thigh High Slit",
+   "Side mini Slit",
+   "Multiple Slit",
+   "Back High Slit",
+   "Back Mini Slit",
+   "Front Mini Slit",
+   "Front High Slit",
+   "M-Slit /Double Slit",
+   "Waist Slit",
+   "Ruche Slit",
+   "Flouncing Slit",
+   "Asymmetrical Slit",
+   "Symmetrical Slit",
+   "Lace Up Slit",
+   "Tape Slit"
   ],
-  "placket": null,
+  "placket": [
+   "One-Piece / Continuous Bound Placket",
+   "Miter Placket",
+   "Faced Open Placket",
+   "Two-Piece Placket",
+   "Conventional Placket",
+   "Bib Placket",
+   "Concealed Placket"
+  ],
   "opening": [
-   "Faced opening",
-   "Placket opening",
-   "Hemmed opening",
-   "False placket opening",
-   "Bias Bound opening",
+   "Faced Opening",
+   "Placket Opening",
+   "Hemmed Opening",
+   "False placket Opening",
+   "Bias Bound Opening",
    "Fly Opening",
-   "Seam opening",
-   "Overlapped opening",
-   "Back opening",
-   "Gathered opening"
+   "Seam Opening",
+   "Overlapped Opening",
+   "Back Opening",
+   "Gathered Opening"
   ],
   "vent": {
    "classes": [
@@ -892,18 +951,7 @@
     ],
     "comment": "left blank    \n"
    }
-  },
-  "toe shape": [
-   "Budapester Toe",
-   "Classic Round Toe",
-   "Almond Toe",
-   "Pointy Toe",
-   "Soft Square Toe",
-   "Square Toe",
-   "Chiseled Toe",
-   "Elongated Toe"
-  ],
-  "sole": null
+  }
  },
  "accessory": {
   "wallate": {
@@ -1230,6 +1278,8 @@
   "color-RGB-values": null,
   "color-names": null,
   "color-degradation-factor": null,
+  "color-standard": null,
+  "hsv-cluster": null,
   "comment": "May include the major colors, and not everything,  generated using some computer vision algorithm.  This is the color at manufacturing time. Not yet known how to estimate this\n"
  },
  "pattern": {
@@ -1248,7 +1298,10 @@
    "Ruffle Print",
    "Geometry",
    "Leopard / Animal",
+   "Jaguar",
+   "Cheetah",
    "Zebra",
+   "Snake",
    "Plaid",
    "Graphic",
    "Fractal",
@@ -1259,11 +1312,11 @@
   ],
   "pattern-density": {
    "classes": [
-    "tiny",
-    "small",
-    "medium",
-    "large",
-    "huge"
+    "Tiny",
+    "Small",
+    "Medium",
+    "Large",
+    "Huge"
    ],
    "comment": ""
   },
@@ -1431,11 +1484,11 @@
   "comment": "This is a description of the post processing, like how the Denim is bleached and processed.\nIt can also be used for decoration, like, Ripped Jeans\n       \n\n\n\n    \n"
  },
  "sustainability": {
-  "recycled-material": "Y",
+  "recycled-material": null,
   "sustainability-grade": 8,
   "organic": null,
-  "slow-fashion": true,
-  "fast-fashion": false,
+  "slow-fashion": null,
+  "fast-fashion": null,
   "other": null,
   "comment": "recycled-material;  Y(Yes) / N(No). \nsustainability-grade;  a measure from 1 to 10 (10 being best)\n"
  },
@@ -1450,8 +1503,6 @@
   },
   "weight": null,
   "height": null,
-  "waste-size": null,
-  "chest-size": null,
   "occupation": {
    "classes": null
   },
@@ -1472,6 +1523,21 @@
    "classes": null
   },
   "customer-comments-review": null,
+  "wrap-shoulder-size": null,
+  "wrap-waste-size": null,
+  "wrap-hipe-size": null,
+  "warp-bust-size": null,
+  "body-shape": [
+   "Apple",
+   "Pear",
+   "Rectanlge",
+   "Hourglass"
+  ],
+  "belly-type": [
+   "Flat",
+   "Average",
+   "Curved"
+  ],
   "comment": "Review field is used to store customers review on products, it may or maynot be available\n        \n"
  },
  "care": {
@@ -1600,8 +1666,8 @@
   },
   "imaging-location": {
    "classes": [
-    "Outdoor",
-    "Indoor",
+    "Outdoors",
+    "Indoors",
     "Studio",
     "Professional-shooting",
     "Personal-shooting"

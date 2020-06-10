@@ -71,12 +71,23 @@ info:
         ai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.
 
 
-sizing:
-    classes: 
+size_n_fit:    
+    size-label:    
+        [XS, S, M, L, XL, XXL]
+    size-gendre:
+        - Mens
+        - Womens
+        - Unisex
+    size-chart:
+        - TODO
+    fit:     
+        - Skinny / Tight
+        - Slim 
+        - Regular / Straight/ Appropriate / Perfect
+        - Normal
         - Loose
-        - Slim
-        - Regular / Appropriate
-        - Normal 
+        
+
         
 ai-model:
     mask-rcnn:
@@ -352,26 +363,61 @@ clothing:
                     
                 
 anatomy:
+
+    toe-shape: # not sure if we need to move this to annatomy
+        - Budapester Toe
+        - Classic Round Toe
+        - Almond Toe 
+        - Pointy Toe 
+        - Soft Square Toe
+        - Square Toe
+        - Chiseled Toe
+        - Elongated Toe
+    sole: 
+        [Commando Sole, Leather Sole, Christy Wedge Sole, Dainite Sole, Rubber Camp Sole, Cork Nitrile Sole,
+        Plantation Crepe Sole, Raw Cord,  ]
+        
     overlap:
 #    overlap
 #extended part of the under lap pattern piece with buttons (or button holes)
 #Note 1 to entry: For digital garments, the horizontal/vertical margin where the material overlaps, focusing on the buttons, is defined to create an opening.
     slit:
-        - xx
+        - Side High / Thigh High Slit
+        - Side mini Slit
+        - Multiple Slit
+        - Back High Slit
+        - Back Mini Slit
+        - Front Mini Slit
+        - Front High Slit
+        - M-Slit /Double Slit
+        - Waist Slit
+        - Ruche Slit
+        - Flouncing Slit
+        - Asymmetrical Slit
+        - Symmetrical Slit
+        - Lace Up Slit
+        - Tape Slit
         
     placket:
+        - One-Piece / Continuous Bound Placket
+        - Miter Placket
+        - Faced Open Placket
+        - Two-Piece Placket 
+        - Conventional Placket
+        - Bib Placket
+        - Concealed Placket
     
     opening:    
-        - Faced opening
-        - Placket opening
-        - Hemmed opening
-        - False placket opening
-        - Bias Bound opening
+        - Faced Opening
+        - Placket Opening
+        - Hemmed Opening
+        - False placket Opening
+        - Bias Bound Opening
         - Fly Opening 
-        - Seam opening
-        - Overlapped opening
-        - Back opening
-        - Gathered opening
+        - Seam Opening
+        - Overlapped Opening
+        - Back Opening
+        - Gathered Opening
     
         
     vent:
@@ -577,16 +623,6 @@ footwear: # footwear is also considered clothing in the literature, but we are s
                 T-Strap Heel, Wedge Heel, Louis / Pompadour]
             comment: |
                 left blank    
-    toe shape: # not sure if we need to move this to annatomy
-        - Budapester Toe
-        - Classic Round Toe
-        - Almond Toe 
-        - Pointy Toe 
-        - Soft Square Toe
-        - Square Toe
-        - Chiseled Toe
-        - Elongated Toe
-    sole: 
     
         
     
@@ -898,6 +934,9 @@ color:
     color-RGB-values:
     color-names:
     color-degradation-factor: 
+    color-standard:    
+    hsv-cluster:
+    
     comment: > 
         May include the major colors, and not everything, 
         generated using some computer vision algorithm. 
@@ -920,6 +959,8 @@ pattern:
         - Ruffle Print
         - Geometry
         - Leopard / Animal
+        - Jaguar
+        - Cheetah
         - Zebra
         - Snake
         - Plaid
@@ -931,11 +972,11 @@ pattern:
         - Scene-Text Printed
     pattern-density:
         classes:
-            - tiny
-            - small
-            - medium
-            - large
-            - huge    
+            - Tiny
+            - Small
+            - Medium
+            - Large
+            - Huge    
         comment: |
           
         
@@ -1048,11 +1089,11 @@ post-processing:
         
     
 sustainability:
-    recycled-material: Y 
+    recycled-material: 
     sustainability-grade: 8 #
     organic:
-    slow-fashion: true 
-    fast-fashion: false
+    slow-fashion:  
+    fast-fashion:
     other:
     comment: |
         recycled-material;  Y(Yes) / N(No). 
@@ -1061,16 +1102,14 @@ sustainability:
 
 personal-characteristics: # and preferences, info are non-obligatory, in general and abide to GDPR
     age:
-    gendre:
-    
+    gendre:   
     primary-preferred-color:
         classes:
     secondary-preferred-color:
         classes:
     weight: # Kg
     height: # cm
-    waste-size: # cm
-    chest-size: # cm
+    
     occupation:
         classes:
     country-of-residence:
@@ -1086,6 +1125,21 @@ personal-characteristics: # and preferences, info are non-obligatory, in general
     ethnic-group:
         classes:
     customer-comments-review: 
+    
+    wrap-shoulder-size:
+    wrap-waste-size: # cm
+    wrap-hipe-size: # cm
+    warp-bust-size: # cm
+    
+    
+    body-shape:
+        - Apple
+        - Pear
+        - Rectanlge
+        - Hourglass 
+    belly-type:
+        [Flat, Average, Curved]
+        
     comment: |
         Review field is used to store customers review on products, it may or maynot be available
                 
