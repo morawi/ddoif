@@ -53,9 +53,9 @@ Media-Class             |  Color-Class             |  Post-processing-Class     
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/morawi/ddoif/blob/master/figures/media.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/color.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/post-processing.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/pattern.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/material_class.svg)  
   
-Sustainability-Class             |  Personal-Characteristics-Class             |  Post-processing-Class              |  Annotation-Class              |  Information-Class             
+Sustainability-Class             |  Personal-Characteristics-Class             |  Size-n-Fit-Class              |  Annotation-Class              |  Information-Class             
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/morawi/ddoif/blob/master/figures/sustainability.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/personal_char.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/post-processing.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/annotation.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/info.svg)  
+![](https://github.com/morawi/ddoif/blob/master/figures/sustainability.svg) | ![](https://github.com/morawi/ddoif/blob/master/figures/personal_char.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/sizenfit.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/annotation.svg)  | ![](https://github.com/morawi/ddoif/blob/master/figures/info.svg)  
 
 
 
