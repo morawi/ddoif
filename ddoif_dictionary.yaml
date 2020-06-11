@@ -57,7 +57,25 @@ info:
     type of format: Fashion Data Organization and Exchange
     magic number: "89 44 44 4f 49 46 0d 0a 1a 0a"
     digital signature:
-    gdpr:    
+    gdpr:
+    media-list: # according to view
+        - Front View
+        - Left Side View
+        - Right Side View
+        - Back View
+        - 3D View
+        - Video View
+        - Other View  
+    media-encoding-list: # user should select the encoding of each item in media list
+        - PNG
+        - JPG-LS
+        - JPG
+        - BMP
+        - OBJ
+        - MP4
+        - AVI
+        - 3DS   
+        
    
             
     '__version__': 0.1
@@ -1251,6 +1269,7 @@ media:
         DDOIF file can have multiple media files for the same item, could be a few images
         at different; images and videos; images, 3D objects, and videos; etc.
     
+    has-person: # if the media has a person or just the piece of clothing
     mode:       
     resolution:        
     description:

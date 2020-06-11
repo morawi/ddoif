@@ -17,6 +17,25 @@
   "magic number": "89 44 44 4f 49 46 0d 0a 1a 0a",
   "digital signature": null,
   "gdpr": null,
+  "media-list": [
+   "Front View",
+   "Left Side View",
+   "Right Side View",
+   "Back View",
+   "3D View",
+   "Video View",
+   "Other View"
+  ],
+  "media-encoding-list": [
+   "PNG",
+   "JPG-LS",
+   "JPG",
+   "BMP",
+   "OBJ",
+   "MP4",
+   "AVI",
+   "3DS"
+  ],
   "__version__": 0.1,
   "comment": "date-example 01-September-2019\nbarcode-url (qr-code-url) is a link to an image of the code, \nbarcode and qr-code images can also be stored along in the DDOIF file\nMedia type is a two-part identifier for file formats and format contents transmitted on the Internet\nMagic number is the file signature \nGDPR Privacy issues are a big concern for a large number of customers and legislators, and this is another element that must be contained in any ICT protocol. Hence, our aim is to make use of fashion data and trends, GDPR and other related policies, and user feedback to define an ICT protocol for the fashion wholesale and retail companies.\nai-model: if AI is not none, this means the part or all the clothing items have been predected, generate, or extracted via an AI model, for example, using Computer Vision and/or NLP.\n"
  },
@@ -1647,6 +1666,7 @@
  },
  "media": {
   "comment": "DDOIF file can have multiple media files for the same item, could be a few images\nat different; images and videos; images, 3D objects, and videos; etc.\n",
+  "has-person": null,
   "mode": null,
   "resolution": null,
   "description": null,
@@ -1673,6 +1693,15 @@
     "Personal-shooting"
    ],
    "comment": ""
-  }
+  },
+  "view-angle": [
+   "Front View",
+   "Left Side View",
+   "Right Side View",
+   "Back View",
+   "3D View",
+   "Video View",
+   "Other View"
+  ]
  }
 }
