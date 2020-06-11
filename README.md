@@ -9,6 +9,8 @@ Towards a standaridized look of fashion data
 ## Objective:
 Enable interoperable data exchange within and between Fashion Industry and AI companies
 
+## Python 3.7
+
 ## Dependencies:
 - https://pypi.org/project/PyYAML/
 - https://pypi.org/project/ruamel.yaml/
