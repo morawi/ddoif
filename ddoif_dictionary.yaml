@@ -1284,6 +1284,14 @@ media:
             - Professional-shooting
             - Personal-shooting
         comment: |
+    view-angle:
+        - Front View
+        - Left Side View
+        - Right Side View
+        - Back View
+        - 3D View
+        - Video View
+        - Other View 
         
 
 
