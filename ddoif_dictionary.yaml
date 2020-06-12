@@ -316,7 +316,7 @@ clothing:
             Board Shorts, Knee hugger Shorts]
         comment: |
                 
-    womens-pant: 
+    womens-pants: 
         classes:
             [Dress pants, Jeans, Overalls / Jumpsuits, Culottes, Harem Pants, 
             Baggy Pants, Bell Bottoms, Leggings, Tights, Punk Pants, Stirrup Pants, 
@@ -350,7 +350,7 @@ clothing:
             Chino Shorts, Leather Shorts, Plaid Shorts]
         comment: |
     
-    mens-pant:
+    mens-pants:
         classes:
             - Khakis Pants
             - Pleated Pants

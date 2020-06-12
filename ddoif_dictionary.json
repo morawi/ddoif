@@ -412,7 +412,7 @@
    ],
    "comment": ""
   },
-  "womens-pant": {
+  "womens-pants": {
    "classes": [
     "Dress pants",
     "Jeans",
@@ -506,7 +506,7 @@
    ],
    "comment": ""
   },
-  "mens-pant": {
+  "mens-pants": {
    "classes": [
     "Khakis Pants",
     "Pleated Pants",
