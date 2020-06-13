@@ -10,6 +10,15 @@ Links
 
 
 """
+# Pantone color catalouges and trends
+# https://www.pantone.com/color-intelligence/fashion-color-trend-report/new-york-autumn-winter-2020-2021
+
+# clo3d is like the autocad of clothing
+# https://www.clo3d.com/explore/whyclo
+# https://www.marvelousdesigner.com/
+
+# 3D formtas
+# https://support.clo3d.com/hc/en-us/articles/115002000227-Compatible-File-Format
 
 # JSON ot svg  https://vanya.jp.net/vtree/
 # https://stackoverflow.com/questions/50846431/converting-a-yaml-file-to-python-json-object
