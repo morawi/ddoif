@@ -107,7 +107,22 @@ size_n_fit:
         - Normal
         - Loose
         
-
+supplementary:
+    bead:
+    zipper:
+    lapel:
+    rivet:
+    buckle:
+    flower:
+    sequin:
+    applique:
+    epaulette:
+    fringe:
+    bow:
+    tassel:
+    ribbon:
+    pleat:
+    
         
 ai-model:
     mask-rcnn:
