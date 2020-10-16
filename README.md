@@ -1,6 +1,9 @@
 # DDOIF - Digital Data Organization and Exchange in Fashion
 
-Towards a standaridized look of fashion data
+## Towards a standaridized look of fashion data
+The fashion industry is looking forward to use artificial intelligence technologies to enhance their processes, services, and applications. Although the amount of fashion data currently in use is increasing, there is a large gap in data exchange between the fashion industry and the related AI companies, not to mention the different structure used for each fashion dataset. As a result, AI companies are relying on manually annotated fashion data to build different applications. Furthermore, as of this writing, the terminology, vocabulary and methods of data representation used to denote fashion items are still ambiguous and confusing. Hence, it is clear that the fashion industry and AI companies will benefit from a protocol that allows them to exchange and organise fashion information in a unified way. To achieve this goal we aim (1) to define a protocol called DDOIF that will allow interoperability of fashion data; (2) for DDOIF to contain diverse entities including extensive information on clothing and accessories attributes in the form of text and various media formats; and (3)To design and implement an API that includes, among other things, functions for importing and exporting a file built according to the DDOIF protocol that stores all information about a single item of clothing. To this end, we identified over 1000 class and subclass names used to name fashion items and use them to build the DDOIF dictionary. We make DDOIF publicly available to all interested users and developers and look forward to engaging more collaborators to improve and enrich it.
+
+For more details see https://arxiv.org/abs/2009.03005 
 
 
 ![symbol](https://github.com/morawi/ddoif/blob/master/figures/symbol.svg)
